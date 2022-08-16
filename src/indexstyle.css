@@ -1,0 +1,57 @@
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+@font-face{
+  font-family:"notoserif";
+  src:url("/src/assets/fonts/NotoSerifCJKjp-Regular.woff")format('opentype');
+}
+@font-face{
+  font-family:"EBGaramond-Regular";
+  src:url("/src/assets/fonts/EBGaramond-Regular.woff")format('opentype');
+}
+@font-face{
+  font-family:"EBGaramond-Medium";
+  src:url("/src/assets/fonts/EBGaramond-Medium.woff")format('opentype');
+}
+
+body {
+    font-size: 14px;
+    font-family: 'notoserif', serif, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
