@@ -1,0 +1,193 @@
+/* 0.通用样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  /* 1.背景样式 */
+  .bg_img {
+    position: absolute;
+    width: 100vw;
+    height: 50000px;
+    z-index: -1000;
+  }
+  
+  .bg_img .bg_longimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50000px;
+    background-image: url("/src/assets/images/bg_mainbg01.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    z-index: -999;
+  }
+  
+  .bg_img .bg_grayimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50000px;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: -998;
+  }
+  
+  .bg_img .bg_pointimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50000px;
+    background-image: url("/src/assets/images/whitepoint.png");
+    opacity: 0.15;
+    z-index: -997;
+  }
+  
+  /* 2.Top图样式 */
+  .top_img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /*opacity: 0.9;*/
+  }
+  /* 2.1 Top-left图样式 */
+  .top_img .top_img_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    background-image: url("/src/assets/images/ttl_logo01_sp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* 2.2 Top-right图样式 */
+  .top_img .top_img_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    background-image: url("/src/assets/images/bg_hero00.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /*3.story/character/staff/cast样式*/
+  
+  .beta_timeline {
+    width: 100vw;
+    background-color: pink;
+  }
+  
+  /* 3.1story整体样式 */
+
+  .b_story{
+      width: 100%;
+  }
+  /* 3.1.1story title样式 */
+
+  .b_st_title {
+      width: 100%;
+      padding: 12% 0 8%;
+      background-color: rgba(128,0,128,0.5);
+  }
+  
+  .b_t_img{
+      width: 100%;
+      padding-top: 8%;
+      background-image: url("/src/assets/images/story.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  
+  
+  
+  /* 3.1.2story body样式 */
+
+  .b_st_body{
+    position: relative;
+    width: 100vw;
+    padding-top: 90%;
+    overflow: hidden;
+  }
+
+  /* 3.1.2.1story body text样式 */
+  .body_text{
+    width: 100%;
+  }
+
+  /* 3.1.2.2story body img样式 */
+  .body_img{
+    width: 180vw;
+    position: absolute;
+    bottom:20%;
+    left:-70%;
+    padding-top: 63%;
+    transform:  rotate(-10deg);
+    overflow: hidden;
+  }
+  
+  .body_slideimg{
+    position: absolute;
+    width: 100vw;
+    top:-11%;
+    left: 42.8%;
+    transform:rotate(10deg);
+  }
+
+
+
+  /* 3.1.2.3左、中、右分部分调整 */
+  .leftimg{
+    position: absolute;
+    background-color: red;
+  }
+
+  .midimg{
+    position: absolute;
+    background-color: aqua;
+  }
+
+  .rightimg{
+    position: absolute;
+    background-color:orange;
+  }
+
+
+  .leftimg_moveup{
+    width: 100%;
+  }
+
+  .midimg_movedown{
+    width: 100%;
+  }
+  .midimg_movedown>li>img{
+    width: 100%;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 2%;
+  }
+
+  .rightimg_moveup{
+    width: 100%;
+  }
+  .rightimg_moveup>li>img{
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+  
+
+  /* 3.1.2.1story body number样式 */
+  .body_number{
+    width: 100vw;
+  }
