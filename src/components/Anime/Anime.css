@@ -6,6 +6,12 @@
     -webkit-box-sizing: border-box;
   }
   
+  
+  
+  
+  
+  
+  
   /* 1.背景样式 */
   .bg_img {
     position: absolute;
@@ -47,6 +53,12 @@
     z-index: -997;
   }
   
+  
+  
+  
+  
+  
+  
   /* 2.Top图样式 */
   .top_img {
     position: relative;
@@ -79,29 +91,37 @@
     background-repeat: no-repeat;
   }
   
-  /*3.story/character/staff/cast样式*/
   
+  
+  
+  
+  
+  
+  /*3.story/character/staff/cast样式*/
   .beta_timeline {
     width: 100vw;
     background-color: pink;
   }
   
+  
+  
+  
   /* 3.1story整体样式 */
 
   .b_story{
-      width: 100%;
+      width: 100vw;
   }
   /* 3.1.1story title样式 */
 
   .b_st_title {
       width: 100%;
-      padding: 12% 0 8%;
+      padding: 10% 0 10%;
       background-color: rgba(128,0,128,0.5);
   }
   
   .b_t_img{
       width: 100%;
-      padding-top: 8%;
+      padding-top: 11%;
       background-image: url("/src/assets/images/story.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -115,7 +135,7 @@
   .b_st_body{
     position: relative;
     width: 100vw;
-    padding-top: 90%;
+    padding-top: 85%;
     overflow: hidden;
   }
 
@@ -128,10 +148,10 @@
   .body_img{
     width: 180vw;
     position: absolute;
-    bottom:20%;
+    bottom:24%;
     left:-70%;
-    padding-top: 63%;
-    transform:  rotate(-10deg);
+    padding-top: 56%;
+    transform:  rotate(-8deg);
     overflow: hidden;
   }
   
@@ -139,9 +159,12 @@
     position: absolute;
     width: 100vw;
     top:-11%;
-    left: 42.8%;
-    transform:rotate(10deg);
+    left: 41.6%;
+    transform:rotate(8deg);
   }
+
+
+
 
 
 
@@ -149,16 +172,20 @@
   .leftimg{
     position: absolute;
     background-color: red;
+    transition: all 0.8s;
   }
 
   .midimg{
+    width: 100%;
     position: absolute;
     background-color: aqua;
+    transition: all 0.8s;
   }
 
   .rightimg{
     position: absolute;
     background-color:orange;
+    transition: all 0.8s;
   }
 
 
@@ -166,15 +193,30 @@
     width: 100%;
   }
 
-  .midimg_movedown{
-    width: 100%;
-  }
-  .midimg_movedown>li>img{
+  .leftimg_moveup>li>img{
     width: 100%;
     height: auto;
-    padding-left: 4%;
+    padding-left: 0%;
+    padding-right: 1%;
+  }
+
+
+
+  .midimg_movedown{
+    width: 100%;
+    height:97.88vw;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .midimg_movedown img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
     padding-right: 2%;
   }
+
+
 
   .rightimg_moveup{
     width: 100%;
@@ -182,12 +224,49 @@
   .rightimg_moveup>li>img{
     width: 100%;
     height: auto;
-    padding-left: 3%;
-    padding-right: 1%;
+    padding-left: 1%;
+    padding-right: 2%;
   }
-  
 
   /* 3.1.2.1story body number样式 */
-  .body_number{
-    width: 100vw;
+  .b_st_footer{
+    position: absolute;
+    width: 60vw;
+    bottom: 10%;
+    left: 37%;
   }
+
+  .num_nav{
+    width: 100%;
+  }
+
+
+
+  
+  
+  /* 3.2characters总体样式 */
+
+  .b_characters{
+    width: 100vw;
+    background-color: rgb(177, 115, 126);
+  }
+
+
+  /* 3.2.1 title样式 */
+  .b_charas_title{
+    width: 100%;
+    padding: 8% 0 8%;
+    /* background-color: purple; */
+  }
+
+  .b_c_img{
+    width: 100%;
+    padding-top:12%;
+    background-image: url("/src/assets/images/characters.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* 3.2.2 body样式 */
+
