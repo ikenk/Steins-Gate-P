@@ -28,30 +28,30 @@
                                 <Col span="15" class="slideimg_left" >
                                   <div class="leftimg" :style="{transform: `translateY(${LeftUp})`}">
                                       <ul class="leftimg_moveup" id="LeftimgMoveup" >
-                                        <li id=""><img src="/src/assets/images/img_story01_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story02_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story03_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story04_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story05_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story06_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story07_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story08_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story09_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story10_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story11_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story12_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story13_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story14_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story15_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story16_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story17_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story18_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story19_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story20_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story21_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story22_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story23_01.png.png"></li>
-                                        <li id=""><img src="/src/assets/images/img_story24_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story01_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story02_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story03_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story04_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story05_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story06_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story07_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story08_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story09_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story10_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story11_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story12_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story13_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story14_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story15_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story16_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story17_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story18_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story19_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story20_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story21_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story22_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story23_01.png.png"></li>
+                                        <li><img src="/src/assets/images/img_story24_01.png.png"></li>
                                       </ul>
                                   </div>
                                 </Col>
@@ -143,31 +143,33 @@
                         </Row>
                         <Row class="b_st_footer">
                             <a class="num_nav">
-                              <Grid :border="border" :hover="hover" :col="12" center square @click="change_st($event)">
-                                  <GridItem >#1</GridItem>
-                                  <GridItem >#2</GridItem>
-                                  <GridItem >#3</GridItem>
-                                  <GridItem >#4</GridItem>
-                                  <GridItem >#5</GridItem>
-                                  <GridItem >#6</GridItem>
-                                  <GridItem >#7</GridItem>
-                                  <GridItem >#8</GridItem>
-                                  <GridItem >#9</GridItem>
-                                  <GridItem >#10</GridItem>
-                                  <GridItem >#11</GridItem>
-                                  <GridItem >#12</GridItem>
-                                  <GridItem >#13</GridItem>
-                                  <GridItem >#14</GridItem>
-                                  <GridItem >#15</GridItem>
-                                  <GridItem >#16</GridItem>
-                                  <GridItem >#17</GridItem>
-                                  <GridItem >#18</GridItem>
-                                  <GridItem >#19</GridItem>
-                                  <GridItem >#20</GridItem>
-                                  <GridItem >#21</GridItem>
-                                  <GridItem >#22</GridItem>
-                                  <GridItem >#23</GridItem>
-                                  <GridItem >#SP</GridItem>
+                              <Grid :border="true" :col="14" padding="0"  @click="change_st($event)">
+                                
+                                  <GridItem class="Item">#1</GridItem>
+                                  <GridItem class="Item">#2</GridItem>
+                                  <GridItem class="Item">#3</GridItem>
+                                  <GridItem class="Item">#4</GridItem>
+                                  <GridItem class="Item">#5</GridItem>
+                                  <GridItem class="Item">#6</GridItem>
+                                  <GridItem class="Item">#7</GridItem>
+                                  <GridItem class="Item">#8</GridItem>
+                                  <GridItem class="Item">#9</GridItem>
+                                  <GridItem class="Item">#10</GridItem>
+                                  <GridItem class="Item">#11</GridItem>
+                                  <GridItem class="Item">#12</GridItem>
+                                  <GridItem class="Item">#13</GridItem>
+                                  <GridItem class="Item">#14</GridItem>
+                                  <GridItem class="Item">#15</GridItem>
+                                  <GridItem class="Item">#16</GridItem>
+                                  <GridItem class="Item">#17</GridItem>
+                                  <GridItem class="Item">#18</GridItem>
+                                  <GridItem class="Item">#19</GridItem>
+                                  <GridItem class="Item">#20</GridItem>
+                                  <GridItem class="Item">#21</GridItem>
+                                  <GridItem class="Item">#22</GridItem>
+                                  <GridItem class="Item">#23</GridItem>
+                                  <GridItem class="Item">#SP</GridItem>
+                            
                               </Grid>
                             </a>
                         </Row>
@@ -213,25 +215,11 @@
     </div>
     <Row class="navbtn_is_show">
       <Row class="three_btn">
-        <Row class="top"></Row>
-        <Row class="mid">
-          <Dropdown >
-            <a href="javascript:void(0)">
-                hover 触发
-                <Icon type="ios-arrow-down"></Icon>
-            </a>
-            <template #list>
-                <DropdownMenu placement="right">
-                    <DropdownItem>驴打滚</DropdownItem>
-                    <DropdownItem>炸酱面</DropdownItem>
-                    <DropdownItem>豆汁儿</DropdownItem>
-                    <DropdownItem>冰糖葫芦</DropdownItem>
-                    <DropdownItem>北京烤鸭</DropdownItem>
-                </DropdownMenu>
-            </template>
-          </Dropdown>
-        </Row>
-        <Row class="bottom"></Row>
+          <Grid :border="false" :hover="hover" :col="1" square padding="0">
+              <GridItem class="top_btn"></GridItem>
+              <GridItem class="mid_btn"></GridItem>
+              <GridItem class="bottom_btn"></GridItem>
+          </Grid>
       </Row>
     </Row>
     <div class="nav"></div>

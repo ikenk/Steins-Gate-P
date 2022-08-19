@@ -9,9 +9,6 @@
   
   
   
-  
-  
-  
   /* 1.背景样式 */
   .bg_img {
     position: absolute;
@@ -65,7 +62,6 @@
     width: 100vw;
     height: 100vh;
     background-color: white;
-    /*opacity: 0.9;*/
   }
   /* 2.1 Top-left图样式 */
   .top_img .top_img_left {
@@ -170,6 +166,7 @@
 
   /* 3.1.2.3左、中、右分部分调整 */
   .leftimg{
+    width: 100%;
     position: absolute;
     background-color: red;
     transition: all 0.8s;
@@ -193,10 +190,10 @@
     width: 100%;
   }
 
-  .leftimg_moveup>li>img{
+  .leftimg_moveup img{
     width: 100%;
     height: auto;
-    padding-left: 0%;
+    padding-left: 1%;
     padding-right: 1%;
   }
 
@@ -232,14 +229,26 @@
   .b_st_footer{
     position: absolute;
     width: 60vw;
-    bottom: 10%;
-    left: 37%;
+    bottom: 11%;
+    left: 39%;
   }
 
   .num_nav{
     width: 100%;
+    font-size: 2em;
+    text-align: center;
+    /* line-height: 71px; */
+    /* margin: 1%; */
   }
 
+  .Item{
+    margin: 0.3%;
+    padding: 2px;
+  }
+
+  .num_nav a{
+    width: 100%;
+  }
 
 
   
@@ -270,3 +279,55 @@
 
   /* 3.2.2 body样式 */
 
+
+
+
+
+
+
+
+  /* 3.3 btn样式 */
+  .three_btn{
+    position: fixed;
+    width: 4.5em;
+    height: 16em;
+    bottom: 50vh;
+    left: 1vw;
+    transform: translateY(50%);
+    background-color: red;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+
+  .top_btn{
+    width: 6em;
+    margin: 0.5em;
+    background-color: white;
+    background-image: url("/src/assets/icons/无穷-透明黑色.png");
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: center;
+    
+  }
+  .mid_btn{
+    width: 100%;
+    margin: 0.5em;
+    background-color: black;
+    background-image: url("/src/assets/icons/菜单-透明白色.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 70% 70%;
+    background-position: center;
+  }
+
+  .bottom_btn{
+    width: 100%;
+    margin: 0.5em;
+    background-color: black;
+    background-image: url("/src/assets/icons/双左-透明白色.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 70% 70%;
+    background-position: center;
+  }
