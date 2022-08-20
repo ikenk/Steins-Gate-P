@@ -279,6 +279,122 @@
   }
 
   /* 3.2.2 body样式 */
+  .b_charas_body{
+    position: relative;
+    width: 100vw;
+    height: 1200px;
+    background-color:orange;
+  }
+
+  .charas_cut{
+    position: absolute;
+    left:-52%;
+    top: 3%;
+    padding-top: 46%;
+    width: 180vw;
+    transform: rotate(-10deg);
+    background: aqua;
+    /* overflow: hidden; */
+  }
+  
+
+  .charas_main{
+    position: absolute;
+    left: 31%;
+    top: -15%;
+    transform: rotate(10deg);
+    width: 100vw;
+  }
+
+  /* 3.2.2.1 txt 样式 */
+
+
+
+  /* 3.2.2.2 slide_img 样式 */
+  .slide_img_whole{
+    position: absolute;
+    width: 100vw;
+    z-index: 201;
+  }
+
+
+  .slide_img{
+    width: 100%;
+    height: 49.616vw;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .slide_img img{
+    width: 100%;
+  }
+
+
+
+
+
+  /* 3.2.2.3 float_img样式 */
+  .float_img_whole{
+    position: absolute;
+    width: 100vw;
+  }
+
+
+    /*  float_bg_img样式 */
+  .float_bg_img{
+    position: relative;
+    width: 100vw;
+  }
+
+  .float_bg_img img{
+    position: absolute;
+    width: 100%;
+  }
+
+
+
+    /* float_top_img 样式 */
+  .float_top_img{
+    position: relative;
+    width: 100vw;
+  }
+
+  .float_top_img div{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .float_top_img div img{
+    position: absolute;
+    width: 35%;
+    top: 12.95vh;
+    z-index: 100;
+  }
+
+  .float_top_img div[class$='_1']{
+    z-index: 105;
+  }
+
+  .float_top_img div[class$='_2']{
+    z-index: 104;
+  }
+  
+  .float_top_img div[class$='_3']{
+    z-index: 103;
+  }
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -298,6 +414,7 @@
     background-color: red;
     flex-direction: column;
     flex-wrap: nowrap;
+    z-index: 1000;
   }
 
 
@@ -335,38 +452,55 @@
 
   /* 3.4 nav导航栏样式 */
   .nav{
-    /* display: none; */
+    display: none;
     position: fixed;
     width: 99vw;
     height: 9vh;
     bottom: 50vh;
     transform: translateY(50%);
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 1);
+    z-index:1000;
+  }
+
+  .nav a{
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .nav_top{
     background-image: url("/src/assets/images/top_nav.svg");
     background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
   }
 
   .nav_story{
     background-image: url("/src/assets/images/story_nav.svg");
     background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
   }
 
   .nav_character{
     background-image: url("/src/assets/images/character_nav.svg");
     background-repeat: no-repeat;
+    background-size: 95% 62%;
+    background-position: 100% center;
   }
 
   .nav_cast{
-    background-image: url("/src/assets/images/cast_nav.svg");
+    background-image: url("/src/assets/images/cast_nav.png");
     background-repeat: no-repeat;
+    background-size: 55% 73%;
+    background-position:  50% center;
   }
 
   .nav_product{
     background-image: url("/src/assets/images/product_nav.svg");
     background-repeat: no-repeat;
+    background-size: 70% 60%;
+    background-position: 0% center;
   }
 
 
