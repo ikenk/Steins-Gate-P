@@ -143,32 +143,31 @@
                         </Row>
                         <Row class="b_st_footer">
                             <a class="num_nav">
-                              <Grid :border="true" :col="14" padding="0"  @click="change_st($event)">
-                                
-                                  <GridItem class="Item">#1</GridItem>
-                                  <GridItem class="Item">#2</GridItem>
-                                  <GridItem class="Item">#3</GridItem>
-                                  <GridItem class="Item">#4</GridItem>
-                                  <GridItem class="Item">#5</GridItem>
-                                  <GridItem class="Item">#6</GridItem>
-                                  <GridItem class="Item">#7</GridItem>
-                                  <GridItem class="Item">#8</GridItem>
-                                  <GridItem class="Item">#9</GridItem>
-                                  <GridItem class="Item">#10</GridItem>
-                                  <GridItem class="Item">#11</GridItem>
-                                  <GridItem class="Item">#12</GridItem>
-                                  <GridItem class="Item">#13</GridItem>
-                                  <GridItem class="Item">#14</GridItem>
-                                  <GridItem class="Item">#15</GridItem>
-                                  <GridItem class="Item">#16</GridItem>
-                                  <GridItem class="Item">#17</GridItem>
-                                  <GridItem class="Item">#18</GridItem>
-                                  <GridItem class="Item">#19</GridItem>
-                                  <GridItem class="Item">#20</GridItem>
-                                  <GridItem class="Item">#21</GridItem>
-                                  <GridItem class="Item">#22</GridItem>
-                                  <GridItem class="Item">#23</GridItem>
-                                  <GridItem class="Item">#SP</GridItem>
+                              <Grid :border="true" :col="14" padding="0" square @click="change_st($event)">              
+                                  <GridItem id="navItem01" class="Item"></GridItem>
+                                  <GridItem id="navItem02" class="Item">#02</GridItem>
+                                  <GridItem id="navItem03" class="Item">#03</GridItem>
+                                  <GridItem id="navItem04" class="Item">#04</GridItem>
+                                  <GridItem id="navItem05" class="Item">#05</GridItem>
+                                  <GridItem id="navItem06" class="Item">#06</GridItem>
+                                  <GridItem id="navItem07" class="Item">#07</GridItem>
+                                  <GridItem id="navItem08" class="Item">#08</GridItem>
+                                  <GridItem id="navItem09" class="Item">#09</GridItem>
+                                  <GridItem id="navItem10" class="Item">#10</GridItem>
+                                  <GridItem id="navItem11" class="Item">#11</GridItem>
+                                  <GridItem id="navItem12" class="Item">#12</GridItem>
+                                  <GridItem id="navItem13" class="Item">#13</GridItem>
+                                  <GridItem id="navItem14" class="Item">#14</GridItem>
+                                  <GridItem id="navItem15" class="Item">#15</GridItem>
+                                  <GridItem id="navItem16" class="Item">#16</GridItem>
+                                  <GridItem id="navItem17" class="Item">#17</GridItem>
+                                  <GridItem id="navItem18" class="Item">#18</GridItem>
+                                  <GridItem id="navItem19" class="Item">#19</GridItem>
+                                  <GridItem id="navItem20" class="Item">#20</GridItem>
+                                  <GridItem id="navItem21" class="Item">#21</GridItem>
+                                  <GridItem id="navItem22" class="Item">#22</GridItem>
+                                  <GridItem id="navItem23" class="Item">#23</GridItem>
+                                  <GridItem id="navItem24" class="Item">#SP</GridItem>
                             
                               </Grid>
                             </a>
@@ -193,7 +192,6 @@
                     </Row>
                 </Row>
                 <Row class="b_cast"></Row>
-                <Row class="b_staff"></Row>
             </Row>
             <Row class="alpha_timeline">
                 <Row class="a_story">
@@ -206,23 +204,34 @@
             </Row>
         </Row>
         <br />
-        <Row class="product">
-        </Row>
+        <Row class="product"></Row>
         <br />
-        <Row class="footer">
+        <Row class="back_to_top">    
+          <BackTop :height="7000" class="btt_body">
+            <div class="btt_img"></div>
+          </BackTop>
         </Row>
+        <Row class="footer"></Row>
       </div>
     </div>
     <Row class="navbtn_is_show">
       <Row class="three_btn">
           <Grid :border="false" :hover="hover" :col="1" square padding="0">
-              <GridItem class="top_btn"></GridItem>
-              <GridItem class="mid_btn"></GridItem>
-              <GridItem class="bottom_btn"></GridItem>
+              <a href="javascript:void(0);"><GridItem class="top_btn"></GridItem></a>
+              <a href="javascript:void(0);"><GridItem class="mid_btn"></GridItem></a>
+              <a href="/home"><GridItem class="bottom_btn"></GridItem></a>
           </Grid>
       </Row>
     </Row>
-    <div class="nav"></div>
+    <Row class="nav">
+      <Col span="4" class="nav_left"></Col>
+      <Col span="2" class="nav_top"></Col>
+      <Col span="3" class="nav_story"></Col>
+      <Col span="4" class="nav_character"></Col>
+      <Col span="3" class="nav_cast"></Col>
+      <Col span="4" class="nav_product"></Col>
+      <Col span="4" class="nav_right"></Col>
+    </Row>
   </div>
 </template>
 
@@ -264,14 +273,21 @@ export default {
       let el_right = document.getElementById("rightimgMoveup").children;
       // console.log(el_right[0].clientHeight);
 
-      // console.log(e.target.innerHTML);
-      if(e.target.innerHTML == '#SP'){
-        this.number_move = 23;
-      }
-      else{
-        this.number_move = parseInt(e.target.innerHTML.slice(1))-1;
-      }
+      let itemid = e.target.id;
+      console.log(e.target.id);
+      this.number_move = parseInt(itemid.slice(7))-1;
       console.log(this.number_move);
+
+
+      // console.log(e.target.innerHTML);
+      // if(e.target.innerHTML == '#SP'){
+      //   this.number_move = 23;
+      // }
+      // else{
+      //   this.number_move = parseInt(e.target.innerHTML.slice(1))-1;
+      // }
+      // console.log(this.number_move);
+
 
 
       // 图片移动
