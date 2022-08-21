@@ -514,9 +514,15 @@
     <Row class="navbtn_is_show">
       <Row class="three_btn">
           <Grid :border="false" :hover="hover" :col="1" square padding="0">
-              <a href="javascript:void(0);"><GridItem class="top_btn"></GridItem></a>
-              <a href="javascript:void(0);"><GridItem class="mid_btn"></GridItem></a>
-              <a href="/home"><GridItem class="bottom_btn"></GridItem></a>
+              <a href="javascript:void(0);" @click="random_url">
+                <GridItem class="top_btn"></GridItem>
+              </a>
+              <a href="javascript:void(0);" @click="show_nav">
+                <GridItem class="mid_btn"></GridItem>
+              </a>
+              <a href="/home">
+                <GridItem class="bottom_btn"></GridItem>
+              </a>
           </Grid>
       </Row>
     </Row>
@@ -620,7 +626,12 @@ export default {
 
     },
 
+    //随机跳转某个网页
+    random_url(){},
 
+
+    //展开nav栏
+    show_nav(){},
 
 
     }
