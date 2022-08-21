@@ -386,10 +386,33 @@
     z-index: 103;
   }
 
-  
 
+  /* 3.2.3 character_footer样式 */
+  .charas_footer{
+    position: absolute;
+    width: 60vw;
+    height:40vh;
+    top:115vh;
+    left: 10vw;
+    background-color: #fff;
+  }
 
+  .charas_footer a{
+    width: 100%;
+    height: 100%;
+  }
 
+  .char_row1{
+    width: 100%;
+    height: 50%;
+  }
+  .char_row2{
+    width: 100%;
+    height: 50%;
+  }
+
+  .char_item01{
+  }
 
 
 

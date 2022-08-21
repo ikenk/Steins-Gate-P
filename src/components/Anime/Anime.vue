@@ -401,24 +401,28 @@
                         </Row>
                       </Row>
                       <Row class="charas_footer">
-                          <Grid :col="8" :hover="true">
-                            <GridItem>01</GridItem>
-                            <GridItem>02</GridItem>
-                            <GridItem>03</GridItem>
-                            <GridItem>04</GridItem>
-                            <GridItem>05</GridItem>
-                            <GridItem>06</GridItem>
-                            <GridItem>07</GridItem>
-                            <GridItem>08</GridItem>
-                            <GridItem>09</GridItem>
-                            <GridItem>10</GridItem>
-                            <GridItem>11</GridItem>
-                            <GridItem>12</GridItem>
-                            <GridItem>13</GridItem>
-                            <GridItem>14</GridItem>
-                            <GridItem>15</GridItem>
-                            <GridItem>16</GridItem>
-                        </Grid>
+                        <a class="charas_nav" > 
+                          <Row class="char_row1" @click="change_chara($event)">
+                            <Col span="3" class="char_item01" id="CharItem1"></Col>
+                            <Col span="3" class="char_item02" id="CharItem2"></Col>
+                            <Col span="3" class="char_item03" id="CharItem3"></Col>
+                            <Col span="3" class="char_item04" id="CharItem4"></Col>
+                            <Col span="3" class="char_item05" id="CharItem5"></Col>
+                            <Col span="3" class="char_item06" id="CharItem6"></Col>
+                            <Col span="3" class="char_item07" id="CharItem7"></Col>
+                            <Col span="3" class="char_item08" id="CharItem8"></Col>
+                          </Row>
+                          <Row class="char_row2" @click="change_chara($event)">
+                            <Col span="3" class="char_item09" id="CharItem9"></Col>
+                            <Col span="3" class="char_item10" id="CharItem10"></Col>
+                            <Col span="3" class="char_item11" id="CharItem11"></Col>
+                            <Col span="3" class="char_item12" id="CharItem12"></Col>
+                            <Col span="3" class="char_item13" id="CharItem13"></Col>
+                            <Col span="3" class="char_item14" id="CharItem14"></Col>
+                            <Col span="3" class="char_item15" id="CharItem15"></Col>
+                            <Col span="3" class="char_item16" id="CharItem16"></Col>
+                          </Row>
+                        </a>
                       </Row>
                     </Row>
                 </Row>
@@ -465,36 +469,40 @@
   </div>
 </template>
 
+<style scoped>
+@import url("./Anime.css");
+</style>
 
 <script>
 export default {
   name: "Anime",
   data() {
     return {
-      iScol: "0",
-      value: false, //布尔值
-      hover: true,
-      border: false,
-      number_move:0,
-      LeftUp:'0px',
-      MidUp:'0px',
-      RightUp:'0px',
+      iScol: "0",//背景大图在页面滚动时向上的滚动距离
+      value: false, //布尔值 目前不清楚是在哪里用到
+      hover: true,//将鼠标放在GridItem上是否有悬浮效果
+      border: false,//GridItem是否有边框
+      number_move:0,//change_st(e)中使用到的移动几个图片单位
+      LeftUp:'0px',//change_st(e)中使用到的左侧图片移动距离
+      MidUp:'0px',//change_st(e)中使用到的中间图片移动距离
+      RightUp:'0px',//change_st(e)中使用到的右侧图片移动距离
     };
   },
-  beforeMount(){
-  },
   mounted() {
-    window.addEventListener("scroll", this.scrollToTop);
+    window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
   },
   methods: {
+    //监视网页滚动
     scrollToTop() {
       var scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-      console.log(scrollTop);
+      // console.log(scrollTop);
       this.iScol = -1.8 * scrollTop;
     },
+
+    //点击集数按钮切换不同剧集的图片和介绍文本
     change_st(e){ //监测各元素高度并且修改图片移动的距离
       let el_left = document.getElementById("LeftimgMoveup").children;
       // console.log(el_left[0].clientHeight);
@@ -507,17 +515,6 @@ export default {
       console.log(e.target.id);
       this.number_move = parseInt(itemid.slice(7))-1;
       console.log(this.number_move);
-
-
-      // console.log(e.target.innerHTML);
-      // if(e.target.innerHTML == '#SP'){
-      //   this.number_move = 23;
-      // }
-      // else{
-      //   this.number_move = parseInt(e.target.innerHTML.slice(1))-1;
-      // }
-      // console.log(this.number_move);
-
 
 
       // 图片移动
@@ -536,10 +533,16 @@ export default {
       //文本移动
 
     },
+
+
+    //点击不同人物头像切换人物图片和介绍文本
+    change_chara(e){
+    },
+
+
+
+
     }
 }
 </script>
 
-<style scoped>
-@import url("./Anime.css");
-</style>
