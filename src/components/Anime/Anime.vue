@@ -377,8 +377,7 @@
                           <Row class="slide_img_whole">
                             <Col span="18"></Col>
                             <Col span="3" class="slide_img_col" >
-                            <Row class="ff"  >
-                              <Row class="slide_img" :style="{transform:`tranlateY(${SlideimgUp})`}">
+                              <div class="slide_img" :style="{transform: `translateY(${SlideimgUp})`}">
                                 <img src="/src/assets/images/img_charabg01.png.png" id="SlideImg01">
                                 <img src="/src/assets/images/img_charabg02.png.png" id="SlideImg02">
                                 <img src="/src/assets/images/img_charabg03.png.png" id="SlideImg03">
@@ -395,8 +394,7 @@
                                 <img src="/src/assets/images/img_charabg14.png.png" id="SlideImg14">
                                 <img src="/src/assets/images/img_charabg15.png.png" id="SlideImg15">
                                 <img src="/src/assets/images/img_charabg16.png.png" id="SlideImg16">
-                              </Row>
-                            </Row>
+                              </div>
                             </Col>
                             <Col span="3"></Col>
                         </Row>
@@ -577,13 +575,13 @@ export default {
       console.log(chara_slide.clientHeight);
       
       let charaitem = e.target.id;
-      console.log(charaitem);
+      // console.log(charaitem);
       this.chara_num = parseInt(charaitem.slice(8))-1;
-      console.log(this.chara_num);
+      // console.log(this.chara_num);
 
       this.SlideimgUp = chara_slide.clientHeight * this.chara_num + 'px';
 
-      console.log(this.SlideimgUp);
+      // console.log(this.SlideimgUp);
     },
 
 
