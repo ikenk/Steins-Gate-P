@@ -96,7 +96,7 @@
   /*3.story/character/staff/cast样式*/
   .beta_timeline {
     width: 100vw;
-    background-color: pink;
+    /* background-color: pink; */
   }
   
   
@@ -258,7 +258,7 @@
 
   .b_characters{
     width: 100vw;
-    background-color: rgb(177, 115, 126);
+    /* background-color: rgb(177, 115, 126); */
   }
 
 
@@ -282,8 +282,8 @@
   .b_charas_body{
     position: relative;
     width: 100vw;
-    height: 1200px;
-    background-color:orange;
+    height: 1100px;
+    /* background-color:orange; */
   }
 
   .charas_cut{
@@ -386,13 +386,13 @@
   }
 
   .float_top_img div[class$='_2']{
-    animation: move_left 1s  0.5s forwards;
+    animation: move_left 1s forwards;
     /* transform: translate(-12vw,2vw); */
     z-index: 104;
   }
   
   .float_top_img div[class$='_3']{
-    animation: move_right 1s  0.5s forwards;
+    animation: move_right 1s forwards;
     /* transform: translate(7vw,-1vw); */
     z-index: 103;
   }
@@ -443,10 +443,6 @@
   .charas_nav img{
     position: absolute;
     width: 100%;
-  }
-
-  .charas_nav img:hover{
-    background-color: #fff;
   }
 
 

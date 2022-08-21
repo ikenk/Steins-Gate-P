@@ -403,54 +403,86 @@
                       <Row class="charas_footer">
                         <Row class="charas_nav" > 
                           <Row class="char_row1" >
-                            <Col span="3" class="char_item01" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft01.png' id="CharItem1"></a>
+                            <Col span="3" class="char_item01" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft01.png' id="CharItem1">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item02" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft02.png' id="CharItem2"></a>
+                            <Col span="3" class="char_item02" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft02.png' id="CharItem2">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item03" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft03.png' id="CharItem3"></a>
+                            <Col span="3" class="char_item03" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft03.png' id="CharItem3">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item04" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft04.png' id="CharItem4"></a>
+                            <Col span="3" class="char_item04" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft04.png' id="CharItem4">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item05" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft05.png' id="CharItem5"></a>
+                            <Col span="3" class="char_item05">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft05.png' id="CharItem5">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item06" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft06.png' id="CharItem6"></a>
+                            <Col span="3" class="char_item06" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft06.png' id="CharItem6">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item07" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft07.png' id="CharItem7"></a>
+                            <Col span="3" class="char_item07">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft07.png' id="CharItem7">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item08" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft08.png' id="CharItem8"></a></Col>
+                            <Col span="3" class="char_item08">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft08.png' id="CharItem8">
+                              </a></Col>
                           </Row>
                           <Row class="char_row2">
-                            <Col span="3" class="char_item09" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft09.png' id="CharItem9"></a>
+                            <Col span="3" class="char_item09">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft09.png' id="CharItem9">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item10" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft10.png' id="CharItem10"></a>
+                            <Col span="3" class="char_item10">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft10.png' id="CharItem10">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item11" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft11.png' id="CharItem11"></a>
+                            <Col span="3" class="char_item11">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft11.png' id="CharItem11">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item12" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft12.png' id="CharItem12"></a>
+                            <Col span="3" class="char_item12">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft12.png' id="CharItem12">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item13" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft13.png' id="CharItem13"></a>
+                            <Col span="3" class="char_item13">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft13.png' id="CharItem13">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item14" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft14.png' id="CharItem14"></a>
+                            <Col span="3" class="char_item14">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft14.png' id="CharItem14">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item15" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft15.png' id="CharItem15"></a>
+                            <Col span="3" class="char_item15" >
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft15.png' id="CharItem15">
+                              </a>
                             </Col>
-                            <Col span="3" class="char_item16" @click="change_chara($event)">
-                              <a><img src='/src/assets/images/img_charaft16.png' id="CharItem16"></a>
+                            <Col span="3" class="char_item16">
+                              <a @click="change_chara($event)">
+                                <img src='/src/assets/images/img_charaft16.png' id="CharItem16">
+                              </a>
                             </Col>
                           </Row>
                         </Row>
