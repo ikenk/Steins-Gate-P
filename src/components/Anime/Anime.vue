@@ -188,7 +188,7 @@
                         <Row class="charas_main">
                           <Row class="float_img_whole">
                             <Row class="float_top_img">
-                              <Row class="float_chara1">
+                              <Row class="float_chara1" v-if="chara_img[0]">
                                 <div class="float_chara_1_1">
                                   <img src="/src/assets/images/img_charamain01_1.png.png">
                                 </div>
@@ -199,7 +199,7 @@
                                   <img src="/src/assets/images/img_charamain01_3.png.png">
                                 </div>
                               </Row>
-                              <!-- <Row class="float_chara2">
+                              <Row class="float_chara2" v-if="chara_img[1]">
                                 <div class="float_chara_2_1">
                                 <img src="/src/assets/images/img_charamain02_1.png.png">
                                 </div>
@@ -210,7 +210,7 @@
                                 <img src="/src/assets/images/img_charamain02_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara3">
+                              <Row class="float_chara3" v-if="chara_img[2]">
                                 <div class="float_chara_3_1">
                                 <img src="/src/assets/images/img_charamain03_1.png.png">
                                 </div>
@@ -221,7 +221,7 @@
                                 <img src="/src/assets/images/img_charamain03_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara4">
+                              <Row class="float_chara4" v-if="chara_img[3]">
                                 <div class="float_chara_4_1">
                                 <img src="/src/assets/images/img_charamain04_1.png.png">
                                 </div>
@@ -232,7 +232,7 @@
                                 <img src="/src/assets/images/img_charamain04_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara5">
+                              <Row class="float_chara5" v-if="chara_img[4]">
                                 <div class="float_chara_5_1">
                                 <img src="/src/assets/images/img_charamain05_1.png.png">
                                 </div>
@@ -243,7 +243,7 @@
                                 <img src="/src/assets/images/img_charamain05_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara6">
+                              <Row class="float_chara6" v-if="chara_img[5]">
                                 <div class="float_chara_6_1">
                                 <img src="/src/assets/images/img_charamain06_1.png.png">
                                 </div>
@@ -254,7 +254,7 @@
                                 <img src="/src/assets/images/img_charamain06_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara7">
+                              <Row class="float_chara7" v-if="chara_img[6]">
                                 <div class="float_chara_7_1">
                                 <img src="/src/assets/images/img_charamain07_1.png.png">
                                 </div>
@@ -265,7 +265,7 @@
                                 <img src="/src/assets/images/img_charamain07_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara8">
+                              <Row class="float_chara8" v-if="chara_img[7]">
                                 <div class="float_chara_8_1">
                                 <img src="/src/assets/images/img_charamain08_1.png.png">
                                 </div>
@@ -276,7 +276,7 @@
                                 <img src="/src/assets/images/img_charamain08_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara9">
+                              <Row class="float_chara9" v-if="chara_img[8]">
                                 <div class="float_chara_9_1">
                                 <img src="/src/assets/images/img_charamain09_1.png.png">
                                 </div>
@@ -287,7 +287,7 @@
                                 <img src="/src/assets/images/img_charamain09_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara10">
+                              <Row class="float_chara10" v-if="chara_img[9]">
                                 <div class="float_chara_10_1">
                                 <img src="/src/assets/images/img_charamain10_1.png.png">
                                 </div>
@@ -298,7 +298,7 @@
                                 <img src="/src/assets/images/img_charamain10_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara11">
+                              <Row class="float_chara11" v-if="chara_img[10]">
                                 <div class="float_chara_11_1">
                                 <img src="/src/assets/images/img_charamain11_1.png.png">
                                 </div>
@@ -309,15 +309,15 @@
                                 <img src="/src/assets/images/img_charamain11_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara12">
+                              <Row class="float_chara12" v-if="chara_img[11]">
                                 <div class="float_chara_12_1">
                                 <img src="/src/assets/images/img_charamain12_1.png.png">
                                 </div>
-                                <div class="float_chara_12_2">
+                                <div class="float_chara_12_3">
                                 <img src="/src/assets/images/img_charamain12_2.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara13">
+                              <Row class="float_chara13" v-if="chara_img[12]">
                                 <div class="float_chara_13_1">
                                 <img src="/src/assets/images/img_charamain13_1.png.png">
                                 </div>
@@ -328,7 +328,7 @@
                                 <img src="/src/assets/images/img_charamain13_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara14">
+                              <Row class="float_chara14" v-if="chara_img[13]">
                                 <div class="float_chara_14_1">
                                 <img src="/src/assets/images/img_charamain14_1.png.png">
                                 </div>
@@ -339,7 +339,7 @@
                                 <img src="/src/assets/images/img_charamain14_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara15">
+                              <Row class="float_chara15" v-if="chara_img[14]">
                                 <div class="float_chara_15_1">
                                 <img src="/src/assets/images/img_charamain15_1.png.png">
                                 </div>
@@ -350,7 +350,7 @@
                                 <img src="/src/assets/images/img_charamain15_3.png.png">
                                 </div>
                               </Row>
-                              <Row class="float_chara16">
+                              <Row class="float_chara16" v-if="chara_img[15]">
                                 <div class="float_chara_16_1">
                                 <img src="/src/assets/images/img_charamain16_1.png.png">
                                 </div>
@@ -360,7 +360,7 @@
                                 <div class="float_chara_16_3">
                                 <img src="/src/assets/images/img_charamain16_3.png.png">
                                 </div>
-                              </Row> -->
+                              </Row>
                             </Row>
                             <Row class="float_bg_img">
                               <Row class="float_bg_img1">
@@ -519,6 +519,7 @@ export default {
       RightUp:'0px',//change_st(e)中使用到的右侧图片移动距离
       SlideimgUp:'0px',//character部分角色滑块滑动距离
       chara_num:0,//change_chara(e)中使用到的移动图片单位
+      chara_img:[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     };
   },
   mounted() {
@@ -577,11 +578,14 @@ export default {
       let charaitem = e.target.id;
       // console.log(charaitem);
       this.chara_num = parseInt(charaitem.slice(8))-1;
-      // console.log(this.chara_num);
+      console.log(this.chara_num);
 
       this.SlideimgUp = chara_slide.clientHeight * this.chara_num + 'px';
-
       // console.log(this.SlideimgUp);
+
+      this.chara_img=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+      this.chara_img[this.chara_num]=1;
+
     },
 
 
