@@ -319,6 +319,7 @@
 
 
   .slide_img{
+    position: absolute;
     width: 100%;
     height: 49.616vw;
     flex-direction: column-reverse;
@@ -329,7 +330,15 @@
     width: 100%;
   }
 
+  .slide_img_col{
+    position: relative;
+  }
 
+  .ff{
+    position: absolute;
+    width: 100%;
+    height:49.616vw;
+  }
 
 
 
@@ -390,14 +399,15 @@
   /* 3.2.3 character_footer样式 */
   .charas_footer{
     position: absolute;
-    width: 60vw;
-    height:40vh;
-    top:115vh;
-    left: 10vw;
-    background-color: #fff;
+    width: 50vw;
+    height:16vw;
+    top:56vw;
+    left: 15vw;
+    background-color: red;
   }
 
-  .charas_footer a{
+  .charas_nav{
+    position: relative;
     width: 100%;
     height: 100%;
   }
@@ -407,11 +417,83 @@
     height: 50%;
   }
   .char_row2{
+    position: absolute;
+    top:3vw;
+    left: 25vw;
     width: 100%;
     height: 50%;
   }
 
-  .char_item01{
+  .charas_nav img{
+    position: absolute;
+    width: 100%;
+  }
+
+
+
+  .char_item01 img{
+    top:0vw;
+    left: 0vw;
+  }
+  .char_item02 img{
+    top:-1.5vw;
+    left:0.5vw;
+  }
+  .char_item03{
+    top:-3vw;
+    left:1vw;
+  }
+  .char_item04{
+    top:-4.5vw;
+    left:1.5vw;
+  }
+  .char_item05{
+    top:-6vw;
+    left:2vw;
+  }
+  .char_item06{
+    top:-7.5vw;
+    left:2.5vw;
+  }
+  .char_item07{
+    top:-9vw;
+    left:3vw;
+  }
+  .char_item08{
+    top:-10.5vw;
+    left:3.5vw;
+  }
+  .char_item09{
+    top: 0vw;
+    left: 0vw;
+  }
+  .char_item10{
+    top: -1.5vw;
+    left: 0.5vw;
+  }
+  .char_item11{
+    top: -3vw;
+    left: 1vw;
+  }
+  .char_item12{
+    top:-4.5vw;
+    left:1.5vw;
+  }
+  .char_item13{
+    top:-6vw;
+    left:2vw;
+  }
+  .char_item14{
+    top:-7.5vw;
+    left:2.5vw;
+  }
+  .char_item15{
+    top:-9vw;
+    left:3vw;
+  }
+  .char_item16{
+    top:-10.5vw;
+    left:3.5vw;
   }
 
 

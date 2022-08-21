@@ -376,53 +376,86 @@
                           </Row>
                           <Row class="slide_img_whole">
                             <Col span="18"></Col>
-                            <Col span="3" class="slide_img_col">
-                              <Row class="slide_img" >
-                                <img src="/src/assets/images/img_charabg01.png.png">
-                                <img src="/src/assets/images/img_charabg02.png.png">
-                                <img src="/src/assets/images/img_charabg03.png.png">
-                                <img src="/src/assets/images/img_charabg04.png.png">
-                                <img src="/src/assets/images/img_charabg05.png.png">
-                                <img src="/src/assets/images/img_charabg06.png.png">
-                                <img src="/src/assets/images/img_charabg07.png.png">
-                                <img src="/src/assets/images/img_charabg08.png.png">
-                                <img src="/src/assets/images/img_charabg09.png.png">
-                                <img src="/src/assets/images/img_charabg10.png.png">
-                                <img src="/src/assets/images/img_charabg11.png.png">
-                                <img src="/src/assets/images/img_charabg12.png.png">
-                                <img src="/src/assets/images/img_charabg13.png.png">
-                                <img src="/src/assets/images/img_charabg14.png.png">
-                                <img src="/src/assets/images/img_charabg15.png.png">
-                                <img src="/src/assets/images/img_charabg16.png.png">
+                            <Col span="3" class="slide_img_col" >
+                            <Row class="ff"  >
+                              <Row class="slide_img" :style="{transform:`tranlateY(${SlideimgUp})`}">
+                                <img src="/src/assets/images/img_charabg01.png.png" id="SlideImg01">
+                                <img src="/src/assets/images/img_charabg02.png.png" id="SlideImg02">
+                                <img src="/src/assets/images/img_charabg03.png.png" id="SlideImg03">
+                                <img src="/src/assets/images/img_charabg04.png.png" id="SlideImg04">
+                                <img src="/src/assets/images/img_charabg05.png.png" id="SlideImg05">
+                                <img src="/src/assets/images/img_charabg06.png.png" id="SlideImg06">
+                                <img src="/src/assets/images/img_charabg07.png.png" id="SlideImg07">
+                                <img src="/src/assets/images/img_charabg08.png.png" id="SlideImg08">
+                                <img src="/src/assets/images/img_charabg09.png.png" id="SlideImg09">
+                                <img src="/src/assets/images/img_charabg10.png.png" id="SlideImg10">
+                                <img src="/src/assets/images/img_charabg11.png.png" id="SlideImg11">
+                                <img src="/src/assets/images/img_charabg12.png.png" id="SlideImg12">
+                                <img src="/src/assets/images/img_charabg13.png.png" id="SlideImg13">
+                                <img src="/src/assets/images/img_charabg14.png.png" id="SlideImg14">
+                                <img src="/src/assets/images/img_charabg15.png.png" id="SlideImg15">
+                                <img src="/src/assets/images/img_charabg16.png.png" id="SlideImg16">
                               </Row>
+                            </Row>
                             </Col>
                             <Col span="3"></Col>
                         </Row>
                         </Row>
                       </Row>
                       <Row class="charas_footer">
-                        <a class="charas_nav" > 
-                          <Row class="char_row1" @click="change_chara($event)">
-                            <Col span="3" class="char_item01" id="CharItem1"></Col>
-                            <Col span="3" class="char_item02" id="CharItem2"></Col>
-                            <Col span="3" class="char_item03" id="CharItem3"></Col>
-                            <Col span="3" class="char_item04" id="CharItem4"></Col>
-                            <Col span="3" class="char_item05" id="CharItem5"></Col>
-                            <Col span="3" class="char_item06" id="CharItem6"></Col>
-                            <Col span="3" class="char_item07" id="CharItem7"></Col>
-                            <Col span="3" class="char_item08" id="CharItem8"></Col>
+                        <Row class="charas_nav" > 
+                          <Row class="char_row1" >
+                            <Col span="3" class="char_item01" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft01.png' id="CharItem1"></a>
+                            </Col>
+                            <Col span="3" class="char_item02" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft02.png' id="CharItem2"></a>
+                            </Col>
+                            <Col span="3" class="char_item03" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft03.png' id="CharItem3"></a>
+                            </Col>
+                            <Col span="3" class="char_item04" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft04.png' id="CharItem4"></a>
+                            </Col>
+                            <Col span="3" class="char_item05" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft05.png' id="CharItem5"></a>
+                            </Col>
+                            <Col span="3" class="char_item06" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft06.png' id="CharItem6"></a>
+                            </Col>
+                            <Col span="3" class="char_item07" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft07.png' id="CharItem7"></a>
+                            </Col>
+                            <Col span="3" class="char_item08" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft08.png' id="CharItem8"></a></Col>
                           </Row>
-                          <Row class="char_row2" @click="change_chara($event)">
-                            <Col span="3" class="char_item09" id="CharItem9"></Col>
-                            <Col span="3" class="char_item10" id="CharItem10"></Col>
-                            <Col span="3" class="char_item11" id="CharItem11"></Col>
-                            <Col span="3" class="char_item12" id="CharItem12"></Col>
-                            <Col span="3" class="char_item13" id="CharItem13"></Col>
-                            <Col span="3" class="char_item14" id="CharItem14"></Col>
-                            <Col span="3" class="char_item15" id="CharItem15"></Col>
-                            <Col span="3" class="char_item16" id="CharItem16"></Col>
+                          <Row class="char_row2">
+                            <Col span="3" class="char_item09" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft09.png' id="CharItem9"></a>
+                            </Col>
+                            <Col span="3" class="char_item10" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft10.png' id="CharItem10"></a>
+                            </Col>
+                            <Col span="3" class="char_item11" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft11.png' id="CharItem11"></a>
+                            </Col>
+                            <Col span="3" class="char_item12" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft12.png' id="CharItem12"></a>
+                            </Col>
+                            <Col span="3" class="char_item13" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft13.png' id="CharItem13"></a>
+                            </Col>
+                            <Col span="3" class="char_item14" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft14.png' id="CharItem14"></a>
+                            </Col>
+                            <Col span="3" class="char_item15" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft15.png' id="CharItem15"></a>
+                            </Col>
+                            <Col span="3" class="char_item16" @click="change_chara($event)">
+                              <a><img src='/src/assets/images/img_charaft16.png' id="CharItem16"></a>
+                            </Col>
                           </Row>
-                        </a>
+                        </Row>
                       </Row>
                     </Row>
                 </Row>
@@ -486,6 +519,8 @@ export default {
       LeftUp:'0px',//change_st(e)中使用到的左侧图片移动距离
       MidUp:'0px',//change_st(e)中使用到的中间图片移动距离
       RightUp:'0px',//change_st(e)中使用到的右侧图片移动距离
+      SlideimgUp:'0px',//character部分角色滑块滑动距离
+      chara_num:0,//change_chara(e)中使用到的移动图片单位
     };
   },
   mounted() {
@@ -513,7 +548,7 @@ export default {
 
       let itemid = e.target.id;
       console.log(e.target.id);
-      this.number_move = parseInt(itemid.slice(7))-1;
+      this.number_move = parseInt(itemid.slice(8))-1;
       console.log(this.number_move);
 
 
@@ -537,6 +572,18 @@ export default {
 
     //点击不同人物头像切换人物图片和介绍文本
     change_chara(e){
+      let chara_slide = document.getElementById("SlideImg01");
+      //打印单张图片高度
+      console.log(chara_slide.clientHeight);
+      
+      let charaitem = e.target.id;
+      console.log(charaitem);
+      this.chara_num = parseInt(charaitem.slice(8))-1;
+      console.log(this.chara_num);
+
+      this.SlideimgUp = chara_slide.clientHeight * this.chara_num + 'px';
+
+      console.log(this.SlideimgUp);
     },
 
 
