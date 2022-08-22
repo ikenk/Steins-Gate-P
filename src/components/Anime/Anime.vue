@@ -837,7 +837,7 @@ export default {
 
       let itemid = e.target.id;
       console.log(e.target.id);
-      this.number_move = parseInt(itemid.slice(8))-1;
+      this.number_move = parseInt(itemid.slice(7))-1;
       console.log(this.number_move);
 
 
