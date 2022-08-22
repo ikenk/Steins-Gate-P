@@ -121,7 +121,7 @@
       background-image: url("/src/assets/images/story.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 50%;
   }
   
   
@@ -282,8 +282,8 @@
   .b_charas_body{
     position: relative;
     width: 100vw;
-    height: 1100px;
-    /* background-color:orange; */
+    height: 73vw;
+    background-color:orange;
   }
 
   .charas_cut{
@@ -293,7 +293,7 @@
     padding-top: 46%;
     width: 180vw;
     transform: rotate(-10deg);
-    background: rgb(25, 25, 25);
+    background: rgb(241, 241, 241);
     overflow: hidden;
   }
   
@@ -353,6 +353,7 @@
 
   .float_bg_img img{
     position: absolute;
+    opacity: 0.3;
     width: 100%;
   }
 
@@ -379,8 +380,6 @@
     z-index: 100;
   }
 
-
-
   .float_top_img div[class$='_1']{
     z-index: 105;
   }
@@ -389,12 +388,14 @@
     animation: move_left 1s forwards;
     /* transform: translate(-12vw,2vw); */
     z-index: 104;
+    opacity: 0.6;
   }
   
   .float_top_img div[class$='_3']{
     animation: move_right 1s forwards;
     /* transform: translate(7vw,-1vw); */
     z-index: 103;
+    opacity: 0.6;
   }
 
   @keyframes move_left {
@@ -515,10 +516,536 @@
 
 
 
+  /* 3.2.4 cast部分样式 */
+  .b_cast{
+    width: 100vw;
+  }
+
+  .bcast_title{
+    width: 100%;
+    padding: 8% 0 6% ;
+    background-color: aqua;
+  }
+
+  /* cast title部分样式 */
+  .title_cast{
+    width: 100%;
+    padding-top: 11%;
+    background-image: url("/src/assets/images/cast.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* cast body样式部分 */
+  .bcast_body{
+    width: 100%;
+    height: 50vw;
+    background-color: rgb(128,12,42);
+    font-family: 'notoserif', serif, sans-serif;
+  }
+
+  .bcast_body span{
+    display: inline-block;
+  }
+
+  .bbody_rows1{
+    position: relative;
+    flex-direction: column;
+    /* background-color: #fff; */
+  }
+
+  .bbody_rows2{
+    flex-direction: column;
+    /* background-color: rgb(25, 15, 15); */
+  }
+
+  .bcast_name11{
+    position: absolute;
+    left: -2vw;
+    top: 0vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name12{
+    position: absolute;
+    left: -2vw;
+    top: 6vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name13{
+    position: absolute;
+    left: -2vw;
+    top: 12vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name14{
+    position: absolute;
+    left: -2vw;
+    top: 18vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name15{
+    position: absolute;
+    left: -2vw;
+    top: 24vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name16{
+    position: absolute;
+    left: -2vw;
+    top: 30vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name17{
+    position: absolute;
+    left: -2vw;
+    top: 36vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name18{
+    position: absolute;
+    left: -2vw;
+    top: 42vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name21{
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name22{
+    position: absolute;
+    left: 0vw;
+    top: 6vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name23{
+    position: absolute;
+    left: 0vw;
+    top: 12vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name24{
+    position: absolute;
+    left: 0vw;
+    top: 18vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name25{
+    position: absolute;
+    left: 0vw;
+    top: 24vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name26{
+    position: absolute;
+    left: 0vw;
+    top: 30vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name27{
+    position: absolute;
+    left: 0vw;
+    top: 36vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bcast_name28{
+    position: absolute;
+    left: 0vw;
+    top: 42vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 
 
+  .bcastname11_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname11_mid{
+    font-size: 3vw;
+  }
+  .bcastname11_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+
+  .bcastname12_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname12_mid{
+    font-size: 3vw;
+  }
+  .bcastname12_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+  
+  .bcastname13_left{
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname13_mid{
+    font-size: 3vw;
+  }
+  .bcastname13_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+
+  .bcastname14_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname14_mid{
+    font-size: 3vw;
+  }
+  .bcastname14_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+
+  .bcastname15_left{
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname15_mid{
+    font-size: 3vw;
+  }
+  .bcastname15_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+  .bcastname16_left{
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname16_mid{
+    font-size: 3vw;
+  }
+  .bcastname16_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+
+  .bcastname17_left{
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname17_mid{
+    font-size: 3vw;
+  }
+  .bcastname17_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+  .bcastname18_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname18_mid{
+    font-size: 3vw;
+  }
+  .bcastname18_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+
+  .bcastname21_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname21_mid{
+    font-size: 3vw;
+  }
+  .bcastname21_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
+  
+  
+  
+  .bcastname22_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname22_mid{
+    font-size: 3vw;
+  }
+  .bcastname22_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  }
+
+
+  .bcastname23_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname23_mid{
+    font-size: 3vw;
+  }
+  .bcastname23_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+
+
+
+
+  .bcastname24_left{
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname24_mid{
+    font-size: 3vw;
+  }
+  .bcastname24_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
+
+
+
+  .bcastname25_left{
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname25_mid{
+    font-size: 3vw;
+  }
+  .bcastname25_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
+  
+
+  .bcastname26_left{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname26_mid{
+    font-size: 3vw;
+  }
+  .bcastname26_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
+
+
+  .bcastname27_left{
+    position: absolute;
+    left: 13%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname27_mid{
+    font-size: 3vw;
+  }
+  .bcastname27_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
+
+
+  .bcastname28_left{
+    position: absolute;
+    left: 19%;
+    top: 40%;
+    font-size: 1vw;
+    margin-right: 1vw;
+  }
+  .bcastname28_mid{
+    font-size: 3vw;
+  }
+  .bcastname28_right{
+    position: absolute;
+    left: 53%;
+    top: 20%;
+    font-size: 2vw;
+    margin-left: 0.5vw;
+  } 
+  
 
 
 
@@ -541,7 +1068,7 @@
 
   .top_btn{
     width: 100%;
-    margin: 1vh;
+    margin: 0.4vw;
     background-color: white;
     background-image: url("/src/assets/icons/无穷-透明黑色.png");
     background-repeat: no-repeat;
@@ -551,7 +1078,7 @@
   }
   .mid_btn{
     width: 100%;
-    margin: 1vh;
+    margin: 0.4vw;
     background-color: black;
     background-image: url("/src/assets/icons/菜单-透明白色.png");
     background-repeat: no-repeat;
@@ -561,7 +1088,7 @@
 
   .bottom_btn{
     width: 100%;
-    margin: 1vh;
+    margin: 0.4vw;
     background-color: black;
     background-image: url("/src/assets/icons/双左-透明白色.png");
     background-repeat: no-repeat;
@@ -573,12 +1100,12 @@
 
   /* 3.4 nav导航栏样式 */
   .nav{
-    display: none;
+    /* display: none; */
     position: fixed;
     width: 99vw;
-    height: 9vh;
-    bottom: 50vh;
-    transform: translateY(50%);
+    height: 4vw;
+    bottom: calc(50vh - 2vw);
+    /* transform: translateY(50%); */
     background-color: rgba(0, 0, 0, 1);
     z-index:1000;
   }
@@ -624,7 +1151,12 @@
     background-position: 0% center;
   }
 
-
+  .nav_arrow img{
+    position: absolute;
+    left: 1.9vw;
+    top:0.5vw;
+    height: 75%;
+  }
 
 
 

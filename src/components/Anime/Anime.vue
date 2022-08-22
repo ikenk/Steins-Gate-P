@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- 背景长图 -->
     <div class="bg_img" :style="{ top: iScol + 'px' }">
       <div class="bg_longimg"></div>
       <div class="bg_grayimg"></div>
@@ -7,12 +8,18 @@
     </div>
     <div class="contents_is_show">
       <div class="contents">
+        <!-- 最顶部图片 -->
         <div class="top_img">
           <div class="top_img_left"></div>
           <div class="top_img_right"></div>
         </div>
+        <!-- 时钟切换按钮 -->
+        <Row class="clock_change"></Row>
+        <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
+            <!-- beta时间线 -->
             <Row class="beta_timeline">
+                <!-- story部分 -->
                 <Row class="b_story">
                     <Row class="b_st_title">
                         <Col span="8" ></Col>
@@ -174,6 +181,7 @@
                         </Row>
                     </Row>
                 </Row>
+                <!-- characters部分 -->
                 <Row class="b_characters">
                     <Row class="b_charas_title">
                         <Col span="8" ></Col>
@@ -489,8 +497,105 @@
                       </Row>
                     </Row>
                 </Row>
-                <Row class="b_cast"></Row>
+                <!-- cast部分 -->
+                <Row class="b_cast">
+                  <Row class="bcast_title">
+                    <Col span="8"></Col>
+                    <Col span="8">
+                      <div class="title_cast"></div>
+                    </Col>
+                    <Col span="8"></Col>
+                  </Row>
+                  <Row class="bcast_body">
+                    <Col span="4"></Col>
+                    <Col span="8" class="bbody_rows1">
+                      <Row class="bcast_name11">
+                        <span class="bcastname11_left">岡部倫太郎</span>
+                        <span class="bcastname11_mid">|</span>
+                        <span class="bcastname11_right">宮野真守</span>
+                      </Row>
+                      <Row class="bcast_name12">
+                        <span class="bcastname12_left">椎名まゆり</span>
+                        <span class="bcastname12_mid">|</span>
+                        <span class="bcastname12_right">花澤香菜</span>
+                      </Row>
+                      <Row class="bcast_name13">
+                        <span class="bcastname13_left">橋田至</span>
+                        <span class="bcastname13_mid">|</span>
+                        <span class="bcastname13_right">関智一</span>
+                      </Row>
+                      <Row class="bcast_name14">
+                        <span class="bcastname14_left">牧瀬紅莉栖</span>
+                        <span class="bcastname14_mid">|</span>
+                        <span class="bcastname14_right">今井麻美</span>
+                      </Row>
+                      <Row class="bcast_name15">
+                        <span class="bcastname15_left">桐生萌郁</span>
+                        <span class="bcastname15_mid">|</span>
+                        <span class="bcastname15_right">後藤沙緒里</span>
+                      </Row>
+                      <Row class="bcast_name16">
+                        <span class="bcastname16_left">漆原るか</span>
+                        <span class="bcastname16_mid">|</span>
+                        <span class="bcastname16_right">小林ゆう</span>
+                      </Row>
+                      <Row class="bcast_name17">
+                        <span class="bcastname17_left">フェイリス・ニャンニャン</span>
+                        <span class="bcastname17_mid">|</span>
+                        <span class="bcastname17_right">桃井はるこ</span>
+                      </Row>
+                      <Row class="bcast_name18">
+                        <span class="bcastname18_left">阿万音鈴羽</span>
+                        <span class="bcastname18_mid">|</span>
+                        <span class="bcastname18_right">田村ゆかり</span>
+                      </Row>
+                    </Col>
+                    <Col span="8" class="bbody_rows2">
+                      <Row class="bcast_name21">
+                        <span class="bcastname21_left">比屋定真帆</span>
+                        <span class="bcastname21_mid">|</span>
+                        <span class="bcastname21_right">矢作紗友里</span>
+                      </Row>
+                      <Row class="bcast_name22">
+                        <span class="bcastname22_left">椎名かがり</span>
+                        <span class="bcastname22_mid">|</span>
+                        <span class="bcastname22_right">潘めぐみ</span>
+                      </Row>
+                      <Row class="bcast_name23">
+                        <span class="bcastname23_left">阿万音由季</span>
+                        <span class="bcastname23_mid">|</span>
+                        <span class="bcastname23_right">田村ゆかり</span>
+                      </Row>
+                      <Row class="bcast_name24">
+                        <span class="bcastname24_left">天王寺綯</span>
+                        <span class="bcastname24_mid">|</span>
+                        <span class="bcastname24_right">山本彩乃</span>
+                      </Row>
+                      <Row class="bcast_name25">
+                        <span class="bcastname25_left">中瀬克美</span>
+                        <span class="bcastname25_mid">|</span>
+                        <span class="bcastname25_right">本多真梨子</span>
+                      </Row>
+                      <Row class="bcast_name26">
+                        <span class="bcastname26_left">来嶋かえで</span>
+                        <span class="bcastname26_mid">|</span>
+                        <span class="bcastname26_right">木野日菜</span>
+                      </Row>
+                      <Row class="bcast_name27">
+                        <span class="bcastname27_left">アレクシス・レスキネン</span>
+                        <span class="bcastname27_mid">|</span>
+                        <span class="bcastname27_right">上田燿司</span>
+                      </Row>
+                      <Row class="bcast_name28">
+                        <span class="bcastname28_left">ジュディ・レイエス</span>
+                        <span class="bcastname28_mid">|</span>
+                        <span class="bcastname28_right">にしむら まや</span>
+                      </Row></Col>
+                    <Col span="4"></Col>
+                  </Row>
+                </Row>
             </Row>
+            <!-- alpha时间线 -->
             <Row class="alpha_timeline">
                 <Row class="a_story">
                     <Row class="a_st_title"></Row>
@@ -504,6 +609,7 @@
         <br />
         <Row class="product"></Row>
         <br />
+        <!-- 返回顶部按钮 -->
         <Row class="back_to_top">    
           <BackTop :height="7000" class="btt_body">
             <div class="btt_img"></div>
@@ -511,6 +617,7 @@
         </Row>
       </div>
     </div>
+    <!-- 侧边三按钮 -->
     <Row class="navbtn_is_show">
       <Row class="three_btn">
           <Grid :border="false" :hover="hover" :col="1" square padding="0">
@@ -526,8 +633,14 @@
           </Grid>
       </Row>
     </Row>
-    <Row class="nav">
-      <Col span="4"></Col>
+    <!-- 导航栏 -->
+    <transition name="transition-drop">
+    <Row class="nav" v-show="NavShow">
+      <Col span="4">     
+        <a href="#" class="nav_arrow" @click="close_nav">
+          <img src="/src/assets/icons/方框反向双箭头-透明白色.png">
+        </a>
+      </Col>
       <Col span="2" ><a href="#" class="nav_top"></a></Col>
       <Col span="3"><a href="#" class="nav_story"></a></Col>
       <Col span="4"><a href="#" class="nav_character"></a></Col>
@@ -535,6 +648,7 @@
       <Col span="4"><a href="#" class="nav_product"></a></Col>
       <Col span="4"></Col>
     </Row>
+    </transition>
   </div>
 </template>
 
@@ -557,7 +671,8 @@ export default {
       RightUp:'0px',//change_st(e)中使用到的右侧图片移动距离
       SlideimgUp:'0px',//character部分角色滑块滑动距离
       chara_num:0,//change_chara(e)中使用到的移动图片单位
-      chara_img:[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      chara_img:[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],//不同角色切换使用到的数组，1为true，0为false
+      NavShow:false,//nav栏折叠动画效果判断条件
     };
   },
   mounted() {
@@ -631,7 +746,12 @@ export default {
 
 
     //展开nav栏
-    show_nav(){},
+    show_nav(){
+      this.NavShow = true;
+    },
+    close_nav(){
+      this.NavShow = false;
+    }
 
 
     }

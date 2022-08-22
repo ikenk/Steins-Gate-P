@@ -27,9 +27,23 @@
   src:url("/src/assets/fonts/EBGaramond-Medium.woff")format('opentype');
 }
 
+@font-face{
+  font-family:"BONX-Frame";
+  src:url("/src/assets/fonts/BONX-Frame.otf")format('opentype');
+}
+@font-face{
+  font-family:"BONX-Silhouette";
+  src:url("/src/assets/fonts/BONX-Silhouette.otf")format('opentype');
+}
+@font-face{
+  font-family:"BONX-Number";
+  src:url("/src/assets/fonts/BONX-Medium.otf")format('opentype');
+}
+
+
 body {
     font-size: 14px;
-    font-family: 'notoserif', serif, sans-serif;
+    font-family: 'notoserif', serif, sans-serif,"BONX-Frame","BONX-Silhouette","BONX-Number";
     background-color: #000;
     color: #fff;
 }
