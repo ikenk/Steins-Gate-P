@@ -35,7 +35,7 @@
     left: 0;
     width: 100vw;
     height: 50000px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: -998;
   }
   
@@ -283,7 +283,7 @@
     position: relative;
     width: 100vw;
     height: 73vw;
-    background-color:orange;
+    /* background-color:orange; */
   }
 
   .charas_cut{
@@ -418,7 +418,7 @@
     height:16vw;
     top:56vw;
     left: 15vw;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .charas_nav{
@@ -435,7 +435,7 @@
 
   .char_row2{
     position: absolute;
-    top:3vw;
+    top:5vw;
     left: 25vw;
     width: 100%;
     height: 50%;
@@ -448,70 +448,418 @@
 
 
 
-  .char_item01 img{
+  .char_item01{
     top:0vw;
     left: 0vw;
   }
-  .char_item02 img{
+
+  .char_item01 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item01 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+  .char_item02{
     top:-1.5vw;
     left:0.5vw;
   }
+
+  .char_item02 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item02 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
   .char_item03{
     top:-3vw;
     left:1vw;
   }
+
+  .char_item03 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item03 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item04{
     top:-4.5vw;
     left:1.5vw;
   }
+
+  .char_item04 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item04 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item05{
     top:-6vw;
     left:2vw;
   }
+
+  .char_item05 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item05 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
   .char_item06{
     top:-7.5vw;
     left:2.5vw;
   }
+
+  .char_item06 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item06 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item07{
     top:-9vw;
     left:3vw;
   }
+
+  .char_item07 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item07 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
+
   .char_item08{
     top:-10.5vw;
     left:3.5vw;
   }
+
+  .char_item08 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item08 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
+
   .char_item09{
     top: 0vw;
     left: 0vw;
   }
+
+  .char_item09 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item09 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item10{
     top: -1.5vw;
     left: 0.5vw;
   }
+
+  .char_item10 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item10 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
+
   .char_item11{
     top: -3vw;
     left: 1vw;
   }
+
+  .char_item11 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item11 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item12{
     top:-4.5vw;
     left:1.5vw;
   }
+
+  .char_item12 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item12 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
   .char_item13{
     top:-6vw;
     left:2vw;
   }
+
+  .char_item13 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item13 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
+
   .char_item14{
     top:-7.5vw;
     left:2.5vw;
   }
+  
+  .char_item14 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item14 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
+
   .char_item15{
     top:-9vw;
     left:3vw;
   }
+
+  .char_item15 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item15 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
+
+
   .char_item16{
     top:-10.5vw;
     left:3.5vw;
   }
+
+  .char_item16 a::before{
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0,0,0,1);
+  }
+
+  .char_item16 a:hover::before{
+    transition: all 1s;
+    z-index: 900;
+    opacity: 0.6;
+  }
+
+
+
 
 
 
@@ -1911,40 +2259,140 @@
     height: 100%;
   }
 
+
+
+
+
   .nav_top{
     background-image: url("/src/assets/images/top_nav.svg");
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 35% 40%;
     background-position: center;
   }
+
+  .nav_top::after{
+    display: none;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav_top:hover::after{
+    display: block;
+  }
+
+
+
+
 
   .nav_story{
     background-image: url("/src/assets/images/story_nav.svg");
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size:45% 40%;
     background-position: center;
   }
+
+  .nav_story::after{
+    display: none;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav_story:hover::after{
+    display: block;
+  }
+
+
+
+
 
   .nav_character{
     background-image: url("/src/assets/images/character_nav.svg");
     background-repeat: no-repeat;
-    background-size: 95% 62%;
-    background-position: 100% center;
+    background-size: 65% 40%;
+    background-position: 30% center;
   }
 
-  .nav_cast{
-    background-image: url("/src/assets/images/cast_nav.png");
-    background-repeat: no-repeat;
-    background-size: 55% 73%;
-    background-position:  50% center;
+  .nav_character::after{
+    display: none;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
   }
+
+  .nav_character:hover::after{
+    display: block;
+  }
+
+
+
+
+
+  .nav_cast{
+    background-image: url("/src/assets/images/cast_nav.svg");
+    background-repeat: no-repeat;
+    background-size: 90% 40%;
+    background-position:  5% center;
+  }
+
+  .nav_cast::after{
+    display: none;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav_cast:hover::after{
+    display: block;
+  }
+
+
+
+
+
 
   .nav_product{
     background-image: url("/src/assets/images/product_nav.svg");
     background-repeat: no-repeat;
-    background-size: 70% 60%;
-    background-position: 0% center;
+    background-size: 55% 40%;
+    background-position: 22% center;
   }
+
+  .nav_product::after{
+    display: none;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav_product:hover::after{
+    display: block;
+  }
+
+
+
+
 
   .nav_arrow img{
     position: absolute;
@@ -1952,6 +2400,8 @@
     top:0.5vw;
     height: 75%;
   }
+
+
 
 
 

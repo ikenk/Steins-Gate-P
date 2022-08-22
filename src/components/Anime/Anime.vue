@@ -9,7 +9,7 @@
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
-        <div class="top_img">
+        <div class="top_img" id="top">
           <div class="top_img_left"></div>
           <div class="top_img_right"></div>
         </div>
@@ -20,7 +20,7 @@
             <!-- beta时间线 -->
             <Row class="beta_timeline">
                 <!-- story部分 -->
-                <Row class="b_story">
+                <Row class="b_story" id="b_story">
                     <Row class="b_st_title">
                         <Col span="8" ></Col>
                         <Col span="8" >
@@ -182,7 +182,7 @@
                     </Row>
                 </Row>
                 <!-- characters部分 -->
-                <Row class="b_characters">
+                <Row class="b_characters" id="b_characters">
                     <Row class="b_charas_title">
                         <Col span="8" ></Col>
                         <Col span="8" >
@@ -412,84 +412,84 @@
                         <Row class="charas_nav" > 
                           <Row class="char_row1" >
                             <Col span="3" class="char_item01" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft01.png' id="CharItem1">
+                              <a @click="change_chara($event)" id="CharItem1">
+                                <img src='/src/assets/images/img_charaft01.png' >
                               </a>
                             </Col>
                             <Col span="3" class="char_item02" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft02.png' id="CharItem2">
+                              <a @click="change_chara($event)" id="CharItem2">
+                                <img src='/src/assets/images/img_charaft02.png' >
                               </a>
                             </Col>
                             <Col span="3" class="char_item03" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft03.png' id="CharItem3">
+                              <a @click="change_chara($event)"  id="CharItem3">
+                                <img src='/src/assets/images/img_charaft03.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item04" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft04.png' id="CharItem4">
+                              <a @click="change_chara($event)" id="CharItem4">
+                                <img src='/src/assets/images/img_charaft04.png' >
                               </a>
                             </Col>
                             <Col span="3" class="char_item05">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft05.png' id="CharItem5">
+                              <a @click="change_chara($event)" id="CharItem5">
+                                <img src='/src/assets/images/img_charaft05.png' >
                               </a>
                             </Col>
                             <Col span="3" class="char_item06" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft06.png' id="CharItem6">
+                              <a @click="change_chara($event)" id="CharItem6">
+                                <img src='/src/assets/images/img_charaft06.png' >
                               </a>
                             </Col>
-                            <Col span="3" class="char_item07">
+                            <Col span="3" class="char_item07" id="CharItem7">
                               <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft07.png' id="CharItem7">
+                                <img src='/src/assets/images/img_charaft07.png' >
                               </a>
                             </Col>
-                            <Col span="3" class="char_item08">
+                            <Col span="3" class="char_item08" id="CharItem8">
                               <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft08.png' id="CharItem8">
+                                <img src='/src/assets/images/img_charaft08.png' >
                               </a></Col>
                           </Row>
                           <Row class="char_row2">
                             <Col span="3" class="char_item09">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft09.png' id="CharItem9">
+                              <a @click="change_chara($event)" id="CharItem9">
+                                <img src='/src/assets/images/img_charaft09.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item10">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft10.png' id="CharItem10">
+                              <a @click="change_chara($event)" id="CharItem10">
+                                <img src='/src/assets/images/img_charaft10.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item11">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft11.png' id="CharItem11">
+                              <a @click="change_chara($event)"  id="CharItem11">
+                                <img src='/src/assets/images/img_charaft11.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item12">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft12.png' id="CharItem12">
+                              <a @click="change_chara($event)"  id="CharItem12">
+                                <img src='/src/assets/images/img_charaft12.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item13">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft13.png' id="CharItem13">
+                              <a @click="change_chara($event)"  id="CharItem13">
+                                <img src='/src/assets/images/img_charaft13.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item14">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft14.png' id="CharItem14">
+                              <a @click="change_chara($event)"  id="CharItem14">
+                                <img src='/src/assets/images/img_charaft14.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item15" >
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft15.png' id="CharItem15">
+                              <a @click="change_chara($event)"  id="CharItem15">
+                                <img src='/src/assets/images/img_charaft15.png'>
                               </a>
                             </Col>
                             <Col span="3" class="char_item16">
-                              <a @click="change_chara($event)">
-                                <img src='/src/assets/images/img_charaft16.png' id="CharItem16">
+                              <a @click="change_chara($event)"  id="CharItem16">
+                                <img src='/src/assets/images/img_charaft16.png'>
                               </a>
                             </Col>
                           </Row>
@@ -498,7 +498,7 @@
                     </Row>
                 </Row>
                 <!-- cast部分 -->
-                <Row class="b_cast">
+                <Row class="b_cast" id="b_cast/staff">
                   <Row class="bcast_title">
                     <Col span="8"></Col>
                     <Col span="8">
@@ -744,7 +744,7 @@
             </Row>
         </Row>
         <br />
-        <Row class="product"></Row>
+        <Row class="product" id="product"></Row>
         <br />
         <!-- 返回顶部按钮 -->
         <Row class="back_to_top">    
@@ -774,16 +774,16 @@
     <transition name="transition-drop">
     <Row class="nav" v-show="NavShow">
       <Col span="4">     
-        <a href="#" class="nav_arrow" @click="close_nav">
+        <a href="javascript:void(0);" class="nav_arrow" @click="close_nav">
           <img src="/src/assets/icons/方框反向双箭头-透明白色.png">
         </a>
       </Col>
-      <Col span="2" ><a href="#" class="nav_top"></a></Col>
-      <Col span="3"><a href="#" class="nav_story"></a></Col>
-      <Col span="4"><a href="#" class="nav_character"></a></Col>
-      <Col span="3"><a href="#" class="nav_cast"></a></Col>
-      <Col span="4"><a href="#" class="nav_product"></a></Col>
-      <Col span="4"></Col>
+      <Col span="2" ><a href="#top" class="nav_top"></a></Col>
+      <Col span="3"><a href="#b_story" class="nav_story"></a></Col>
+      <Col span="4"><a href="#b_characters" class="nav_character"></a></Col>
+      <Col span="4"><a href="#b_cast/staff" class="nav_cast"></a></Col>
+      <Col span="4"><a href="#product" class="nav_product"></a></Col>
+      <Col span="3"></Col>
     </Row>
     </transition>
   </div>
@@ -863,10 +863,11 @@ export default {
     change_chara(e){
       let chara_slide = document.getElementById("SlideImg01");
       //打印单张图片高度
-      console.log(chara_slide.clientHeight);
+      // console.log(chara_slide.clientHeight);
       
       let charaitem = e.target.id;
-      // console.log(charaitem);
+      console.log(e);
+      console.log(charaitem);
       this.chara_num = parseInt(charaitem.slice(8))-1;
       console.log(this.chara_num);
 
