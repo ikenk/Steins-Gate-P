@@ -508,7 +508,7 @@
                   </Row>
                   <Row class="bcast_body">
                     <Col span="4"></Col>
-                    <Col span="8" class="bbody_rows1">
+                    <Col span="8" class="bcastbody_row1">
                       <Row class="bcast_name11">
                         <span class="bcastname11_left">岡部倫太郎</span>
                         <span class="bcastname11_mid">|</span>
@@ -550,7 +550,7 @@
                         <span class="bcastname18_right">田村ゆかり</span>
                       </Row>
                     </Col>
-                    <Col span="8" class="bbody_rows2">
+                    <Col span="8" class="bcastbody_row1">
                       <Row class="bcast_name21">
                         <span class="bcastname21_left">比屋定真帆</span>
                         <span class="bcastname21_mid">|</span>
@@ -591,6 +591,143 @@
                         <span class="bcastname28_mid">|</span>
                         <span class="bcastname28_right">にしむら まや</span>
                       </Row></Col>
+                    <Col span="4"></Col>
+                  </Row>
+                </Row>
+                <Row class="b_staff">
+                  <Row class="bstaff_title">
+                    <Col span="8"></Col>
+                    <Col span="8">
+                      <div class="title_staff"></div>
+                    </Col>
+                    <Col span="8"></Col>
+                  </Row>
+                  <Row class="bstaff_body">
+                    <Col span="4"></Col>
+                    <Col span="8" class="bstaffbody_row1">
+                      <Row class="bstaff_name11">
+                      <span class="bstaffname11_left">原作</span>
+                      <span class="bstaffname11_mid">|</span>
+                      <span class="bstaffname11_right">志倉千代丸/MAGES.</span>
+                      </Row>
+                      <Row class="bstaff_name12">
+                      <span class="bstaffname12_left">監督</span>
+                      <span class="bstaffname12_mid">|</span>
+                      <span class="bstaffname12_right">川村賢一</span>
+                      </Row>
+                      <Row class="bstaff_name13">
+                      <span class="bstaffname13_left">シリーズ構成</span>
+                      <span class="bstaffname13_mid">|</span>
+                      <span class="bstaffname13_right">花田十輝</span>
+                      </Row>
+                      <Row class="bstaff_name14">
+                      <span class="bstaffname14_left">シナリオ監修</span>
+                      <span class="bstaffname14_mid">|</span>
+                      <span class="bstaffname14_right">林 直孝、松原達也、<br>西村卓也、安本 了</span>
+                      </Row>
+                      <Row class="bstaff_name15">
+                      <span class="bstaffname15_left">キャラクター原案</span>
+                      <span class="bstaffname15_mid">|</span>
+                      <span class="bstaffname15_right">huke</span>
+                      </Row>
+                      <Row class="bstaff_name16">
+                      <span class="bstaffname16_left">未来ガジェット原案</span>
+                      <span class="bstaffname16_mid">|</span>
+                      <span class="bstaffname16_right">SH@RP</span>
+                      </Row>
+                      <Row class="bstaff_name17">
+                      <span class="bstaffname17_left">キャラクターデザイン</span>
+                      <span class="bstaffname17_mid">|</span>
+                      <span class="bstaffname17_right">稲吉智重</span>
+                      </Row>
+                      <Row class="bstaff_name18">
+                      <span class="bstaffname18_left">プロップデザイン</span>
+                      <span class="bstaffname18_mid">|</span>
+                      <span class="bstaffname18_right">稲吉朝子、灯夢、<br>コレサワシゲユキ</span>
+                      </Row>
+                      <Row class="bstaff_name19">
+                      <span class="bstaffname19_left">美術設定</span>
+                      <span class="bstaffname19_mid">|</span>
+                      <span class="bstaffname19_right">灯夢、コレサワシゲユキ</span>
+                      </Row>
+                      <Row class="bstaff_name110">
+                      <span class="bstaffname110_left">美術監督</span>
+                      <span class="bstaffname110_mid">|</span>
+                      <span class="bstaffname110_right">小髙 猛</span>
+                      </Row>
+                      <Row class="bstaff_name111">
+                      <span class="bstaffname111_left">色彩設計</span>
+                      <span class="bstaffname111_mid">|</span>
+                      <span class="bstaffname111_right">佐藤美由紀</span>
+                      </Row>
+                      <Row class="bstaff_name112">
+                      <span class="bstaffname112_left">オープニング主題歌</span>
+                      <span class="bstaffname112_mid">|</span>
+                      <span class="bstaffname112_right">「ファティマ」<br> 歌：いとうかなこ</span>
+                      </Row>
+                    </Col>
+                    <Col span="8" class="bstaffbody_row2">
+                      <Row class="bstaff_name21">
+                      <span class="bstaffname21_left">特効監修</span>
+                      <span class="bstaffname21_mid">|</span>
+                      <span class="bstaffname21_right">谷口久美子</span>
+                      </Row>
+                      <Row class="bstaff_name22">
+                      <span class="bstaffname22_left">撮影監督</span>
+                      <span class="bstaffname22_mid">|</span>
+                      <span class="bstaffname22_right">塩川智幸</span>
+                      </Row>
+                      <Row class="bstaff_name23">
+                      <span class="bstaffname23_left">３Ｄディレクター</span>
+                      <span class="bstaffname23_mid">|</span>
+                      <span class="bstaffname23_right">ヨシダミキ</span>
+                      </Row>
+                      <Row class="bstaff_name24">
+                      <span class="bstaffname24_left">モデリング</span>
+                      <span class="bstaffname24_mid">|</span>
+                      <span class="bstaffname24_right">相馬 洋</span>
+                      </Row>
+                      <Row class="bstaff_name25">
+                      <span class="bstaffname25_left">編集</span>
+                      <span class="bstaffname25_mid">|</span>
+                      <span class="bstaffname25_right">須藤 瞳</span>
+                      </Row>
+                      <Row class="bstaff_name26">
+                      <span class="bstaffname26_left">音響監督</span>
+                      <span class="bstaffname26_mid">|</span>
+                      <span class="bstaffname26_right">山口貴之</span>
+                      </Row>
+                      <Row class="bstaff_name27">
+                      <span class="bstaffname27_left">音楽</span>
+                      <span class="bstaffname27_mid">|</span>
+                      <span class="bstaffname27_right">阿保 剛、信澤宣明、日向 萌</span>
+                      </Row>
+                      <Row class="bstaff_name28">
+                      <span class="bstaffname28_left">音楽プロデューサー</span>
+                      <span class="bstaffname28_mid">|</span>
+                      <span class="bstaffname28_right">金谷雄文</span>
+                      </Row>
+                      <Row class="bstaff_name29">
+                      <span class="bstaffname29_left">音楽制作</span>
+                      <span class="bstaffname29_mid">|</span>
+                      <span class="bstaffname29_right">MAGES.</span>
+                      </Row>
+                      <Row class="bstaff_name210">
+                      <span class="bstaffname210_left">アニメーション制作</span>
+                      <span class="bstaffname210_mid">|</span>
+                      <span class="bstaffname210_right">WHITE FOX</span>
+                      </Row>
+                      <Row class="bstaff_name211">
+                      <span class="bstaffname211_left">製作</span>
+                      <span class="bstaffname211_mid">|</span>
+                      <span class="bstaffname211_right">未来ガジェット研究所</span>
+                      </Row>
+                      <Row class="bstaff_name212">
+                      <span class="bstaffname212_left">エンディング主題歌</span>
+                      <span class="bstaffname212_mid">|</span>
+                      <span class="bstaffname212_right">「LAST GAME」<br>歌:Zwei</span>
+                      </Row>
+                    </Col>
                     <Col span="4"></Col>
                   </Row>
                 </Row>
