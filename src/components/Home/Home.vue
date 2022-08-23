@@ -36,17 +36,6 @@
                     <img src="/src/assets/images/left.png" class="secrightimg">
                 </div>
             </router-link>
-            <!-- </a> -->
-            <!-- <div class="leftbox" name="middle">
-                <a href="www.baidu.com" class="lefturl">
-                    <img src="./images/left.png" class="secleftimg">
-                </a>
-            </div> -->
-            <!-- <div class="rightbox" name="middle">
-                <a href="#" class="righturl">
-                    <img src="./images/right.png" class="secrightimg">
-                </a>
-            </div> -->
             <router-link to="/game" class="righturl">
             <!-- <a href="#" class="righturl"> -->
                 <div class="rightbox" name="middle">
@@ -89,7 +78,7 @@ export default{
             let _this = this;
             setInterval(()=>{
                 const date = new Date()
-                _this.hour = date.getHours().toString()
+                _this.hour = _this.time2str(date.getHours())
                 _this.minute = _this.time2str(date.getMinutes())
                 _this.second = _this.time2str(date.getSeconds())
             },1000)

@@ -112,7 +112,7 @@
   .b_st_title {
       width: 100%;
       padding: 10% 0 10%;
-      background-color: rgba(128,0,128,0.5);
+      /* background-color: rgba(128,0,128,0.5); */
   }
   
   .b_t_img{
@@ -168,20 +168,20 @@
   .leftimg{
     width: 100%;
     position: absolute;
-    background-color: red;
+    /* background-color: red; */
     transition: all 0.8s;
   }
 
   .midimg{
     width: 100%;
     position: absolute;
-    background-color: aqua;
+    /* background-color: aqua; */
     transition: all 0.8s;
   }
 
   .rightimg{
     position: absolute;
-    background-color:orange;
+    /* background-color:orange; */
     transition: all 0.8s;
   }
 
@@ -447,6 +447,9 @@
   }
 
 
+  .charas_nav a{
+    transition: all 1s;
+  }
 
   .char_item01{
     top:0vw;
@@ -462,12 +465,22 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
+    
   }
 
   .char_item01 a:hover::before{
     transition: all 1s;
     z-index: 900;
     opacity: 0.6;
+  }
+
+
+  @keyframes opac {
+    100%{
+        opacity: 0;   
+    }
   }
 
 
@@ -486,6 +499,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item02 a:hover::before{
@@ -511,6 +526,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item03 a:hover::before{
@@ -537,6 +554,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item04 a:hover::before{
@@ -563,6 +582,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item05 a:hover::before{
@@ -587,6 +608,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item06 a:hover::before{
@@ -613,6 +636,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item07 a:hover::before{
@@ -640,6 +665,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item08 a:hover::before{
@@ -667,6 +694,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item09 a:hover::before{
@@ -693,6 +722,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item10 a:hover::before{
@@ -720,6 +751,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item11 a:hover::before{
@@ -746,6 +779,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item12 a:hover::before{
@@ -770,6 +805,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item13 a:hover::before{
@@ -797,6 +834,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item14 a:hover::before{
@@ -824,6 +863,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item15 a:hover::before{
@@ -850,6 +891,8 @@
     width: 100%;
     height: 110%;
     background-color: rgb(0,0,0,1);
+    transition: all 1s;
+    z-index: 900;
   }
 
   .char_item16 a:hover::before{
@@ -872,7 +915,7 @@
   .bcast_title{
     width: 100%;
     padding: 8% 0 6% ;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   /* cast title部分样式 */
@@ -888,8 +931,9 @@
   .bcast_body{
     width: 100%;
     height: 50vw;
-    background-color: rgb(128,12,42);
+    /* background-color: rgb(128,12,42); */
     font-family: 'notoserif', serif, sans-serif;
+    color: #fff;
   }
 
   .bcast_body span{
@@ -1420,16 +1464,17 @@
     height: 75vw;
     background-color: rgb(128,12,42);
     font-family: 'notoserif', serif, sans-serif;
+    color: #fff;
   }
 
-  .bstaff_body span{
-    /* display: inline-block; */
-  }
+  /* .bstaff_body span{
+    display: inline-block;
+  } */
 
   .bstaffbody_row1{
     position: relative;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(7, 184, 116);
   }
 
   .bstaffbody_row2{
@@ -2194,6 +2239,47 @@
 
 
 
+  /* 3.2.6 product样式 */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* 3.3 左侧三个btn样式 */
   .three_btn{
     position: fixed;
@@ -2202,7 +2288,7 @@
     bottom: 50vh;
     left: 1vw;
     transform: translateY(50%);
-    background-color: red;
+    /* background-color: red; */
     flex-direction: column;
     flex-wrap: nowrap;
     z-index: 1000;
