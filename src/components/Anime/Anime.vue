@@ -744,7 +744,40 @@
             </Row>
         </Row>
         <br />
-        <Row class="product" id="product"></Row>
+        <Row class="product" id="product">
+          <Row class="product_title">
+            <Col span="8"></Col>
+            <Col span="8">
+              <div class="title_product"></div>
+            </Col>
+            <Col span="8"></Col>
+          </Row>
+          <Row class="product_body">
+            <Col flex="5"></Col>
+            <Col flex="5" class="product1">
+              <a href="javascript:void(0);">
+                <div class="product_BD">
+                  <span class="productBD_txt">Blu-ray<br><span>DVD</span></span>
+                </div>
+              </a>
+            </Col>
+            <Col flex="5" class="product2">
+              <a href="javascript:void(0);">
+                <div class="product_CD">
+                  <span class="productCD_txt">CD</span>
+                </div>
+              </a>
+            </Col>
+            <Col flex="5" class="product3">
+              <a href="javascript:void(0);">
+                <div class="product_GOODS">
+                  <span class="productGOODS_txt">GOODS</span>
+                </div>
+              </a>
+            </Col>
+            <Col flex="5"></Col>
+          </Row>
+        </Row>
         <br />
         <!-- 返回顶部按钮 -->
         <Row class="back_to_top">    

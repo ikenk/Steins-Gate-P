@@ -258,6 +258,7 @@
 
   .b_characters{
     width: 100vw;
+    overflow: hidden;
     /* background-color: rgb(177, 115, 126); */
   }
 
@@ -1438,6 +1439,13 @@
     margin-left: 0.5vw;
   } 
   
+
+
+
+
+
+
+
   /* 3.2.5 staff部分样式 */
   .b_staff{
     width: 100vw;
@@ -2240,11 +2248,129 @@
 
 
   /* 3.2.6 product样式 */
+  .product{
+    width: 100vw;
+  }
+
+  .product_title{
+    width: 100%;
+    padding: 8% 0 6% ;
+    background-color: aqua;
+  }
+
+  /* product title部分样式 */
+  .title_product{
+    width: 100%;
+    padding-top: 11%;
+    background-image: url("/src/assets/images/product.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* staff body样式部分 */
+  .product_body{
+    width: 100%;
+    height: 25vw;
+    background-color: rgb(128,12,42);
+    font-family: 'notoserif', serif, sans-serif;
+    color: #fff;
+  }
+
+  .product1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .product2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .product3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .product_body a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+  }
   
+  div[class^='product_']{
+    position:absolute;
+    top:3vw;
+    left: 2vw;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 16vw;
+    height: 16vw;
+    border: 0.1vw solid #fff;
+    border-radius: 50%;
+    font-size: 2vw;
+    transition: all 1s;
+  }
 
 
+  .product_BD:hover{
+    transition: all 1s;
+    transform: scale(1.25);
+  }
+
+  .product_CD:hover{
+    transition: all 1s;
+    transform: scale(1.25);
+  }
+
+  .product_GOODS:hover{
+    transition: all 1s;
+    transform: scale(1.25);
+  }
 
 
+  .product_body span{
+    display: inline-block;
+  }
+
+
+  .productBD_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+  }
+
+  .productBD_txt span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .productCD_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .productGOODS_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 
 
 
