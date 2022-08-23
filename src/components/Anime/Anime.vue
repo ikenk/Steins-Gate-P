@@ -194,7 +194,7 @@
                       <Row class="charas_text"></Row>
                       <Row class="charas_cut">
                         <Row class="charas_main">
-                          <Row class="float_img_whole">
+                          <Row class="float_img_whole" >
                             <Row class="float_top_img">
                               <Row class="float_chara1" v-if="chara_img[0]">
                                 <div class="float_chara_1_1">
