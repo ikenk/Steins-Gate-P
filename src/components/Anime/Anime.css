@@ -1454,7 +1454,7 @@
   .bstaff_title{
     width: 100%;
     padding: 8% 0 6% ;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   /* staff title部分样式 */
@@ -1470,7 +1470,7 @@
   .bstaff_body{
     width: 100%;
     height: 75vw;
-    background-color: rgb(128,12,42);
+    /* background-color: rgb(128,12,42); */
     font-family: 'notoserif', serif, sans-serif;
     color: #fff;
   }
@@ -1482,12 +1482,12 @@
   .bstaffbody_row1{
     position: relative;
     flex-direction: column;
-    background-color: rgb(7, 184, 116);
+    /* background-color: rgb(7, 184, 116); */
   }
 
   .bstaffbody_row2{
     flex-direction: column;
-    background-color: rgb(25, 15, 15);
+    /* background-color: rgb(25, 15, 15); */
   }
 
 
