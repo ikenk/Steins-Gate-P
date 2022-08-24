@@ -1,8 +1,5 @@
 <template>
     <div><router-view></router-view></div>
-    <!-- <div>
-        <anime></anime>
-    </div> -->
 </template>
 
 

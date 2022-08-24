@@ -2387,25 +2387,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* 3.3 左侧三个btn样式 */
   .three_btn{
     position: fixed;
@@ -2633,3 +2614,41 @@
     background-size: 70% 70%;
     background-position:center;
   }
+
+
+
+
+
+
+
+
+    /* 3.6 时钟切换样式 */
+    .clock_change_box{
+      position: fixed;
+      left: 0vw;
+      top: 0vw;
+      width: 100vw;
+      height: 100vh;
+      z-index:99;
+    }
+    .clock_change{
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(254, 253, 253);
+    }
+  
+    .clock_click{
+      position: absolute;
+      width: 29vw;
+      top:15vw;
+      left: 35vw;
+      z-index: 200;
+      transform: scale(2);
+    }
+  
+    .twinkle_noise{
+      position: absolute;
+      width: 100%;
+      z-index: 199;
+    }

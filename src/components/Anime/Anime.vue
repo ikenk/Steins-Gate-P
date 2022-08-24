@@ -13,8 +13,6 @@
           <div class="top_img_left"></div>
           <div class="top_img_right"></div>
         </div>
-        <!-- 时钟切换按钮 -->
-        <Row class="clock_change"></Row>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
             <!-- beta时间线 -->
@@ -441,13 +439,13 @@
                                 <img src='/src/assets/images/img_charaft06.png' >
                               </a>
                             </Col>
-                            <Col span="3" class="char_item07" id="CharItem7">
-                              <a @click="change_chara($event)">
+                            <Col span="3" class="char_item07">
+                              <a @click="change_chara($event)"  id="CharItem7">
                                 <img src='/src/assets/images/img_charaft07.png' >
                               </a>
                             </Col>
-                            <Col span="3" class="char_item08" id="CharItem8">
-                              <a @click="change_chara($event)">
+                            <Col span="3" class="char_item08">
+                              <a @click="change_chara($event)" id="CharItem8">
                                 <img src='/src/assets/images/img_charaft08.png' >
                               </a></Col>
                           </Row>
@@ -791,12 +789,15 @@
     <Row class="navbtn_is_show">
       <Row class="three_btn">
           <Grid :border="false" :hover="hover" :col="1" square padding="0">
-              <a href="javascript:void(0);" @click="random_url">
+              <!-- 切换时间线按钮 -->
+              <a href="javascript:void(0);" @click="change_line">
                 <GridItem class="top_btn"></GridItem>
               </a>
+              <!-- 展示nav栏按钮 -->
               <a href="javascript:void(0);" @click="show_nav">
                 <GridItem class="mid_btn"></GridItem>
               </a>
+              <!-- 返回主页按钮 -->
               <a href="/home">
                 <GridItem class="bottom_btn"></GridItem>
               </a>
@@ -819,6 +820,13 @@
       <Col span="3"></Col>
     </Row>
     </transition>
+    <!-- 时钟切换 -->
+    <Row class="clock_change_box" v-show="ClockChangeDis">
+      <Row class="clock_change">
+        <ClockRand class="clock_click"></ClockRand>
+        <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
+      </Row>
+    </Row>
   </div>
 </template>
 
@@ -827,8 +835,19 @@
 </style>
 
 <script>
+import ClockRand from '/src/components/globalReg/ClockRand.vue';
+import TwinklingNoise from '/src/components/globalReg/TwinklingNoise.vue';
+
+
+
+
 export default {
   name: "Anime",
+  components:{
+    "ClockRand": ClockRand,
+    "TwinklingNoise": TwinklingNoise,
+},
+
   data() {
     return {
       iScol: "0",//背景大图在页面滚动时向上的滚动距离
@@ -843,6 +862,7 @@ export default {
       chara_num:0,//change_chara(e)中使用到的移动图片单位
       chara_img:[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],//不同角色切换使用到的数组，1为true，0为false
       NavShow:false,//nav栏折叠动画效果判断条件
+      ClockChangeDis:false,//切换时间线的过场动画
     };
   },
   mounted() {
@@ -911,18 +931,27 @@ export default {
       this.chara_img[this.chara_num]=1;
 
     },
-
-    //随机跳转某个网页
-    random_url(){},
-
-
+    
+    
     //展开nav栏
     show_nav(){
       this.NavShow = true;
     },
     close_nav(){
       this.NavShow = false;
-    }
+    },
+
+
+
+    //切换alpha和beta线动画
+    change_line(){
+      this.ClockChangeDis = true;
+      // this.$refs.ClockRand.getRandomTime();
+      setTimeout(()=>{this.ClockChangeDis = false},1500);
+    },
+
+
+
 
 
     }
