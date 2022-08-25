@@ -28,7 +28,7 @@ export default {
                 _this.hour = _this.time2str(rand_hour)
                 _this.minute = _this.time2str(rand_min)
                 _this.second = _this.time2str(rand_sec)
-            },500)
+            },100)
         },
         time2str(num){
             return ('0' + num).slice(-2)
@@ -56,25 +56,13 @@ export default {
         } 
     }
 
-    /* 移位动画 */
-    @-webkit-keyframes move{ 
-        100%{ 
-            transform: translate(-2%,-2%); 
-        } 
-    } 
-    @keyframes move{ 
-        100%{ 
-            transform: translate(0,-2%); 
-        } 
-    }
-
         /* 2.1 顶部时间样式 */
     .toptime{
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items:flex-end;
-        padding: 1%;
+        padding: 0%;
         position: relative;
         width: 100%;
         height: 25%;
@@ -102,6 +90,6 @@ export default {
         font-size: 15vh;
         color: #D9A600;
         text-shadow: -3px 0 2px #eb2900, 0 3px 2px #eb2900, 3px 0 2px #eb2900, 0 -3px 2px #eb2900;
-        animation: twinkling  0.2s 5;
+        animation: twinkling  0.2s 7;
     }
 </style>

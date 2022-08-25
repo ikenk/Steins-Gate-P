@@ -779,11 +779,7 @@
         </Row>
         <br />
         <!-- 返回顶部按钮 -->
-        <Row class="back_to_top">    
-          <BackTop :height="7000" class="btt_body">
-            <div class="btt_img"></div>
-          </BackTop>
-        </Row>
+        <BackToTop></BackToTop>
       </div>
     </div>
     <!-- 侧边三按钮 -->
@@ -839,6 +835,7 @@
 import ClockRand from '/src/components/globalReg/ClockRand.vue';
 import TwinklingNoise from '/src/components/globalReg/TwinklingNoise.vue';
 import BackgroundLongImg from '/src/components/globalReg/BackgroundLongImg.vue';
+import BackToTop from '/src/components/globalReg/BackToTop.vue';
 
 
 
@@ -849,6 +846,7 @@ export default {
     "ClockRand": ClockRand,
     "TwinklingNoise": TwinklingNoise,
     "BackgroundLongImg": BackgroundLongImg,
+    "BackToTop": BackToTop,
   },
 
   data() {
@@ -879,11 +877,12 @@ export default {
     // 因作bg_img作为单独组件引入，因此注释掉原函数
     //监视网页滚动
     // scrollToTop() {
-    //   var scrollTop =
+    //   let scrollTop =
     //     window.pageYOffset ||
     //     document.documentElement.scrollTop ||
     //     document.body.scrollTop;
-    //   // console.log(scrollTop);
+    //   console.log(0.5*document.body.clientHeight);
+    //   console.log(scrollTop);
     //   this.iScol = -1.8 * scrollTop;
     // },
 
@@ -956,7 +955,7 @@ export default {
     change_line(){
       this.ClockChangeDis = true;
       // this.$refs.ClockRand.getRandomTime();
-      setTimeout(()=>{this.ClockChangeDis = false},1500);
+      setTimeout(()=>{this.ClockChangeDis = false},1000);
     },
 
 

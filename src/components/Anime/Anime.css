@@ -2600,30 +2600,11 @@
 
 
 
-  /* 3.5 返回顶部按钮样式 */
-  .btt_body{
-    width: 3.7vw;
-    height: 3.7vw;
-    right: 1.2vw;
-  }
-
-  .btt_img{
-    width: 100%;
-    height: 100%;
-    background-image: url("/src/assets/icons/方框向上-透明白色.png");
-    background-repeat: no-repeat;
-    background-size: 70% 70%;
-    background-position:center;
-  }
 
 
 
 
-
-
-
-
-    /* 3.6 时钟切换样式 */
+    /* 3.5 时钟切换样式 */
     .clock_change_box{
       position: fixed;
       left: 0vw;
@@ -2641,11 +2622,11 @@
   
     .clock_click{
       position: absolute;
-      width: 29vw;
-      top:15vw;
-      left: 35vw;
+      width: 100vw;
+      top:50%;
+      left: 0;
       z-index: 200;
-      transform: scale(2);
+      transform: translateY(-65%) scale(1.5);
     }
   
     .twinkle_noise{

@@ -79,28 +79,28 @@ export default {
     position: absolute;
     width: 55%;
     height: 100%;
-    animation: twinkling 0.1s  6 ;
+    animation: twinkling 0.1s  8 ;
 }
 .rightimg2{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 55%;
-    animation: twinkling 0.1s  0.2s 6 ;
+    animation: twinkling 0.1s  0.2s 7 ;
 }
 .rightimg3{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 70%;
-    animation: twinkling 0.1s  0.1s 6 ;
+    animation: twinkling 0.1s  0.1s 8 ;
 }
 .rightimg4{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 85%;
-    animation: twinkling 0.1s 0.2s 6 ;
+    animation: twinkling 0.1s 0.2s 7 ;
 }
 
 </style>
