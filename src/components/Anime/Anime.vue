@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    <!-- 背景长图 -->
-    <div class="bg_img" :style="{ top: iScol + 'px' }">
+    <!-- 背景长图 --><!-- 作为单独组件引入，因此可将原代码注释 -->
+    <BackgroundLongImg></BackgroundLongImg>
+    <!-- <div class="bg_img" :style="{ top: iScol + 'px' }">
       <div class="bg_longimg"></div>
       <div class="bg_grayimg"></div>
       <div class="bg_pointimg"></div>
-    </div>
+    </div> -->
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
@@ -837,20 +838,25 @@
 <script>
 import ClockRand from '/src/components/globalReg/ClockRand.vue';
 import TwinklingNoise from '/src/components/globalReg/TwinklingNoise.vue';
-
+import BackgroundLongImg from '/src/components/globalReg/BackgroundLongImg.vue';
 
 
 
 export default {
   name: "Anime",
+
   components:{
     "ClockRand": ClockRand,
     "TwinklingNoise": TwinklingNoise,
-},
+    "BackgroundLongImg": BackgroundLongImg,
+  },
 
   data() {
     return {
-      iScol: "0",//背景大图在页面滚动时向上的滚动距离
+
+      //  作为单独组件引入，因此注释掉原变量iScol: "0"
+      // iScol: "0",//背景大图在页面滚动时向上的滚动距离
+
       value: false, //布尔值 目前不清楚是在哪里用到
       hover: true,//将鼠标放在GridItem上是否有悬浮效果
       border: false,//GridItem是否有边框
@@ -866,18 +872,21 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
+    // 因作bg_img作为单独组件引入，因此注释掉原函数
+    // window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
   },
   methods: {
+    // 因作bg_img作为单独组件引入，因此注释掉原函数
     //监视网页滚动
-    scrollToTop() {
-      var scrollTop =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-      // console.log(scrollTop);
-      this.iScol = -1.8 * scrollTop;
-    },
+    // scrollToTop() {
+    //   var scrollTop =
+    //     window.pageYOffset ||
+    //     document.documentElement.scrollTop ||
+    //     document.body.scrollTop;
+    //   // console.log(scrollTop);
+    //   this.iScol = -1.8 * scrollTop;
+    // },
+
 
     //点击集数按钮切换不同剧集的图片和介绍文本
     change_st(e){ //监测各元素高度并且修改图片移动的距离
