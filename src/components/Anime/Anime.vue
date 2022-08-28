@@ -1540,8 +1540,7 @@
                 <Row class="astaff_name111">
                   <span class="astaffname111_left">オープニング主題歌</span>
                   <span class="astaffname111_mid">|</span>
-                  <span class="astaffname111_right">「ファティマ」<br />
-                    歌：いとうかなこ</span>
+                  <span class="astaffname111_right">「Hacking to the Gate」<br />&nbsp;歌：いとうかなこ</span>
                 </Row>
                 </Col>
                 <Col span="8" class="astaffbody_row2">
@@ -1599,7 +1598,7 @@
                 <Row class="astaff_name211">
                   <span class="astaffname211_left">エンディング主題歌</span>
                   <span class="astaffname211_mid">|</span>
-                  <span class="astaffname211_right">「LAST GAME」<br />歌:Zwei</span>
+                  <span class="astaffname211_right">「刻司ル十二ノ盟约」<br />&nbsp;歌:Zwei</span>
                 </Row>
                 </Col>
                 <Col span="4">
