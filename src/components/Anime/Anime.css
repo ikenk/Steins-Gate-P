@@ -3030,8 +3030,8 @@
   .astaffname14_right{
     position: absolute;
     left: 51%;
-    top: 12%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 
@@ -3091,8 +3091,8 @@
   .astaffname17_right{
     position: absolute;
     left: 51%;
-    top: 27%;
-    font-size: 1.7vw;
+    top: 15%;
+    font-size: 1.5vw;
     margin-left: 0.5vw;
   }
 
@@ -3111,8 +3111,8 @@
   .astaffname18_right{
     position: absolute;
     left: 51%;
-    top: 12%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 
@@ -3132,15 +3132,15 @@
   .astaffname19_right{
     position: absolute;
     left: 51%;
-    top: 35%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 
 
 
-
-  .astaffname110_left{
+  /* 保留空位 */
+  /* .astaffname110_left{
     position: absolute;
     right: 51%;
     top: 35%;
@@ -3156,7 +3156,7 @@
     top: 27%;
     font-size: 1.7vw;
     margin-left: 0.5vw;
-  }
+  } */
 
 
 
@@ -3265,8 +3265,8 @@
   .astaffname24_right{
     position: absolute;
     left: 51%;
-    top: 12%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 
@@ -3346,8 +3346,8 @@
   .astaffname28_right{
     position: absolute;
     left: 51%;
-    top: 12%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 
@@ -3367,8 +3367,8 @@
   .astaffname29_right{
     position: absolute;
     left: 51%;
-    top: 35%;
-    font-size: 1.5vw;
+    top: 27%;
+    font-size: 1.7vw;
     margin-left: 0.5vw;
   }
 

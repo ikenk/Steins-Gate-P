@@ -1578,7 +1578,7 @@
                 <Row class="astaff_name27">
                   <span class="astaffname27_left">音楽</span>
                   <span class="astaffname27_mid">|</span>
-                  <span class="astaffname27_right">阿保 剛、村上純</span>
+                  <span class="astaffname27_right">阿保 剛、村上 純</span>
                 </Row>
                 <Row class="astaff_name28">
                   <span class="astaffname28_left">アニメーション制作</span>
