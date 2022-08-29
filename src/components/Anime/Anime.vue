@@ -847,24 +847,7 @@
       </div>
     </div>
     <!-- 侧边三按钮 -->
-    <Row class="navbtn_is_show">
-      <Row class="three_btn">
-        <Grid :border="false" :hover="hover" :col="1" square padding="0">
-          <!-- 切换时间线按钮 -->
-          <a href="javascript:void(0);" @click="change_line">
-            <GridItem class="top_btn"></GridItem>
-          </a>
-          <!-- 展示nav栏按钮 -->
-          <a href="javascript:void(0);" @click="show_nav">
-            <GridItem class="mid_btn"></GridItem>
-          </a>
-          <!-- 返回主页按钮 -->
-          <a href="/home">
-            <GridItem class="bottom_btn"></GridItem>
-          </a>
-        </Grid>
-      </Row>
-    </Row>
+    <SideThreeNavBtn :btnimg="btnimgurl" :btnhref="btnurl" @MidClick="show_nav" @TopClick="change_line"></SideThreeNavBtn>
     <!-- 导航栏 -->
     <transition name="transition-drop">
       <Row class="nav" v-show="NavShow">
@@ -902,6 +885,7 @@ import TwinklingNoise from "/src/components/globalReg/TwinklingNoise.vue";
 import BackgroundLongImg from "/src/components/globalReg/BackgroundLongImg.vue";
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
 import BetaTimeline from "/src/components/privateReg/BetaTimeline.vue";
+import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
 
 export default {
   name: "Anime",
@@ -912,6 +896,7 @@ export default {
     "BackgroundLongImg": BackgroundLongImg,
     "BackToTop": BackToTop,
     "BetaTimeline":BetaTimeline,
+    'SideThreeNavBtn':SideThreeNavBtn,
 },
 
   data() {
@@ -946,6 +931,16 @@ export default {
       ],
       copyright: 'Copyright © 2022 View Design All Rights Reserved',
       //全局页脚
+      btnimgurl:[
+        "/src/assets/icons/无穷-透明黑色.png",
+        "/src/assets/icons/菜单-透明白色.png",
+        "/src/assets/icons/双左-透明白色.png",
+      ],
+      btnurl:[
+        "javascript:void(0);",
+        "javascript:void(0);",
+        "/home",
+      ],
     };
   },
   mounted() {
