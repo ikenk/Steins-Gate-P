@@ -44,6 +44,9 @@
                 <Col span="8">
                 </Col>
               </Row>
+              <Row class="a_charas_body">
+                
+              </Row>
             </Row>
             <!-- cast/staff部分 -->
             <Row class="a_cast" id="a_cast/staff">
