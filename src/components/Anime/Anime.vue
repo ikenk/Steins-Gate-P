@@ -5,10 +5,6 @@
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
-        <!-- <div class="top_img" id="top">
-          <div class="top_img_left"></div>
-          <div class="top_img_right"></div>
-        </div> -->
         <TopImg :TopImgUrl="topimgurl"></TopImg>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">

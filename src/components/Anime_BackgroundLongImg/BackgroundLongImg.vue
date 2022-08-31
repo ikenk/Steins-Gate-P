@@ -11,6 +11,8 @@
 export default {
     name:'BackgroundLongImg',
 
+    
+
     data() {
       return {
         iScol: "0",//背景大图在页面滚动时向上的滚动距离
