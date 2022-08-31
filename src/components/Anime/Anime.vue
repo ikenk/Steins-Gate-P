@@ -1,20 +1,15 @@
 <template>
   <div class="container">
     <!-- 背景长图 -->
-    <!-- 作为单独组件引入，因此可将原代码注释 -->
     <BackgroundLongImg></BackgroundLongImg>
-    <!-- <div class="bg_img" :style="{ top: iScol + 'px' }">
-      <div class="bg_longimg"></div>
-      <div class="bg_grayimg"></div>
-      <div class="bg_pointimg"></div>
-    </div> -->
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
-        <div class="top_img" id="top">
+        <!-- <div class="top_img" id="top">
           <div class="top_img_left"></div>
           <div class="top_img_right"></div>
-        </div>
+        </div> -->
+        <TopImg :TopImgUrl="topimgurl"></TopImg>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
@@ -45,7 +40,7 @@
                 </Col>
               </Row>
               <Row class="a_charas_body">
-                
+
               </Row>
             </Row>
             <!-- cast/staff部分 -->
@@ -352,6 +347,7 @@ import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/Backgroun
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
 import BetaTimeline from "/src/components/Anime_BetaTimeLine/BetaTimeline.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
+import TopImg from "/src/components/globalReg/TopImg.vue";
 
 export default {
   name: "Anime",
@@ -361,14 +357,19 @@ export default {
     "TwinklingNoise": TwinklingNoise,
     "BackgroundLongImg": BackgroundLongImg,
     "BackToTop": BackToTop,
-    "BetaTimeline":BetaTimeline,
-    'SideThreeNavBtn':SideThreeNavBtn,
+    "BetaTimeline": BetaTimeline,
+    "SideThreeNavBtn": SideThreeNavBtn,
+    "TopImg":TopImg,
 },
 
   data() {
     return {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
       // iScol: "0",//背景大图在页面滚动时向上的滚动距离
+      topimgurl:[
+        "/src/assets/images/ttl_logo01_sp.svg",
+        "/src/assets/images/bg_hero00.png",
+      ],//顶部图片路径
       value: false, //布尔值 目前不清楚是在哪里用到
       hover: true, //将鼠标放在GridItem上是否有悬浮效果
       border: false, //GridItem是否有边框

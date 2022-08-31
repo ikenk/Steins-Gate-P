@@ -61,25 +61,28 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: #fff;
+    
   }
   /* 2.1 Top-left图样式 */
   .top_img .top_img_left {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 40vw;
+    left: calc(0.1 * (100vw - 104.96vh));
+    width: calc(100vw - 104.96vh);
     height: 100vh;
     background-image: url("/src/assets/images/ttl_logo01_sp.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: calc(0.8 * (100vw - 104.96vh));
+    z-index: 100;
   }
   /* 2.2 Top-right图样式 */
   .top_img .top_img_right {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60vw;
+    width: 104.96vh;
     height: 100vh;
     background-image: url("/src/assets/images/bg_hero00.png");
     background-position: right center;
