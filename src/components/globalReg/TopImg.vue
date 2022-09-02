@@ -1,7 +1,7 @@
 <template>
-<div class="top_img" id="top">
-    <div class="top_img_left" :style="{ backgroundImage: 'url(' + TopImgUrl[0] + ')' }"></div>
-    <div class="top_img_right" :style="{ backgroundImage: 'url(' + TopImgUrl[1] + ')' }"></div>
+<div class="top_img" id="top" :style="{backgroundColor:`${BackgroundColor}`}">
+    <div class="top_img_left" :style="{ backgroundImage: 'url(' + TopImgUrl[0] + ')' , left: `calc(0.1 * (100vw - ${RightImgWidth})) `, width:`calc(100vw - ${RightImgWidth})`}"></div>
+    <div class="top_img_right" :style="{ backgroundImage: 'url(' + TopImgUrl[1] + ')'  , width:`${RightImgWidth}`}"></div>
 </div>
 </template>
 
@@ -10,6 +10,8 @@ export default {
     name:'TopImg',
     props:[
         'TopImgUrl',
+        'RightImgWidth',
+        'BackgroundColor',
     ]
 }
 </script>

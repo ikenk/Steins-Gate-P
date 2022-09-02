@@ -5,7 +5,8 @@
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
-        <TopImg :TopImgUrl="topimgurl"></TopImg>
+        <TopImg :TopImgUrl="b_topimgurl" RightImgWidth='104.96vh' v-if="false"></TopImg>
+        <TopImg :TopImgUrl="a_topimgurl" RightImgWidth='80vh' BackgroundColor='#ffffff' v-else></TopImg>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
@@ -362,10 +363,14 @@ export default {
     return {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
       // iScol: "0",//背景大图在页面滚动时向上的滚动距离
-      topimgurl:[
+      b_topimgurl:[
         "/src/assets/images/ttl_logo01_sp.svg",
         "/src/assets/images/bg_hero00.png",
-      ],//顶部图片路径
+      ],//顶部图片路径 beta线
+      a_topimgurl:[
+        "/src/assets/images/ttl_logo01_sp.svg",
+        "/src/assets/images/a_top_img.png",
+      ],//顶部图片路径 alpha线
       value: false, //布尔值 目前不清楚是在哪里用到
       hover: true, //将鼠标放在GridItem上是否有悬浮效果
       border: false, //GridItem是否有边框
