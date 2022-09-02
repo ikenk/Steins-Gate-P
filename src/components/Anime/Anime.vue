@@ -330,6 +330,20 @@
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
       </Row>
     </Row>
+    <!-- video切换 -->
+    <Row class="video_change_box" v-show="true">
+      <img src="/src/assets/images/video_bgimg.png" class="video_bgimg">
+      <div class="video_bgimg_mask"></div>
+      <Row class="video_change">
+        <Col span="8" class="video_col"></Col>
+        <Col span="8" class="video_col">
+          <video class="video_player" controls autoplay muted loop>
+            <source src="/src/assets/videos/steinsgate - Compressed.mp4" type="video/mp4" class="video_source">
+          </video>
+        </Col>
+        <Col span="8" class="video_col"></Col>
+      </Row>
+    </Row>
   </div>
 </template>
 

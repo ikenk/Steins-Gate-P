@@ -1733,3 +1733,51 @@
       width: 100%;
       z-index: 199;
     }
+
+
+    .video_change_box{
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .video_bgimg{
+      position: absolute;
+      width: auto;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    
+    .video_change_box::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color:rgba(0,0,0,0.8);
+      z-index: 0;
+    }
+
+    .video_change{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .video_col{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .video_player{
+      width: auto;
+      height: 100%;
+    }
+
+    .video_source{
+      height: 100vh;
+    }

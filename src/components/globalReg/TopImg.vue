@@ -36,7 +36,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size: calc(0.8 * (100vw - 104.96vh));
-    z-index: 100;
   }
   /* 2.2 Top-right图样式 */
   .top_img .top_img_right {
