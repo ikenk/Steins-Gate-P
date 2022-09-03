@@ -305,7 +305,7 @@
       </div>
     </div>
     <!-- 侧边三按钮 -->
-    <SideThreeNavBtn :btnimg="btnimgurl" :btnhref="btnurl" @MidClick="show_nav" @TopClick="change_line"></SideThreeNavBtn>
+    <SideThreeNavBtn :btnimg="btnimgurl" :btnhref="btnurl" @MidClick="show_nav" @TopClick="change_infinite"></SideThreeNavBtn>
     <!-- 导航栏 -->
     <transition name="transition-drop">
       <Row class="nav" v-show="NavShow">
@@ -331,7 +331,7 @@
       </Row>
     </Row>
     <!-- video切换 -->
-    <Row class="video_change_box" v-show="true">
+    <Row class="video_change_box" v-show="false">
       <img src="/src/assets/images/video_bgimg.png" class="video_bgimg">
       <div class="video_bgimg_mask"></div>
       <Row class="video_change">
@@ -453,7 +453,7 @@ export default {
     },
 
     //切换alpha和beta线动画
-    change_line() {
+    change_infinite() {
       this.ClockChangeDis = true;
       // this.$refs.ClockRand.getRandomTime();
       setTimeout(() => {

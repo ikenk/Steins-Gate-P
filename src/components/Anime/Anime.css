@@ -1710,7 +1710,7 @@
       top: 0vw;
       width: 100vw;
       height: 100vh;
-      z-index:99;
+      z-index:100;
     }
     .clock_change{
       position: relative;
@@ -1735,10 +1735,15 @@
     }
 
 
+
+
     .video_change_box{
-      position: relative;
+      position: fixed;
+      left: 0vw;
+      top: 0vw;
       width: 100vw;
       height: 100vh;
+      z-index:99;
     }
 
     .video_bgimg{
