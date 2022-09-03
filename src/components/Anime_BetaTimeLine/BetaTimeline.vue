@@ -19,48 +19,48 @@
         <Col span="15" class="slideimg_left">
         <div class="leftimg" :style="{ transform: `translateY(${LeftUp})` }">
             <ul class="leftimg_moveup" id="LeftimgMoveup">
-              <li v-for="leftimg_moveup in leftimgs_moveup" :key="leftimg_moveup.id">
-                  <img :src="leftimg_moveup.src">
-              </li>
+                <li v-for="leftimg_moveup in leftimgs_moveup" :key="leftimg_moveup.id">
+                    <img :src="leftimg_moveup.src">
+                </li>
             </ul>
         </div>
         </Col>
         <Col span="6" class="slideimg_middle">
         <Row class="midimg" :style="{ transform: `translateY(${MidUp})` }">
             <Row class="midimg_movedown" id="midimgMoveup">
-            <img src="/src/assets/images/img_story01_02.png.png" />
-            <img src="/src/assets/images/img_story02_02.png.png" />
-            <img src="/src/assets/images/img_story03_02.png.png" />
-            <img src="/src/assets/images/img_story04_02.png.png" />
-            <img src="/src/assets/images/img_story05_02.png.png" />
-            <img src="/src/assets/images/img_story06_02.png.png" />
-            <img src="/src/assets/images/img_story07_02.png.png" />
-            <img src="/src/assets/images/img_story08_02.png.png" />
-            <img src="/src/assets/images/img_story09_02.png.png" />
-            <img src="/src/assets/images/img_story10_02.png.png" />
-            <img src="/src/assets/images/img_story11_02.png.png" />
-            <img src="/src/assets/images/img_story12_02.png.png" />
-            <img src="/src/assets/images/img_story13_02.png.png" />
-            <img src="/src/assets/images/img_story14_02.png.png" />
-            <img src="/src/assets/images/img_story15_02.png.png" />
-            <img src="/src/assets/images/img_story16_02.png.png" />
-            <img src="/src/assets/images/img_story17_02.png.png" />
-            <img src="/src/assets/images/img_story18_02.png.png" />
-            <img src="/src/assets/images/img_story19_02.png.png" />
-            <img src="/src/assets/images/img_story20_02.png.png" />
-            <img src="/src/assets/images/img_story21_02.png.png" />
-            <img src="/src/assets/images/img_story22_02.png.png" />
-            <img src="/src/assets/images/img_story23_02.png.png" />
-            <img src="/src/assets/images/img_story24_02.png.png" />
+                <img src="/src/assets/images/img_story01_02.png.png" />
+                <img src="/src/assets/images/img_story02_02.png.png" />
+                <img src="/src/assets/images/img_story03_02.png.png" />
+                <img src="/src/assets/images/img_story04_02.png.png" />
+                <img src="/src/assets/images/img_story05_02.png.png" />
+                <img src="/src/assets/images/img_story06_02.png.png" />
+                <img src="/src/assets/images/img_story07_02.png.png" />
+                <img src="/src/assets/images/img_story08_02.png.png" />
+                <img src="/src/assets/images/img_story09_02.png.png" />
+                <img src="/src/assets/images/img_story10_02.png.png" />
+                <img src="/src/assets/images/img_story11_02.png.png" />
+                <img src="/src/assets/images/img_story12_02.png.png" />
+                <img src="/src/assets/images/img_story13_02.png.png" />
+                <img src="/src/assets/images/img_story14_02.png.png" />
+                <img src="/src/assets/images/img_story15_02.png.png" />
+                <img src="/src/assets/images/img_story16_02.png.png" />
+                <img src="/src/assets/images/img_story17_02.png.png" />
+                <img src="/src/assets/images/img_story18_02.png.png" />
+                <img src="/src/assets/images/img_story19_02.png.png" />
+                <img src="/src/assets/images/img_story20_02.png.png" />
+                <img src="/src/assets/images/img_story21_02.png.png" />
+                <img src="/src/assets/images/img_story22_02.png.png" />
+                <img src="/src/assets/images/img_story23_02.png.png" />
+                <img src="/src/assets/images/img_story24_02.png.png" />
             </Row>
         </Row>
         </Col>
         <Col span="3" class="slideimg_right">
         <div class="rightimg" :style="{ transform: `translateY(${RightUp})` }">
             <ul class="rightimg_moveup" id="rightimgMoveup">
-              <li v-for="rightimg_moveup in rightimgs_moveup" :key="rightimg_moveup.id">
-              <img :src="rightimg_moveup.src">
-              </li>
+                <li v-for="rightimg_moveup in rightimgs_moveup" :key="rightimg_moveup.id">
+                    <img :src="rightimg_moveup.src">
+                </li>
             </ul>
         </div>
         </Col>
@@ -836,6 +836,6 @@ export default {
 
 <style scoped>
 
-  @import url("./BetaTimeline.css");
+    @import url("./BetaTimeline.css");
 
 </style>

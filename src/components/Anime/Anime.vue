@@ -5,259 +5,16 @@
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
-        <TopImg :TopImgUrl="b_topimgurl" RightImgWidth='104.96vh' v-if="false"></TopImg>
-        <TopImg :TopImgUrl="a_topimgurl" RightImgWidth='80vh' BackgroundColor='#ffffff' v-else></TopImg>
+        <!-- beta线TopImg -->
+        <TopImg :TopImgUrl="b_topimgurl" RightImgWidth='104.96vh' v-if="ChangAlphaBetaNum[1]"></TopImg>
+        <!-- alpha线TopImg -->
+        <TopImg :TopImgUrl="a_topimgurl" RightImgWidth='80vh' BackgroundColor='#ffffff' v-if="ChangAlphaBetaNum[0]"></TopImg>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
-          <BetaTimeline v-if="false"></BetaTimeline>
+          <BetaTimeline v-if="ChangAlphaBetaNum[1]"></BetaTimeline>
           <!-- alpha时间线 -->
-          <Row class="alpha_timeline" v-if="true">
-            <!-- story部分 -->
-            <Row class="a_story" id="a_story">
-              <Row class="a_st_title">
-                <Col span="8">
-                </Col>
-                <Col span="8">
-                <Row class="a_t_img"></Row>
-                </Col>
-                <Col span="8">
-                </Col>
-              </Row>
-            </Row>
-            <!-- characters部分 -->
-            <Row class="a_characters" id="a_characters">
-              <Row class="a_charas_title">
-                <Col span="8">
-                </Col>
-                <Col span="8">
-                <Row class="a_c_img"></Row>
-                </Col>
-                <Col span="8">
-                </Col>
-              </Row>
-              <Row class="a_charas_body">
-
-              </Row>
-            </Row>
-            <!-- cast/staff部分 -->
-            <Row class="a_cast" id="a_cast/staff">
-              <Row class="acast_title">
-                <Col span="8">
-                </Col>
-                <Col span="8">
-                <div class="title_cast"></div>
-                </Col>
-                <Col span="8">
-                </Col>
-              </Row>
-              <Row class="acast_body">
-                <Col span="4">
-                </Col>
-                <Col span="8" class="acastbody_row1">
-                <Row class="acast_name11">
-                  <span class="acastname11_left">岡部倫太郎</span>
-                  <span class="acastname11_mid">|</span>
-                  <span class="acastname11_right">宮野真守</span>
-                </Row>
-                <Row class="acast_name12">
-                  <span class="acastname12_left">椎名まゆり</span>
-                  <span class="acastname12_mid">|</span>
-                  <span class="acastname12_right">花澤香菜</span>
-                </Row>
-                <Row class="acast_name13">
-                  <span class="acastname13_left">橋田至</span>
-                  <span class="acastname13_mid">|</span>
-                  <span class="acastname13_right">関智一</span>
-                </Row>
-                <Row class="acast_name14">
-                  <span class="acastname14_left">牧瀬紅莉栖</span>
-                  <span class="acastname14_mid">|</span>
-                  <span class="acastname14_right">今井麻美</span>
-                </Row>
-                <Row class="acast_name15">
-                  <span class="acastname15_left">桐生萌郁</span>
-                  <span class="acastname15_mid">|</span>
-                  <span class="acastname15_right">後藤沙緒里</span>
-                </Row>
-                <!-- 预留空位 -->
-                <!-- <Row class="acast_name16">
-                  <span class="acastname16_left">漆原るか</span>
-                  <span class="acastname16_mid">|</span>
-                  <span class="acastname16_right">小林ゆう</span>
-                </Row> -->
-                </Col>
-                <Col span="8" class="acastbody_row1">
-                <Row class="acast_name21">
-                  <span class="acastname21_left">阿万音鈴羽</span>
-                  <span class="acastname21_mid">|</span>
-                  <span class="acastname21_right">田村ゆかり</span>
-                </Row>
-                <Row class="acast_name22">
-                  <span class="acastname22_left">フェイリス・ニャンニャン</span>
-                  <span class="acastname22_mid">|</span>
-                  <span class="acastname22_right">桃井はるこ</span>
-                </Row>
-                <Row class="acast_name23">
-                  <span class="acastname23_left">天王寺裕吾</span>
-                  <span class="acastname23_mid">|</span>
-                  <span class="acastname23_right">寺杣昌纪</span>
-                </Row>
-                <Row class="acast_name24">
-                  <span class="acastname24_left">天王寺綯</span>
-                  <span class="acastname24_mid">|</span>
-                  <span class="acastname24_right">山本彩乃</span>
-                </Row>
-                <Row class="acast_name25">
-                  <span class="acastname25_left">漆原るか</span>
-                  <span class="acastname25_mid">|</span>
-                  <span class="acastname25_right">小林ゆう</span>
-                </Row>
-                <!-- 预留空位 -->
-                <!-- <Row class="acast_name26">
-                  <span class="acastname26_left">来嶋かえで</span>
-                  <span class="acastname26_mid">|</span>
-                  <span class="acastname26_right">木野日菜</span>
-                </Row> -->
-                </Col>
-                <Col span="4">
-                </Col>
-              </Row>
-            </Row>
-            <Row class="a_staff">
-              <Row class="astaff_title">
-                <Col span="8">
-                </Col>
-                <Col span="8">
-                <div class="title_staff"></div>
-                </Col>
-                <Col span="8">
-                </Col>
-              </Row>
-              <Row class="astaff_body">
-                <Col span="4">
-                </Col>
-                <Col span="8" class="astaffbody_row1">
-                <Row class="astaff_name11">
-                  <span class="astaffname11_left">原作</span>
-                  <span class="astaffname11_mid">|</span>
-                  <span class="astaffname11_right">志倉千代丸/Nitroplus.</span>
-                </Row>
-                <Row class="astaff_name12">
-                  <span class="astaffname12_left">監督</span>
-                  <span class="astaffname12_mid">|</span>
-                  <span class="astaffname12_right">佐藤卓哉、滨崎博嗣</span>
-                </Row>
-                <Row class="astaff_name13">
-                  <span class="astaffname13_left">シリーズ構成</span>
-                  <span class="astaffname13_mid">|</span>
-                  <span class="astaffname13_right">花田十輝</span>
-                </Row>
-                <Row class="astaff_name14">
-                  <span class="astaffname14_left">キャラクター原案</span>
-                  <span class="astaffname14_mid">|</span>
-                  <span class="astaffname14_right">huke</span>
-                </Row>
-                <Row class="astaff_name15">
-                  <span class="astaffname15_left">未来ガジェット原案</span>
-                  <span class="astaffname15_mid">|</span>
-                  <span class="astaffname15_right">SH@RP</span>
-                </Row>
-                <Row class="astaff_name16">
-                  <span class="astaffname16_left">キャラクターデザイン</span>
-                  <span class="astaffname16_mid">|</span>
-                  <span class="astaffname16_right">坂井久太</span>
-                </Row>
-                <Row class="astaff_name17">
-                  <span class="astaffname17_left">プロップデザイン</span>
-                  <span class="astaffname17_mid">|</span>
-                  <span class="astaffname17_right">中村和久<br />コレサワシゲユキ</span>
-                </Row>
-                <Row class="astaff_name18">
-                  <span class="astaffname18_left">美術設定</span>
-                  <span class="astaffname18_mid">|</span>
-                  <span class="astaffname18_right">金平和茂</span>
-                </Row>
-                <Row class="astaff_name19">
-                  <span class="astaffname19_left">色彩設計</span>
-                  <span class="astaffname19_mid">|</span>
-                  <span class="astaffname19_right">佐藤美由紀</span>
-                </Row>
-                <!-- 保留空位 -->
-                <!-- <Row class="astaff_name110">
-                  <span class="astaffname110_left">色彩設計</span>
-                  <span class="astaffname110_mid">|</span>
-                  <span class="astaffname110_right">佐藤美由紀</span>
-                </Row> -->
-                <Row class="astaff_name111">
-                  <span class="astaffname111_left">オープニング主題歌</span>
-                  <span class="astaffname111_mid">|</span>
-                  <span class="astaffname111_right">「Hacking to the Gate」<br />&nbsp;歌：いとうかなこ</span>
-                </Row>
-                </Col>
-                <Col span="8" class="astaffbody_row2">
-                <Row class="astaff_name21">
-                  <span class="astaffname21_left">特効効果</span>
-                  <span class="astaffname21_mid">|</span>
-                  <span class="astaffname21_right">垣田由紀子</span>
-                </Row>
-                <Row class="astaff_name22">
-                  <span class="astaffname22_left">撮影監督</span>
-                  <span class="astaffname22_mid">|</span>
-                  <span class="astaffname22_right">中村圭介</span>
-                </Row>
-                <Row class="astaff_name23">
-                  <span class="astaffname23_left">美術監督</span>
-                  <span class="astaffname23_mid">|</span>
-                  <span class="astaffname23_right">衛藤功二</span>
-                </Row>
-                <Row class="astaff_name24">
-                  <span class="astaffname24_left">モデリング</span>
-                  <span class="astaffname24_mid">|</span>
-                  <span class="astaffname24_right">相馬 洋</span>
-                </Row>
-                <Row class="astaff_name25">
-                  <span class="astaffname25_left">編集</span>
-                  <span class="astaffname25_mid">|</span>
-                  <span class="astaffname25_right">後藤正浩</span>
-                </Row>
-                <Row class="astaff_name26">
-                  <span class="astaffname26_left">音響監督</span>
-                  <span class="astaffname26_mid">|</span>
-                  <span class="astaffname26_right">藤山房伸</span>
-                </Row>
-                <Row class="astaff_name27">
-                  <span class="astaffname27_left">音楽</span>
-                  <span class="astaffname27_mid">|</span>
-                  <span class="astaffname27_right">阿保 剛、村上 純</span>
-                </Row>
-                <Row class="astaff_name28">
-                  <span class="astaffname28_left">アニメーション制作</span>
-                  <span class="astaffname28_mid">|</span>
-                  <span class="astaffname28_right">WHITE FOX</span>
-                </Row>
-                <Row class="astaff_name29">
-                  <span class="astaffname29_left">製作</span>
-                  <span class="astaffname29_mid">|</span>
-                  <span class="astaffname29_right">未来ガジェット研究所</span>
-                </Row>
-                <!-- 保留空位 -->
-                <!-- <Row class="astaff_name210">
-                  <span class="astaffname210_left">アニメーション制作</span>
-                  <span class="astaffname210_mid">|</span>
-                  <span class="astaffname210_right">WHITE FOX</span>
-                </Row> -->
-                <Row class="astaff_name211">
-                  <span class="astaffname211_left">エンディング主題歌</span>
-                  <span class="astaffname211_mid">|</span>
-                  <span class="astaffname211_right">「刻司ル十二ノ盟约」<br />&nbsp;歌:Zwei</span>
-                </Row>
-                </Col>
-                <Col span="4">
-                </Col>
-              </Row>
-            </Row>
-          </Row>
+          <AlphaTimeline v-if="ChangAlphaBetaNum[0]"></AlphaTimeline>
         </Row>
         <br />
         <Row class="product" id="product">
@@ -310,28 +67,28 @@
     <transition name="transition-drop">
       <Row class="nav" v-show="NavShow">
         <Col span="4">
-        <a href="javascript:void(0);" class="nav_arrow" @click="close_nav">
-          <img src="/src/assets/icons/方框反向双箭头-透明白色.png" />
-        </a>
+          <a href="javascript:void(0);" class="nav_arrow" @click="close_nav">
+            <img src="/src/assets/icons/方框反向双箭头-透明白色.png" />
+          </a>
         </Col>
-        <Col span="2"><a href="#top" class="nav_top"></a></Col>
-        <Col span="3"><a href="#b_story" class="nav_story"></a></Col>
-        <Col span="4"><a href="#b_characters" class="nav_character"></a></Col>
-        <Col span="4"><a href="#b_cast/staff" class="nav_cast"></a></Col>
-        <Col span="4"><a href="#product" class="nav_product"></a></Col>
-        <Col span="3">
+          <Col span="2"><a href="#top" class="nav_top"></a></Col>
+          <Col span="3"><a :href= NavChangeHref[0] class="nav_story"></a></Col>
+          <Col span="4"><a :href= NavChangeHref[1] class="nav_character"></a></Col>
+          <Col span="4"><a :href= NavChangeHref[2] class="nav_cast"></a></Col>
+          <Col span="4"><a href="#product" class="nav_product"></a></Col>
+          <Col span="3">
         </Col>
       </Row>
     </transition>
     <!-- 时钟切换 -->
-    <Row class="clock_change_box" v-show="ClockChangeDis">
+    <Row class="clock_change_box" v-show="ClockChangeDis[0]">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
       </Row>
     </Row>
     <!-- video切换 -->
-    <Row class="video_change_box" v-show="false">
+    <Row class="video_change_box" v-show="ClockChangeDis[1]">
       <img src="/src/assets/images/video_bgimg.png" class="video_bgimg">
       <div class="video_bgimg_mask"></div>
       <Row class="video_change">
@@ -359,6 +116,7 @@ import BackToTop from "/src/components/globalReg/BackToTop.vue";
 import BetaTimeline from "/src/components/Anime_BetaTimeLine/BetaTimeline.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
 import TopImg from "/src/components/globalReg/TopImg.vue";
+import AlphaTimeline from "/src/components/Anime_AlphaTimeLine/AlphaTimeline.vue";
 
 export default {
   name: "Anime",
@@ -371,12 +129,14 @@ export default {
     "BetaTimeline": BetaTimeline,
     "SideThreeNavBtn": SideThreeNavBtn,
     "TopImg":TopImg,
+    "AlphaTimeline":AlphaTimeline,
 },
 
   data() {
     return {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
       // iScol: "0",//背景大图在页面滚动时向上的滚动距离
+
       b_topimgurl:[
         "/src/assets/images/ttl_logo01_sp.svg",
         "/src/assets/images/bg_hero00.png",
@@ -385,11 +145,23 @@ export default {
         "/src/assets/images/ttl_logo01_sp.svg",
         "/src/assets/images/a_top_img.png",
       ],//顶部图片路径 alpha线
+
+
+
       value: false, //布尔值 目前不清楚是在哪里用到
       hover: true, //将鼠标放在GridItem上是否有悬浮效果
       border: false, //GridItem是否有边框
       NavShow: false, //nav栏折叠动画效果判断条件
-      ClockChangeDis: false, //切换时间线的过场动画
+
+
+
+      ChangeRandNum:1,//切换时间线所需的随机数
+      ChangAlphaBetaNum:[1,0],//切换alpha、beta线
+      ClockChangeDis: [0,0], //出现切换时间线的过场动画还是圣地巡礼视频
+      NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
+
+
+
       //全局页脚
       links: [
         {
@@ -413,11 +185,15 @@ export default {
       ],
       copyright: 'Copyright © 2022 View Design All Rights Reserved',
       //全局页脚
+
+
+      //btn图片链接
       btnimgurl:[
         "/src/assets/icons/无穷-透明黑色.png",
         "/src/assets/icons/菜单-透明白色.png",
         "/src/assets/icons/双左-透明白色.png",
       ],
+      //btn跳转链接
       btnurl:[
         "javascript:void(0);",
         "javascript:void(0);",
@@ -426,24 +202,8 @@ export default {
     };
   },
   mounted() {
-    // 因作bg_img作为单独组件引入，因此注释掉原函数
-    // window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
   },
   methods: {
-    // 因作bg_img作为单独组件引入，因此注释掉原函数
-    //监视网页滚动
-    // scrollToTop() {
-    //   let scrollTop =
-    //     window.pageYOffset ||
-    //     document.documentElement.scrollTop ||
-    //     document.body.scrollTop;
-    //   console.log(0.5*document.body.clientHeight);
-    //   console.log(scrollTop);
-    //   this.iScol = -1.8 * scrollTop;
-    // },
-
-  
-
     //展开nav栏
     show_nav() {
       this.NavShow = true;
@@ -452,14 +212,77 @@ export default {
       this.NavShow = false;
     },
 
-    //切换alpha和beta线动画
+    //切换alpha和beta线动画或者是圣地巡礼视频
     change_infinite() {
-      this.ClockChangeDis = true;
-      // this.$refs.ClockRand.getRandomTime();
-      setTimeout(() => {
-        this.ClockChangeDis = false;
-      }, 1000);
+      console.log(this.ChangeRandNum);
+      // 如果前一次是alpha线
+      if(this.ChangeRandNum === 1){
+        // 向beta线和圣地巡礼动画切换
+        this.ChangeRandNum = this.getRndInteger(2, 3);
+        //切换到beta线
+        if(this.ChangeRandNum = 2){
+          //时钟动画出现，然后alpha线和时钟动画消失，beta线出现
+          this.ClockChangeDis[0] = 1;
+          setTimeout(() => {
+            this.ClockChangeDis[0] = 0;
+          }, 1000);
+          this.ChangAlphaBetaNum = [0,1];
+          this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
+        }
+        else{
+          //否则圣地巡礼动画出现
+          this.ClockChangeDis[1] = 1;
+        }
+      }
+      // 如果前一次是beta线
+      else if(this.ChangeRandNum === 2){
+        //等概率生成alpha线还是圣地巡礼动画
+        let randnum = this.getRndInteger(1, 10);
+        if(randnum <=5){
+          // 生成alpha线，时钟动画出现，时钟动画和beta线消失
+          this.ChangeRandNum = 1;
+          this.ClockChangeDis[0] = 1;
+          setTimeout(() => {
+            this.ClockChangeDis[0] = 0;
+          }, 1000);
+          this.ChangAlphaBetaNum = [1,0];
+          this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
+        }
+        else{
+          //生成圣地巡礼视频
+          this.ChangeRandNum = 3;
+          this.ClockChangeDis[1] = 1;
+        }
+      }
+      // 如果前一次是圣地巡礼动画
+      else{
+        this.ClockChangeDis[1] = 0;//圣地巡礼视频消失
+        //判断生成alpha线还是beta线
+        this.ChangeRandNum = this.getRndInteger(1, 2);
+        if(this.ChangeRandNum = 1){
+          // 生成alpha线
+          this.ClockChangeDis[0] = 1;
+          setTimeout(() => {
+            this.ClockChangeDis[0] = 0;
+          }, 1000);
+          this.ChangAlphaBetaNum = [1,0];
+          this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
+        }
+        else{
+          // 生成beta线
+          this.ClockChangeDis[0] = 1;
+          setTimeout(() => {
+            this.ClockChangeDis[0] = 0;
+          }, 1000);
+          this.ChangAlphaBetaNum = [0,1];
+          this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
+        }
+      } 
     },
+    //获取[min,max]间的随机数
+    getRndInteger(min, max){
+      return Math.floor(Math.random() * (max - min) ) + min;
+    }
   },
 };
 </script>
