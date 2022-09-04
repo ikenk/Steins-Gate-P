@@ -43,10 +43,11 @@ export default {
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 18%;
-    padding: 2.3%;
+    height: 10vh;
+    padding: 0%;
     /* background-color:pink; */
     z-index: -2;
+    margin-bottom: 3vh;
 }
 .bottomdate::before{
     position: absolute;

@@ -6,26 +6,23 @@
     <div class="secpage" id="secendpage">
         <!-- 顶部时间部分 -->
         <clock></clock>
-
+        <!-- 底部日期部分 -->
+        <Date></Date>
         <!-- 选择部分的图片 -->
         <div class="middleimg" name="middle">
-            <!-- <a href="#" class="lefturl"> -->
             <router-link to="/anime" class="lefturl">
                 <div class="leftbox" name="middle">
                     <img src="/src/assets/images/left.png" class="secrightimg">
                 </div>
             </router-link>
             <router-link to="/game" class="righturl">
-            <!-- <a href="#" class="righturl"> -->
                 <div class="rightbox" name="middle">
                     <img src="/src/assets/images/right.png" class="secrightimg">
                 </div>
-            <!-- </a> -->
             </router-link>
         </div>
 
-        <!-- 底部日期部分 -->
-        <Date></Date>
+
     </div>
 </template>
 

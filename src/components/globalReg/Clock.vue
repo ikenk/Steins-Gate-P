@@ -43,17 +43,18 @@ export default {
     flex-flow: row nowrap;
     justify-content: center;
     align-items:flex-end;
-    padding: 1%;
+    padding-top: 0%;
     position: relative;
     width: 100%;
-    height: 25%;
+    height: 20vh;
     z-index: -2;
+    margin-bottom: -3vh;
 }
 .toptime::before{
     position: absolute;
     content: "00-00-00";
     font-family: "BONX-Frame";
-    font-size: 15vh;
+    font-size: 13vh;
     color:#000000;
     opacity:0.5;
 }
@@ -61,14 +62,14 @@ export default {
     position: absolute;
     content: "00-00-00";
     font-family: "BONX-Silhouette";
-    font-size: 15vh;
+    font-size: 13vh;
     color: #58120D;
     z-index: -1;
 }
 .time{
     position: absolute;
     font-family: "BONX-Number";
-    font-size: 15vh;
+    font-size: 13vh;
     color: #D9A600;
     text-shadow: -3px 0 2px #eb2900, 0 3px 2px #eb2900, 3px 0 2px #eb2900, 0 -3px 2px #eb2900;
 }
