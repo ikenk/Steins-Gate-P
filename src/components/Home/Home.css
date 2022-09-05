@@ -18,18 +18,18 @@
     width: 100vw;
     height: 100vh;
     z-index: -15;
-    background-color: rgb(17, 17, 17);
-    background-image: url("/src/assets/images/img_noise01.png");
+    /* background-color: rgb(17, 17, 17); */
+    background-image: url("/src/assets/images/5-石头门0 OP2-1080P 高清-AVC.jpg");
     background-size: 15% auto;
 }
 
-/* .secpage::before{
+.secpage::before{
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
-} */
+    background-color: rgba(0,0,0,0.6);
+}
 
 /* 2.1 顶部时间样式 */
 
@@ -38,7 +38,7 @@
 /* 2.3 图片样式 */
 .middleimg{
     width: 100vw;
-    height: 60vh;
+    height: 63vh;
     /* background-color: #eb2900; */
     display: flex;
     flex-flow: row nowrap;
@@ -81,14 +81,14 @@
 /* 将左右url<a>改为flex，以便修改尺寸 */
 .lefturl{
     display:flex;
-    width: 42.64vh;
-    height: 60vh;
+    width: 45vh;
+    height: 63vh;
     justify-content: flex-end;
 }
 .righturl{
     display:flex;
-    width: 42.64vh;
-    height: 60vh;
+    width: 45vh;
+    height: 63vh;
     justify-content: flex-start;
 }
 
