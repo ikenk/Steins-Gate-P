@@ -411,8 +411,8 @@
 
 
 
-
-    .video_change_box{
+    /* 竖屏视频样式 */
+    .video_col01_change_box{
       position: fixed;
       left: 0vw;
       top: 0vw;
@@ -421,17 +421,17 @@
       z-index:99;
     }
 
-    .video_bgimg{
+    .video_col01_bgimg{
       position: absolute;
       width: auto;
-      height: 100%;
+      height: auto;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
       z-index: -1;
     }
     
-    .video_change_box::before{
+    .video_col01_change_box::before{
       position: absolute;
       content: '';
       width: 100%;
@@ -440,12 +440,12 @@
       z-index: 0;
     }
 
-    .video_change{
+    .video_col01_change{
       width: 100vw;
       height: 100vh;
     }
 
-    .video_col{
+    .video_col01_col{
       width: 100%;
       height: 100%;
       display: flex;
@@ -453,11 +453,13 @@
       justify-content: center;
     }
 
-    .video_player{
+    .video_col01_player{
       width: auto;
       height: 100%;
     }
 
-    .video_source{
+    .video_col01_source{
       height: 100vh;
     }
+
+

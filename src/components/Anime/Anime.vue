@@ -88,19 +88,25 @@
       </Row>
     </Row>
     <!-- video切换 -->
-    <Row class="video_change_box" v-show="ClockChangeDis[1]">
-      <img src="/src/assets/images/video_bgimg.png" class="video_bgimg">
-      <div class="video_bgimg_mask"></div>
-      <Row class="video_change">
-        <Col span="8" class="video_col"></Col>
-        <Col span="8" class="video_col">
-          <video class="video_player" controls autoplay muted loop>
-            <source src="/src/assets/videos/steinsgate - Compressed.mp4" type="video/mp4" class="video_source">
+    <Row class="video_col01_change_box" v-show="ClockChangeDis[1]">
+      <img src="/src/assets/images/video_bgimg.png" class="video_col01_bgimg">
+      <Row class="video_col01_change">
+        <Col span="8" class="video_col01_col"></Col>
+        <Col span="8" class="video_col01_col">
+          <video class="video_col01_player" controls autoplay muted loop>
+            <source src="/src/assets/videos/Anime/steinsgate - Compressed.mp4" type="video/mp4" class="video_col01_source">
           </video>
         </Col>
-        <Col span="8" class="video_col"></Col>
+        <Col span="8" class="video_col01_col"></Col>
       </Row>
     </Row>
+    <!-- 1080p video切换 -->
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
   </div>
 </template>
 
@@ -117,6 +123,7 @@ import BetaTimeline from "/src/components/Anime_BetaTimeLine/BetaTimeline.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
 import TopImg from "/src/components/globalReg/TopImg.vue";
 import AlphaTimeline from "/src/components/Anime_AlphaTimeLine/AlphaTimeline.vue";
+import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
 
 export default {
   name: "Anime",
@@ -130,6 +137,7 @@ export default {
     "SideThreeNavBtn": SideThreeNavBtn,
     "TopImg":TopImg,
     "AlphaTimeline":AlphaTimeline,
+    "AnimeVideo1080pChange":AnimeVideo1080pChange,
 },
 
   data() {
@@ -159,6 +167,18 @@ export default {
       ChangAlphaBetaNum:[1,0],//切换alpha、beta线
       ClockChangeDis: [0,0], //出现切换时间线的过场动画还是圣地巡礼视频
       NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
+
+
+      //1080p视url
+      AnimeVideo1080pChange:[
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/1-石头门OP-1080P 高清-AVC.mp4",
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/2-石头门ED-1080P 高清-AVC.mp4",
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/3-石头门0 OP1-1080P 高清-AVC.mp4",
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/4-石头门0 OP2-1080P 高清-AVC.mp4",
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/5-石头门0 ED1-1080P 高清-AVC.mp4",
+        "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/6-石头门0 ED2-1080P 高清-AVC.mp4",
+      ],
+      //1080p视url
 
 
 
