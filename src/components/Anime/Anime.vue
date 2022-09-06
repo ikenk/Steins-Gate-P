@@ -101,12 +101,12 @@
       </Row>
     </Row>
     <!-- 1080p video切换 -->
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] type="video/mp4" v-show="0"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] type="video/mp4" v-show="ClockChangeDis[2]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] type="video/mp4" v-show="ClockChangeDis[3]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] type="video/mp4" v-show="ClockChangeDis[4]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] type="video/mp4" v-show="ClockChangeDis[5]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] type="video/mp4" v-show="ClockChangeDis[6]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] type="video/mp4" v-show="ClockChangeDis[7]"></AnimeVideo1080pChange>
   </div>
 </template>
 
@@ -165,7 +165,7 @@ export default {
 
       ChangeRandNum:1,//切换时间线所需的随机数
       ChangAlphaBetaNum:[1,0],//切换alpha、beta线
-      ClockChangeDis: [0,0], //出现切换时间线的过场动画还是圣地巡礼视频
+      ClockChangeDis: [0,0,0,0,0,0,0,0], //出现切换时间线的过场动画还是圣地巡礼视频
       NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
 
 
