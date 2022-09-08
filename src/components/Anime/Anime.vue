@@ -6,15 +6,15 @@
       <div class="contents">
         <!-- 最顶部图片 -->
         <!-- beta线TopImg -->
-        <TopImg :TopImgUrl="b_topimgurl" RightImgWidth='104.96vh' v-if="ChangAlphaBetaNum[1]"></TopImg>
+        <TopImg :TopImgUrl="b_topimgurl" RightImgWidth='104.96vh' v-if="ChangeDis[7]"></TopImg>
         <!-- alpha线TopImg -->
-        <TopImg :TopImgUrl="a_topimgurl" RightImgWidth='80vh' BackgroundColor='#ffffff' v-if="ChangAlphaBetaNum[0]"></TopImg>
+        <TopImg :TopImgUrl="a_topimgurl" RightImgWidth='80vh' BackgroundColor='#ffffff' v-if="ChangeDis[6]"></TopImg>
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
-          <BetaTimeline v-if="ChangAlphaBetaNum[1]"></BetaTimeline>
+          <BetaTimeline v-if="ChangeDis[7]"></BetaTimeline>
           <!-- alpha时间线 -->
-          <AlphaTimeline v-if="ChangAlphaBetaNum[0]"></AlphaTimeline>
+          <AlphaTimeline v-if="ChangeDis[6]"></AlphaTimeline>
         </Row>
         <br />
         <Row class="product" id="product">
@@ -81,13 +81,13 @@
       </Row>
     </transition>
     <!-- 时钟切换 -->
-    <Row class="clock_change_box" v-show="ClockChangeDis[0]">
+    <Row class="clock_change_box" v-show="ClockChangeDis">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
       </Row>
     </Row>
-    <!-- video切换 -->
+    <!-- video切换
     <Row class="video_col01_change_box" v-show="ClockChangeDis[1]">
       <img src="/src/assets/images/video_bgimg.png" class="video_col01_bgimg">
       <Row class="video_col01_change">
@@ -99,14 +99,14 @@
         </Col>
         <Col span="8" class="video_col01_col"></Col>
       </Row>
-    </Row>
+    </Row> -->
     <!-- 1080p video切换 -->
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] type="video/mp4" v-show="ClockChangeDis[2]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] type="video/mp4" v-show="ClockChangeDis[3]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] type="video/mp4" v-show="ClockChangeDis[4]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] type="video/mp4" v-show="ClockChangeDis[5]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] type="video/mp4" v-show="ClockChangeDis[6]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] type="video/mp4" v-show="ClockChangeDis[7]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] v-show="ChangeDis[0]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] v-show="ChangeDis[1]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] v-show="ChangeDis[2]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] v-show="ChangeDis[3]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] v-show="ChangeDis[4]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] v-show="ChangeDis[5]"></AnimeVideo1080pChange>
   </div>
 </template>
 
@@ -163,9 +163,11 @@ export default {
 
 
 
-      ChangeRandNum:1,//切换时间线所需的随机数
-      ChangAlphaBetaNum:[1,0],//切换alpha、beta线
-      ClockChangeDis: [0,0,0,0,0,0,0,0], //出现切换时间线的过场动画还是圣地巡礼视频
+      Randnum:0,
+      ChangeRandNum:6,//切换时间线所需的随机数   
+      ChangeDisStatus: [0,0,0,0,0,0,1,0],//[video0,video1,v2,v3,v4,v5,alpha,beta]状态码，范围0~6，代表鼠标点击次数，到6之后就清零，表示该对象可再次出现
+      ChangeDis:[0,0,0,0,0,0,1,0],//[video0,video1,v2,v3,v4,v5,alpha,beta]显示码，0表示不显示，1表示显示
+      ClockChangeDis:0,
       NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
 
 
@@ -232,76 +234,105 @@ export default {
       this.NavShow = false;
     },
 
-    //切换alpha和beta线动画或者是圣地巡礼视频
+    //切换alpha和beta线动画或者是视频，一共7个对象，分别是video0~5，alpha，beta线，
+    //若用户点击超过6次，则此对象可进入下一次随机循环
     change_infinite() {
-      console.log(this.ChangeRandNum);
+      //时钟动画先出现，然后1s之后消失
+      this.ClockChangeDis = 1;
+      setTimeout(() => {
+        this.ClockChangeDis = 0;
+      }, 1000);
+      //在时钟动画出现过程中，生成一个随机数
+      while(true){
+        this.Randnum = this.getRndInteger(0, 7)
+        if(this.ChangeDisStatus[this.Randnum] === 0){
+          break;
+        }
+      }
+      // console.log(this.Randnum);
+      this.ChangeDis[this.Randnum] = 1;//显示某个对象
+      if(this.Randnum === 6 || this.Randnum === 7){
+        this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
+      }
+      this.ChangeDis[this.ChangeRandNum] = 0;//将上次显示的对象改为不显示
+      for(let i=0; i<this.ChangeDisStatus.length; i++){
+        if(this.ChangeDisStatus[i] === 6){
+          this.ChangeDisStatus[i] = 0;
+        }
+        if(this.ChangeDisStatus[i] >= 1){
+          this.ChangeDisStatus[i]++;
+        }
+      }//遍历每一个状态码，对于大于等于1的进行自加1，表示用户已点击次数，若用户点击超过6次，则此对象可进入下一次随机循环
+      this.ChangeDisStatus[this.Randnum] = 1;//将这次显示的对象的显示状态改为1，表示点击了一次
+      this.ChangeRandNum = this.Randnum;//记录此次对象的编号
+      console.log(this.ChangeDisStatus);
       // 如果前一次是alpha线
-      if(this.ChangeRandNum === 1){
-        // 向beta线和圣地巡礼动画切换
-        this.ChangeRandNum = this.getRndInteger(2, 3);
-        //切换到beta线
-        if(this.ChangeRandNum = 2){
-          //时钟动画出现，然后alpha线和时钟动画消失，beta线出现
-          this.ClockChangeDis[0] = 1;
-          setTimeout(() => {
-            this.ClockChangeDis[0] = 0;
-          }, 1000);
-          this.ChangAlphaBetaNum = [0,1];
-          this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
-        }
-        else{
-          //否则圣地巡礼动画出现
-          this.ClockChangeDis[1] = 1;
-        }
-      }
-      // 如果前一次是beta线
-      else if(this.ChangeRandNum === 2){
-        //等概率生成alpha线还是圣地巡礼动画
-        let randnum = this.getRndInteger(1, 10);
-        if(randnum <=5){
-          // 生成alpha线，时钟动画出现，时钟动画和beta线消失
-          this.ChangeRandNum = 1;
-          this.ClockChangeDis[0] = 1;
-          setTimeout(() => {
-            this.ClockChangeDis[0] = 0;
-          }, 1000);
-          this.ChangAlphaBetaNum = [1,0];
-          this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
-        }
-        else{
-          //生成圣地巡礼视频
-          this.ChangeRandNum = 3;
-          this.ClockChangeDis[1] = 1;
-        }
-      }
-      // 如果前一次是圣地巡礼动画
-      else{
-        this.ClockChangeDis[1] = 0;//圣地巡礼视频消失
-        //判断生成alpha线还是beta线
-        this.ChangeRandNum = this.getRndInteger(1, 2);
-        if(this.ChangeRandNum = 1){
-          // 生成alpha线
-          this.ClockChangeDis[0] = 1;
-          setTimeout(() => {
-            this.ClockChangeDis[0] = 0;
-          }, 1000);
-          this.ChangAlphaBetaNum = [1,0];
-          this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
-        }
-        else{
-          // 生成beta线
-          this.ClockChangeDis[0] = 1;
-          setTimeout(() => {
-            this.ClockChangeDis[0] = 0;
-          }, 1000);
-          this.ChangAlphaBetaNum = [0,1];
-          this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
-        }
-      } 
+      // if(this.ChangeRandNum === 1){
+      //   // 向beta线和圣地巡礼动画切换
+      //   this.ChangeRandNum = this.getRndInteger(2, 3);
+      //   //切换到beta线
+      //   if(this.ChangeRandNum = 2){
+      //     //时钟动画出现，然后alpha线和时钟动画消失，beta线出现
+      //     this.ClockChangeDis[0] = 1;
+      //     setTimeout(() => {
+      //       this.ClockChangeDis[0] = 0;
+      //     }, 1000);
+      //     this.ChangAlphaBetaNum = [0,1];
+      //     this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
+      //   }
+      //   else{
+      //     //否则圣地巡礼动画出现
+      //     this.ClockChangeDis[1] = 1;
+      //   }
+      // }
+      // // 如果前一次是beta线
+      // else if(this.ChangeRandNum === 2){
+      //   //等概率生成alpha线还是圣地巡礼动画
+      //   let randnum = this.getRndInteger(1, 10);
+      //   if(randnum <=5){
+      //     // 生成alpha线，时钟动画出现，时钟动画和beta线消失
+      //     this.ChangeRandNum = 1;
+      //     this.ClockChangeDis[0] = 1;
+      //     setTimeout(() => {
+      //       this.ClockChangeDis[0] = 0;
+      //     }, 1000);
+      //     this.ChangAlphaBetaNum = [1,0];
+      //     this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
+      //   }
+      //   else{
+      //     //生成圣地巡礼视频
+      //     this.ChangeRandNum = 3;
+      //     this.ClockChangeDis[1] = 1;
+      //   }
+      // }
+      // // 如果前一次是圣地巡礼动画
+      // else{
+      //   this.ClockChangeDis[1] = 0;//圣地巡礼视频消失
+      //   //判断生成alpha线还是beta线
+      //   this.ChangeRandNum = this.getRndInteger(1, 2);
+      //   if(this.ChangeRandNum = 1){
+      //     // 生成alpha线
+      //     this.ClockChangeDis[0] = 1;
+      //     setTimeout(() => {
+      //       this.ClockChangeDis[0] = 0;
+      //     }, 1000);
+      //     this.ChangAlphaBetaNum = [1,0];
+      //     this.NavChangeHref = [ "#a_story", "#a_characters", "#a_cast/staff"];
+      //   }
+      //   else{
+      //     // 生成beta线
+      //     this.ClockChangeDis[0] = 1;
+      //     setTimeout(() => {
+      //       this.ClockChangeDis[0] = 0;
+      //     }, 1000);
+      //     this.ChangAlphaBetaNum = [0,1];
+      //     this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
+      //   }
+      // } 
     },
     //获取[min,max]间的随机数
     getRndInteger(min, max){
-      return Math.floor(Math.random() * (max - min) ) + min;
+      return Math.floor(Math.random() * (max - min + 1) ) + min;
     }
   },
 };
