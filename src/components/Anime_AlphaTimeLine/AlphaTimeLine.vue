@@ -4,69 +4,95 @@
     <!-- story部分 -->
     <Row class="a_story" id="a_story">
         <Row class="a_st_title">
-        <Col span="8">
-        </Col>
-        <Col span="8">
-        <Row class="a_t_img"></Row>
-        </Col>
-        <Col span="8">
-        </Col>
+            <Col span="8"></Col>
+            <Col span="8">
+                <Row class="a_t_img"></Row>
+            </Col>
+            <Col span="8"></Col>
         </Row>
         <Row class="a_st_body">
-        <Row class="body_text"></Row>
-        <Row class="body_img">
-            <Row class="body_slideimg">
-            <Col span="15" class="slideimg_left">
-            <div class="leftimg" :style="{ transform: `translateY(${LeftUp})` }">
-                <ul class="leftimg_moveup" id="LeftimgMoveup">
-                <li v-for="leftimg_moveup in leftimgs_moveup" :key="leftimg_moveup.id">
-                    <img :src="leftimg_moveup.src">
-                </li>
+            <Row class="body_text">
+                <ul class="textbody">
+                    <li class="storytxt01"><div></div></li>
+                    <li class="storytxt02"><div></div></li>
+                    <li class="storytxt03"><div></div></li>
+                    <li class="storytxt04"><div></div></li>
+                    <li class="storytxt05"><div></div></li>
+                    <li class="storytxt06"><div></div></li>
+                    <li class="storytxt07"><div></div></li>
+                    <li class="storytxt08"><div></div></li>
+                    <li class="storytxt09"><div></div></li>
+                    <li class="storytxt10"><div></div></li>
+                    <li class="storytxt11"><div></div></li>
+                    <li class="storytxt12"><div></div></li>
+                    <li class="storytxt13"><div></div></li>
+                    <li class="storytxt14"><div></div></li>
+                    <li class="storytxt15"><div></div></li>
+                    <li class="storytxt16"><div></div></li>
+                    <li class="storytxt17"><div></div></li>
+                    <li class="storytxt18"><div></div></li>
+                    <li class="storytxt19"><div></div></li>
+                    <li class="storytxt20"><div></div></li>
+                    <li class="storytxt21"><div></div></li>
+                    <li class="storytxt22"><div></div></li>
+                    <li class="storytxt23"><div></div></li>
+                    <li class="storytxt24"><div></div></li>
+                    <li class="storytxt25"><div></div></li>
                 </ul>
-            </div>
-            </Col>
-            <Col span="6" class="slideimg_middle">
-            <Row class="midimg" :style="{ transform: `translateY(${MidUp})` }">
-                <Row class="midimg_movedown" id="midimgMoveup">
-                    <img src="/src/assets/images/img_story01_02.png"/>
-                    <img src="/src/assets/images/img_story02_02.png"/>
-                    <img src="/src/assets/images/img_story03_02.png"/>
-                    <img src="/src/assets/images/img_story04_02.png"/>
-                    <img src="/src/assets/images/img_story05_02.png"/>
-                    <img src="/src/assets/images/img_story06_02.png"/>
-                    <img src="/src/assets/images/img_story07_02.png"/>
-                    <img src="/src/assets/images/img_story08_02.png"/>
-                    <img src="/src/assets/images/img_story09_02.png"/>
-                    <img src="/src/assets/images/img_story10_02.png"/>
-                    <img src="/src/assets/images/img_story11_02.png"/>
-                    <img src="/src/assets/images/img_story12_02.png"/>
-                    <img src="/src/assets/images/img_story13_02.png"/>
-                    <img src="/src/assets/images/img_story14_02.png"/>
-                    <img src="/src/assets/images/img_story15_02.png"/>
-                    <img src="/src/assets/images/img_story16_02.png"/>
-                    <img src="/src/assets/images/img_story17_02.png"/>
-                    <img src="/src/assets/images/img_story18_02.png"/>
-                    <img src="/src/assets/images/img_story19_02.png"/>
-                    <img src="/src/assets/images/img_story20_02.png"/>
-                    <img src="/src/assets/images/img_story21_02.png"/>
-                    <img src="/src/assets/images/img_story22_02.png"/>
-                    <img src="/src/assets/images/img_story23_02.png"/>
-                    <img src="/src/assets/images/img_story24_02.png"/>
-                    <img src="/src/assets/images/img_story25_02.png"/>
+            </Row>
+            <Row class="body_img">
+                <Row class="body_slideimg">
+                <Col span="15" class="slideimg_left">
+                    <div class="leftimg" :style="{ transform: `translateY(${LeftUp})` }">
+                    <ul class="leftimg_moveup" id="LeftimgMoveup">
+                    <li v-for="leftimg_moveup in leftimgs_moveup" :key="leftimg_moveup.id">
+                        <img :src="leftimg_moveup.src">
+                    </li>
+                    </ul>
+                    </div>
+                </Col>
+                <Col span="6" class="slideimg_middle">
+                    <Row class="midimg" :style="{ transform: `translateY(${MidUp})` }">
+                        <Row class="midimg_movedown" id="midimgMoveup">
+                            <img src="/src/assets/images/img_story01_02.png"/>
+                            <img src="/src/assets/images/img_story02_02.png"/>
+                            <img src="/src/assets/images/img_story03_02.png"/>
+                            <img src="/src/assets/images/img_story04_02.png"/>
+                            <img src="/src/assets/images/img_story05_02.png"/>
+                            <img src="/src/assets/images/img_story06_02.png"/>
+                            <img src="/src/assets/images/img_story07_02.png"/>
+                            <img src="/src/assets/images/img_story08_02.png"/>
+                            <img src="/src/assets/images/img_story09_02.png"/>
+                            <img src="/src/assets/images/img_story10_02.png"/>
+                            <img src="/src/assets/images/img_story11_02.png"/>
+                            <img src="/src/assets/images/img_story12_02.png"/>
+                            <img src="/src/assets/images/img_story13_02.png"/>
+                            <img src="/src/assets/images/img_story14_02.png"/>
+                            <img src="/src/assets/images/img_story15_02.png"/>
+                            <img src="/src/assets/images/img_story16_02.png"/>
+                            <img src="/src/assets/images/img_story17_02.png"/>
+                            <img src="/src/assets/images/img_story18_02.png"/>
+                            <img src="/src/assets/images/img_story19_02.png"/>
+                            <img src="/src/assets/images/img_story20_02.png"/>
+                            <img src="/src/assets/images/img_story21_02.png"/>
+                            <img src="/src/assets/images/img_story22_02.png"/>
+                            <img src="/src/assets/images/img_story23_02.png"/>
+                            <img src="/src/assets/images/img_story24_02.png"/>
+                            <img src="/src/assets/images/img_story25_02.png"/>
+                        </Row>
+                    </Row>
+                </Col>
+                <Col span="3" class="slideimg_right">
+                    <div class="rightimg" :style="{ transform: `translateY(${RightUp})` }">
+                        <ul class="rightimg_moveup" id="rightimgMoveup">
+                            <li v-for="rightimg_moveup in rightimgs_moveup" :key="rightimg_moveup.id">
+                            <img :src="rightimg_moveup.src">
+                            </li>
+                        </ul>
+                    </div>
+                </Col>
                 </Row>
             </Row>
-            </Col>
-            <Col span="3" class="slideimg_right">
-            <div class="rightimg" :style="{ transform: `translateY(${RightUp})` }">
-                <ul class="rightimg_moveup" id="rightimgMoveup">
-                    <li v-for="rightimg_moveup in rightimgs_moveup" :key="rightimg_moveup.id">
-                    <img :src="rightimg_moveup.src">
-                    </li>
-                </ul>
-            </div>
-            </Col>
-            </Row>
-        </Row>
         <Row class="a_st_footer">
             <a class="num_nav">
             <Grid :border="true" :col="15" padding="0" square @click="change_st($event)">

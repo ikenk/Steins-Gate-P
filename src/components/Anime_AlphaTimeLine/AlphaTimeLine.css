@@ -44,8 +44,38 @@
 
 /* 3.1.2.1story body text样式 */
 .body_text{
-    width: 100%;    
+    position: absolute;
+    top:-5vw;
+    left: 0;
+    width: 100vw; 
+    height: 80vw;  
 }
+
+.textbody{
+  width: 100vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+}
+
+li[class^='storytxt']{
+  width: 100vw;
+  
+}
+
+.textbody div{
+  width: 100%;
+  height: 80vw;
+}
+
+
+
+
+
+
+
+
 
 .body_img{
     width: 180vw;
@@ -112,7 +142,7 @@
 .midimg_movedown img{
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -877,7 +907,7 @@
 
   .astaff_name11{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 0vw;
     width: 150%;
     height: 5vw;
@@ -887,7 +917,7 @@
 
   .astaff_name12{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 6vw;
     width: 150%;
     height: 5vw;
@@ -897,7 +927,7 @@
 
   .astaff_name13{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 12vw;
     width: 150%;
     height: 5vw;
@@ -907,7 +937,7 @@
 
   .astaff_name14{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 18vw;
     width: 150%;
     height: 5vw;
@@ -917,7 +947,7 @@
 
   .astaff_name15{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 24vw;
     width: 150%;
     height: 5vw;
@@ -927,7 +957,7 @@
 
   .astaff_name16{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 30vw;
     width: 150%;
     height: 5vw;
@@ -937,7 +967,7 @@
 
   .astaff_name17{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 36vw;
     width: 150%;
     height: 5vw;
@@ -947,7 +977,7 @@
 
   .astaff_name18{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 42vw;
     width: 150%;
     height: 5vw;
@@ -957,7 +987,7 @@
 
   .astaff_name19{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 48vw;
     width: 150%;
     height: 5vw;
@@ -977,7 +1007,7 @@
 
   .astaff_name111{
     position: absolute;
-    left: -11vw;
+    left: -15vw;
     top: 60vw;
     width: 150%;
     height: 5vw;
@@ -992,7 +1022,7 @@
 
   .astaff_name21{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 0vw;
     width: 150%;
     height: 5vw;
@@ -1002,7 +1032,7 @@
 
   .astaff_name22{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 6vw;
     width: 150%;
     height: 5vw;
@@ -1012,7 +1042,7 @@
 
   .astaff_name23{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 12vw;
     width: 150%;
     height: 5vw;
@@ -1022,7 +1052,7 @@
 
   .astaff_name24{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 18vw;
     width: 150%;
     height: 5vw;
@@ -1032,7 +1062,7 @@
 
   .astaff_name25{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 24vw;
     width: 150%;
     height: 5vw;
@@ -1042,7 +1072,7 @@
 
   .astaff_name26{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 30vw;
     width: 150%;
     height: 5vw;
@@ -1052,7 +1082,7 @@
 
   .astaff_name27{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 36vw;
     width: 150%;
     height: 5vw;
@@ -1062,7 +1092,7 @@
 
   .astaff_name28{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 42vw;
     width: 150%;
     height: 5vw;
@@ -1072,7 +1102,7 @@
 
   .astaff_name29{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 48vw;
     width: 150%;
     height: 5vw;
@@ -1092,7 +1122,7 @@
 
   .astaff_name211{
     position: absolute;
-    left: -7.5vw;
+    left: -5.5vw;
     top: 60vw;
     width: 150%;
     height: 5vw;
