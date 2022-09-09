@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    font-family: 'notoserif', serif, sans-serif;
 }
 
 .alpha_timeline {
@@ -13,7 +14,6 @@
 
 
 /* 4.1 story整体样式 */
-
 .a_story{
     width: 100vw;
 }
@@ -102,8 +102,23 @@ div[class^='storytxt']{
 }
 
 /* 文本里的文字 */
+.txtinside{
+  position: absolute;
+  top: 5vw;
+  left: 13vw;
+  z-index:10;
+  color: white;
+  width: 48vw;
+}
 
+.txtinsidetitle{
+  font-size: 2vw;
+}
 
+.txtinsidebody{
+  font-size: 1.5vw;
+  text-shadow: 1px 1px 5px rgb(0 0 0 / 70%);
+}
 
 
 

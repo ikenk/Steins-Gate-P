@@ -16,7 +16,23 @@
                     <li class="txtsidebg"></li>
                     <li>
                         <div class="storytxt01">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody">秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <Button class="txtmorebtn" shape="circle" size="large" ghost> 
+                                    More 
+                                    <Icon type="ios-arrow-forward" />
+                                </Button>
+                                <Button class="txtclosebtn" shape="circle" size="large" ghost> 
+                                    <Icon type="ios-arrow-back" />
+                                    Close
+                                </Button>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav01.png'></div>
                         </div>
                     </li>
@@ -161,7 +177,7 @@
                     <li>
                         <div class="storytxt25">
                             <div class="txtinside"></div>
-                            <div class="txtnum"><img src='/src/assets/images/bs_Nav25.png'></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_NavSP.png'></div>
                         </div>
                     </li>
                 </ul>

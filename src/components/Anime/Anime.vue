@@ -81,32 +81,19 @@
       </Row>
     </transition>
     <!-- 时钟切换 -->
-    <Row class="clock_change_box" v-show="ClockChangeDis">
+    <Row class="clock_change_box" v-if="ClockChangeDis">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
       </Row>
     </Row>
-    <!-- video切换
-    <Row class="video_col01_change_box" v-show="ClockChangeDis[1]">
-      <img src="/src/assets/images/video_bgimg.png" class="video_col01_bgimg">
-      <Row class="video_col01_change">
-        <Col span="8" class="video_col01_col"></Col>
-        <Col span="8" class="video_col01_col">
-          <video class="video_col01_player" controls autoplay muted loop>
-            <source src="/src/assets/videos/Anime/steinsgate - Compressed.mp4" type="video/mp4" class="video_col01_source">
-          </video>
-        </Col>
-        <Col span="8" class="video_col01_col"></Col>
-      </Row>
-    </Row> -->
     <!-- 1080p video切换 -->
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] v-show="ChangeDis[0]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] v-show="ChangeDis[1]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] v-show="ChangeDis[2]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] v-show="ChangeDis[3]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] v-show="ChangeDis[4]"></AnimeVideo1080pChange>
-    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] v-show="ChangeDis[5]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[0] v-if="ChangeDis[0]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[1] v-if="ChangeDis[1]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[2] v-if="ChangeDis[2]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[3] v-if="ChangeDis[3]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[4] v-if="ChangeDis[4]"></AnimeVideo1080pChange>
+    <AnimeVideo1080pChange :VideoUrl=AnimeVideo1080pChange[5] v-if="ChangeDis[5]"></AnimeVideo1080pChange>
   </div>
 </template>
 
@@ -116,14 +103,14 @@
 
 <script>
 import ClockRand from "/src/components/globalReg/ClockRand.vue";
+import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
 import TwinklingNoise from "/src/components/globalReg/TwinklingNoise.vue";
+import TopImg from "/src/components/globalReg/TopImg.vue";
 import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/BackgroundLongImg.vue";
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
-import BetaTimeLine from "/src/components/Anime_BetaTimeLine/BetaTimeLine.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
-import TopImg from "/src/components/globalReg/TopImg.vue";
 import AlphaTimeLine from "/src/components/Anime_AlphaTimeLine/AlphaTimeLine.vue";
-import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
+import BetaTimeLine from "/src/components/Anime_BetaTimeLine/BetaTimeLine.vue";
 
 export default {
   name: "Anime",
@@ -145,6 +132,7 @@ export default {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
       // iScol: "0",//背景大图在页面滚动时向上的滚动距离
 
+
       b_topimgurl:[
         "/src/assets/images/ttl_logo01_sp.svg",
         "/src/assets/images/bg_hero00.png",
@@ -154,14 +142,10 @@ export default {
         "/src/assets/images/a_top_img.png",
       ],//顶部图片路径 alpha线
 
-
-
       value: false, //布尔值 目前不清楚是在哪里用到
       hover: true, //将鼠标放在GridItem上是否有悬浮效果
       border: false, //GridItem是否有边框
       NavShow: false, //nav栏折叠动画效果判断条件
-
-
 
       Randnum:0,
       ChangeRandNum:6,//切换时间线所需的随机数   
@@ -169,7 +153,6 @@ export default {
       ChangeDis:[0,0,0,0,0,0,1,0],//[video0,video1,v2,v3,v4,v5,alpha,beta]显示码，0表示不显示，1表示显示
       ClockChangeDis:0,
       NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
-
 
       //1080p视url
       AnimeVideo1080pChange:[
@@ -181,8 +164,6 @@ export default {
         "/src/assets/videos/Anime/Steins;Gate anime series OP;ED/6-石头门0 ED2-1080P 高清-AVC.mp4",
       ],
       //1080p视url
-
-
 
       //全局页脚
       links: [
@@ -249,7 +230,6 @@ export default {
           break;
         }
       }
-      // console.log(this.Randnum);
       this.ChangeDis[this.Randnum] = 1;//显示某个对象
       if(this.Randnum === 6 || this.Randnum === 7){
         this.NavChangeHref = [ "#b_story", "#b_characters", "#b_cast/staff"];
