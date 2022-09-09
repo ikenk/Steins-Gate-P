@@ -48,7 +48,8 @@
     top:-5vw;
     left: 0;
     width: 100vw; 
-    height: 80vw;  
+    height: 80vw; 
+    overflow: hidden;
 }
 
 .textbody{
@@ -58,6 +59,7 @@
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
+  z-index: 20;
 }
 
 /* body里的每个部分 */
@@ -116,7 +118,7 @@ div[class^='storytxt']{
 }
 
 .txtinsidebody{
-  height: 13.5vw;
+  height: 7vw;
   overflow: hidden;
   font-size: 1.5vw;
   text-shadow: 1px 1px 5px rgb(0 0 0 / 70%);
@@ -126,9 +128,9 @@ div[class^='storytxt']{
 
 .txtbodyanime{
   /* animation: txtbodyheight 1s linear forwards; */
-  height: 20vw;
-  background-color: rgb(34, 34, 34);
-  border-radius: 2vw;
+  height: 38.5vw;
+  background-color:rgba(0,0,0,0.55);
+  border-radius: 1vw;
 }
 
 .txtbodyanimereverse div{
@@ -252,6 +254,7 @@ div[class^='storytxt']{
     width: 60vw;
     bottom: 11%;
     left: 39%;
+    z-index: 100;
 }
 
 .num_nav{

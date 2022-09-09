@@ -12,7 +12,7 @@
         </Row>
         <Row class="a_st_body">
             <Row class="body_text">
-                <ul class="textbody">
+                <ul class="textbody" id="textslide" :style="{ transform: `translateY(${TxtUp})` }">
                     <li class="txtsidebg"></li>
                     <li>
                         <div class="storytxt01">
@@ -43,145 +43,655 @@
                     </li>
                     <li>
                         <div class="storytxt02">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">時間跳躍のパラノイア</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    中鉢博士の講演が行われたラジ館で、何者かによって刺殺された牧瀬紅莉栖。しかし、ATFで行われたセミナーに参加した岡部が目にしたのは、
+                                    何事もなかったように講義する紅莉栖の姿であった。殺されたはずの紅莉栖が生きている──理解を超えた出来事に混乱する岡部であったが、
+                                    変異はそれだけではなかった。 2000年ごろにインターネット上を騒がしたジョン・タイターという自称未来人。10年の時を経て、
+                                    巨大掲示板“@ちゃんねる”に彼を名乗る人物が再び現れたが、岡部以外は誰ひとりとして彼の存在を覚えてはいなかった。
+                                    岡部はフェイリスのいるメイド喫茶に向かう途中、希少なレトロPC“IBN5100”を探している桐生萌郁と出会う。
+                                    ラボに戻った岡部は電話レンジ（仮）の再実験を行うが──レンジの中に入れたはずのバナナはゲルバナと化し、テーブル上の房へと戻っていた。
+                                    予期せぬ実験結果に驚く岡部とダル。そして、そこに姿を現したのは牧瀬紅莉栖その人であった。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav02.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt03">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">並列過程のパラノイア</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    未来ガジェット研究所にて、「電話レンジ（仮）」の実験を行う岡部とダル。レンジ内にあったはずのバナナはゲル状と化し、
+                                    レンジから離れた場所にある房に戻るという驚くべき結果となった。その実験を偶然目撃していた牧瀬紅莉栖に促されて再実験を行った岡部は、
+                                    「電話レンジ（仮）」には過去にメールを送信する機能があり、擬似的な「タイムマシン」のようなものではないかと推測する。
+                                    紅莉栖はタイムマシンの存在を認めようとせず、未来ガジェット研究所をあとにした。一方、「電話レンジ（仮）」のタイムマシン仮説を立証しようとする岡部は、
+                                    ジョン・タイターが@ちゃんねるに書き込んだ「未来ではSERNがタイムマシンを管理している」という記述を思い出す。ダルにSERNをハッキングさせた岡部は、
+                                    職員の電子メールのやりとりを発見し、SERNが公式に否定しているミニブラックホールの生成に成功している事を知る。タイムトラベルを実現するために、
+                                    ブラックホールを使った理論が存在するのである。そして、一通のメールには次のように書かれていた。「HUMAN IS DEAD MISMATCH」と――。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav03.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt04">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">空理彷徨のランデヴー</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    ハッキングしたSERN職員の電子メールに書かれていた「Human is Dead,mismatch 」の文字は、岡部とダルに戦慄を与えた。彼らはさらなるハッキングを行おうと試みるが、
+                                    謎のプログラムコードに阻まれてしまう。岡部は鈴羽やジョン・タイターとのやりとりで知ったパーソナルコンピューター、“IBN5100”の存在を思い出す。
+                                    そのレトロPCは、BASICが登場する以前のコードで記されたプログラムを解析できるマシンであった。SERNのコードをハッキングする鍵はIBN5100にあると推測し、
+                                    その所在を探していた岡部の元に、意外な人物から情報がもたらされる。情報提供者であるフェイリスによると、彼女の父親がIBN5100を所有していたことがあり、
+                                    現在は秋葉原の柳林神社に奉納しているという。柳林神社に向かった岡部は、そこであっけなくIBN5100と対面することに。神主のるかの父によると、IBN5100を奉納した人物――おそらくはフェイリスの父――は、
+                                    「いつかこのパソコンを必要とする若者が現れるから、大事にとっておくように」との言葉を残していた。まさしく運命の巡り合わせ──シュタインズ・ゲートの選択に岡部は興奮しながら、
+                                    居合わせた紅莉栖とともにIBN5100をラボへと運ぶのであった。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav04.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt05">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">電荷衝突のランデヴー</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    SERNのハッキングに必要なIBN5100をラボまで運んできた岡部と紅莉栖は、ブラウン管工房の片付けをする鈴羽と出会う。
+                                    紅莉栖とは初対面のはずの鈴羽であったが、なぜか紅莉栖に対して激しい敵対心を見せる。その理由を訪ねる岡部に、
+                                    彼女は「牧瀬紅莉栖には気をつけて」と忠告するのであった。IBN5100を修理した岡部、ダル、紅莉栖の3人はSERNへのハッキングを再開する。そして、
+                                    手に入れた資料から恐るべき事実が明らかになる。ゼリーマンズレポートと呼ばれるその資料には、SERNが40年以上前からタイムトラベル実験に着手しており、
+                                    人体実験をも行っていたことが記されていた。凄惨な実験結果にショックを受ける一同。しかし、岡部はSERNに先行して完璧なタイムマシンを作り上げる事を紅莉栖に宣言するのであった。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav05.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt06">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav06.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt07">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav07.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt08">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav08.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt09">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav09.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt10">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav10.png'></div>
-                        </div> 
+                        </div>
                     </li>
                     <li>
                         <div class="storytxt11">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav11.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt12">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav12.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt13">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav13.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt14">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav14.png'></div>
                         </div>
                     </li>
                     <li>   
                         <div class="storytxt15">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav15.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt16">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav16.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt17">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav17.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt18">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav18.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt19">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav19.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt20">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav20.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt21">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav21.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt22">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav22.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt23">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav23.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt24">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav24.png'></div>
                         </div>
                     </li>
                     <li>
                         <div class="storytxt25">
-                            <div class="txtinside"></div>
+                            <div class="txtinside">
+                                <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                    ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
+                                    彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
+                                    動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
+                                    ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
+                                </div>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
+                            </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_NavSP.png'></div>
                         </div>
                     </li>
@@ -518,6 +1028,7 @@ export default {
             LeftUp: "0px", //change_st(e)中使用到的左侧图片移动距离
             MidUp: "0px", //change_st(e)中使用到的中间图片移动距离
             RightUp: "0px", //change_st(e)中使用到的右侧图片移动距离
+            TxtUp:"0px",//change_st(e)中使用到的文字区移动距离
             SlideimgUp: "0px", //character部分角色滑块滑动距离
             chara_num: 0, //change_chara(e)中使用到的移动图片单位
             chara_img: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //不同角色切换使用到的数组，1为true，0为false
@@ -591,26 +1102,32 @@ export default {
         // console.log(el_mid[0].clientHeight);
         let el_right = document.getElementById("rightimgMoveup").children;
         // console.log(el_right[0].clientHeight);
+        let el_txt = document.getElementById("textslide").children;
+        // console.log(el_txt[1].clientHeight);
 
         let itemid = e.target.id;
         console.log(e.target.id);
         this.number_move = parseInt(itemid.slice(7)) - 1;
         console.log(this.number_move);
 
-        // 图片移动
+        // 图片移动/文本移动
+        //每个显示区域的高度
         let left_height = el_left[0].clientHeight;
         let mid_height = el_mid[0].clientHeight;
         let right_height = el_right[0].clientHeight;
-
+        let txt_height = el_txt[1].clientHeight
+        
+        //不同集数对应需要移动的距离
         this.LeftUp = -left_height * this.number_move + "px";
         console.log(this.LeftUp);
         this.MidUp = mid_height * this.number_move + "px";
         console.log(this.MidUp);
         this.RightUp = -right_height * this.number_move + "px";
         console.log(this.RightUp);
-
-        //文本移动
+        this.TxtUp = txt_height * this.number_move + "px";
+        console.log(this.TxtUp);
         },
+
         //折叠文本
         fold(){
             // this.txtbodyheight = '13.5vw';
@@ -619,6 +1136,7 @@ export default {
             this.txtbtn[0] = 1;
             this.txtbtn[1] = 0;
         },
+
         //展开文本
         unfold(){
             // this.txtbodyheight = '100%';
