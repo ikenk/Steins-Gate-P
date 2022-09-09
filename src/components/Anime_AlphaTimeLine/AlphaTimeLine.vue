@@ -13,31 +13,157 @@
         <Row class="a_st_body">
             <Row class="body_text">
                 <ul class="textbody">
-                    <li class="storytxt01"><div></div></li>
-                    <li class="storytxt02"><div></div></li>
-                    <li class="storytxt03"><div></div></li>
-                    <li class="storytxt04"><div></div></li>
-                    <li class="storytxt05"><div></div></li>
-                    <li class="storytxt06"><div></div></li>
-                    <li class="storytxt07"><div></div></li>
-                    <li class="storytxt08"><div></div></li>
-                    <li class="storytxt09"><div></div></li>
-                    <li class="storytxt10"><div></div></li>
-                    <li class="storytxt11"><div></div></li>
-                    <li class="storytxt12"><div></div></li>
-                    <li class="storytxt13"><div></div></li>
-                    <li class="storytxt14"><div></div></li>
-                    <li class="storytxt15"><div></div></li>
-                    <li class="storytxt16"><div></div></li>
-                    <li class="storytxt17"><div></div></li>
-                    <li class="storytxt18"><div></div></li>
-                    <li class="storytxt19"><div></div></li>
-                    <li class="storytxt20"><div></div></li>
-                    <li class="storytxt21"><div></div></li>
-                    <li class="storytxt22"><div></div></li>
-                    <li class="storytxt23"><div></div></li>
-                    <li class="storytxt24"><div></div></li>
-                    <li class="storytxt25"><div></div></li>
+                    <li class="txtsidebg"></li>
+                    <li>
+                        <div class="storytxt01">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav01.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt02">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav02.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt03">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav03.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt04">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav04.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt05">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav05.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt06">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav06.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt07">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav07.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt08">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav08.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt09">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav09.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt10">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav10.png'></div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="storytxt11">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav11.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt12">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav12.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt13">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav13.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt14">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav14.png'></div>
+                        </div>\
+                    </li>
+                    <li>   
+                        <div class="storytxt15">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav15.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt16">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav16.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt17">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav17.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt18">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav18.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt19">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav19.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt20">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav20.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt21">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav21.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt22">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav22.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt23">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav23.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt24">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav24.png'></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="storytxt25">
+                            <div class="txtinside"></div>
+                            <div class="txtnum"><img src='/src/assets/images/bs_Nav25.png'></div>
+                        </div>
+                    </li>
                 </ul>
             </Row>
             <Row class="body_img">

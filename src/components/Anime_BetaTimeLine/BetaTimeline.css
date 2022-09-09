@@ -24,7 +24,7 @@
 
   .b_st_title {
       width: 100%;
-      padding: 10% 0 10%;
+      padding: 10% 0 5%;
       /* background-color: rgba(128,0,128,0.5); */
   }
   
@@ -44,7 +44,7 @@
   .b_st_body{
     position: relative;
     width: 100vw;
-    padding-top: 85%;
+    padding-top: 90%;
     overflow: hidden;
   }
 

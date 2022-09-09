@@ -836,6 +836,6 @@ export default {
 
 <style scoped>
 
-    @import url("./BetaTimeline.css");
+    @import url("./BetaTimeLine.css");
 
 </style>

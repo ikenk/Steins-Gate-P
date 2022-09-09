@@ -12,9 +12,9 @@
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
-          <BetaTimeline v-if="ChangeDis[7]"></BetaTimeline>
+          <BetaTimeLine v-if="ChangeDis[7]"></BetaTimeLine>
           <!-- alpha时间线 -->
-          <AlphaTimeline v-if="ChangeDis[6]"></AlphaTimeline>
+          <AlphaTimeLine v-if="ChangeDis[6]"></AlphaTimeLine>
         </Row>
         <br />
         <Row class="product" id="product">
@@ -119,10 +119,10 @@ import ClockRand from "/src/components/globalReg/ClockRand.vue";
 import TwinklingNoise from "/src/components/globalReg/TwinklingNoise.vue";
 import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/BackgroundLongImg.vue";
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
-import BetaTimeline from "/src/components/Anime_BetaTimeLine/BetaTimeline.vue";
+import BetaTimeLine from "/src/components/Anime_BetaTimeLine/BetaTimeLine.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
 import TopImg from "/src/components/globalReg/TopImg.vue";
-import AlphaTimeline from "/src/components/Anime_AlphaTimeLine/AlphaTimeline.vue";
+import AlphaTimeLine from "/src/components/Anime_AlphaTimeLine/AlphaTimeLine.vue";
 import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
 
 export default {
@@ -133,10 +133,10 @@ export default {
     "TwinklingNoise": TwinklingNoise,
     "BackgroundLongImg": BackgroundLongImg,
     "BackToTop": BackToTop,
-    "BetaTimeline": BetaTimeline,
+    "BetaTimeLine": BetaTimeLine,
     "SideThreeNavBtn": SideThreeNavBtn,
     "TopImg":TopImg,
-    "AlphaTimeline":AlphaTimeline,
+    "AlphaTimeLine":AlphaTimeLine,
     "AnimeVideo1080pChange":AnimeVideo1080pChange,
 },
 
