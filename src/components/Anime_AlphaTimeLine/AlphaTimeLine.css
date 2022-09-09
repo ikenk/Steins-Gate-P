@@ -116,11 +116,52 @@ div[class^='storytxt']{
 }
 
 .txtinsidebody{
+  height: 13.5vw;
+  overflow: hidden;
   font-size: 1.5vw;
   text-shadow: 1px 1px 5px rgb(0 0 0 / 70%);
+  /* background-color:black; */
+  transition: all 0.5s;
 }
 
+.txtbodyanime{
+  /* animation: txtbodyheight 1s linear forwards; */
+  height: 20vw;
+  background-color: rgb(34, 34, 34);
+  border-radius: 2vw;
+}
 
+.txtbodyanimereverse div{
+  /* animation:txtbodyheight 1s linear forwards; */
+  height: 13.5vw;
+}
+
+/* @keyframes txtbodyheight {
+  from {
+    height: 13.5vw;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes txtbodyheightreverse {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 13.5vw;
+  }
+} */
+
+
+.txtmorebtnbox{
+  margin: 1vw 0;
+}
+
+.txtclosebtnbox{
+  margin: 1vw 0vw;
+}
 
 
 .body_img{

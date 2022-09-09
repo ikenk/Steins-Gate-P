@@ -18,20 +18,25 @@
                         <div class="storytxt01">
                             <div class="txtinside">
                                 <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
-                                <div class="txtinsidebody">秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
+                                <div class="txtinsidebody" :class="{'txtbodyanime':istxtbodyanime,'txtbodyanimereverse':istxtbodyanimereverse}">
+                                    秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
                                     ラジ館で行われる中鉢博士の講演へと足を運んだ。講演の最中、中鉢博士が提唱するタイムマシン理論に異議を唱えた岡部は、ひとりの少女に連れ出される。
                                     彼女の名は牧瀬紅莉栖。米国の科学誌に論文を発表するほどの才媛である。しかし──紅莉栖と別れた直後、ラジ館に悲鳴が響く。駆けつけた岡部が見たのは、先ほど知り合ったばかりの紅莉栖が、無惨にも血の海に沈んでいた姿であった。
                                     動転した岡部はラボのメンバーのダルこと橋田至に、事件の顛末をケータイでメールする。送信ボタンを押した瞬間、岡部の周囲が静寂に包まれ、秋葉原の街から人影が消えた。一瞬の混乱ののち、ようやく現実世界へと引き戻された岡部が見たのは、ラジ館に落着した人工衛星と思しき物体であった。
                                     ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
                                 </div>
-                                <Button class="txtmorebtn" shape="circle" size="large" ghost> 
-                                    More 
-                                    <Icon type="ios-arrow-forward" />
-                                </Button>
-                                <Button class="txtclosebtn" shape="circle" size="large" ghost> 
-                                    <Icon type="ios-arrow-back" />
-                                    Close
-                                </Button>
+                                <div v-if="txtbtn[0]" class="txtmorebtnbox">
+                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                        More 
+                                        <Icon type="ios-arrow-forward" />
+                                    </Button>
+                                </div>
+                                <div v-if="txtbtn[1]" class="txtclosebtnbox">
+                                    <Button class="txtclosebtn" shape="circle" size="large" ghost @click="fold">            
+                                        Close
+                                        <Icon type="ios-arrow-back" />
+                                    </Button>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav01.png'></div>
                         </div>
@@ -112,7 +117,7 @@
                         <div class="storytxt14">
                             <div class="txtinside"></div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav14.png'></div>
-                        </div>\
+                        </div>
                     </li>
                     <li>   
                         <div class="storytxt15">
@@ -570,6 +575,10 @@ export default {
                 {id:24, src:'/src/assets/images/img_story24_03.png'},
                 {id:25, src:'/src/assets/images/img_story25_03.png'},
             ],//v-for展示右侧滑动图片
+            txtbodyheight:"13.5vw",
+            txtbtn:[1,0],
+            istxtbodyanime:false,
+            istxtbodyanimereverse:false,
         }
     },
     methods:{
@@ -601,6 +610,22 @@ export default {
         console.log(this.RightUp);
 
         //文本移动
+        },
+        //折叠文本
+        fold(){
+            // this.txtbodyheight = '13.5vw';
+            this.istxtbodyanimereverse = true;
+            this.istxtbodyanime = false;
+            this.txtbtn[0] = 1;
+            this.txtbtn[1] = 0;
+        },
+        //展开文本
+        unfold(){
+            // this.txtbodyheight = '100%';
+            this.istxtbodyanime = true;
+            this.istxtbodyanimereverse = false;
+            this.txtbtn[0] = 0;
+            this.txtbtn[1] = 1;
         },
     },
 }
