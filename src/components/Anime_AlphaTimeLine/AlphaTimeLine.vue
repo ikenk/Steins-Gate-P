@@ -809,37 +809,37 @@
                 </Col>
                 </Row>
             </Row>
-        <Row class="a_st_footer">
-            <a class="num_nav">
-            <Grid :border="true" :col="15" padding="0" square @click="change_st($event)">
-                <GridItem id="navItem01" class="Item"></GridItem>
-                <GridItem id="navItem02" class="Item"></GridItem>
-                <GridItem id="navItem03" class="Item"></GridItem>
-                <GridItem id="navItem04" class="Item"></GridItem>
-                <GridItem id="navItem05" class="Item"></GridItem>
-                <GridItem id="navItem06" class="Item"></GridItem>
-                <GridItem id="navItem07" class="Item"></GridItem>
-                <GridItem id="navItem08" class="Item"></GridItem>
-                <GridItem id="navItem09" class="Item"></GridItem>
-                <GridItem id="navItem10" class="Item"></GridItem>
-                <GridItem id="navItem11" class="Item"></GridItem>
-                <GridItem id="navItem12" class="Item"></GridItem>
-                <GridItem id="navItem13" class="Item"></GridItem>
-                <GridItem id="navItem14" class="Item"></GridItem>
-                <GridItem id="navItem15" class="Item"></GridItem>
-                <GridItem id="navItem16" class="Item"></GridItem>
-                <GridItem id="navItem17" class="Item"></GridItem>
-                <GridItem id="navItem18" class="Item"></GridItem>
-                <GridItem id="navItem19" class="Item"></GridItem>
-                <GridItem id="navItem20" class="Item"></GridItem>
-                <GridItem id="navItem21" class="Item"></GridItem>
-                <GridItem id="navItem22" class="Item"></GridItem>
-                <GridItem id="navItem23" class="Item"></GridItem>
-                <GridItem id="navItem24" class="Item"></GridItem>
-                <GridItem id="navItem25" class="Item"></GridItem>
-            </Grid>
-            </a>
-        </Row>
+            <Row class="a_st_footer">
+                <a class="num_nav">
+                <Grid :border="true" :col="15" padding="0" square @click="change_st($event)">
+                    <GridItem id="navItem01" class="Item"></GridItem>
+                    <GridItem id="navItem02" class="Item"></GridItem>
+                    <GridItem id="navItem03" class="Item"></GridItem>
+                    <GridItem id="navItem04" class="Item"></GridItem>
+                    <GridItem id="navItem05" class="Item"></GridItem>
+                    <GridItem id="navItem06" class="Item"></GridItem>
+                    <GridItem id="navItem07" class="Item"></GridItem>
+                    <GridItem id="navItem08" class="Item"></GridItem>
+                    <GridItem id="navItem09" class="Item"></GridItem>
+                    <GridItem id="navItem10" class="Item"></GridItem>
+                    <GridItem id="navItem11" class="Item"></GridItem>
+                    <GridItem id="navItem12" class="Item"></GridItem>
+                    <GridItem id="navItem13" class="Item"></GridItem>
+                    <GridItem id="navItem14" class="Item"></GridItem>
+                    <GridItem id="navItem15" class="Item"></GridItem>
+                    <GridItem id="navItem16" class="Item"></GridItem>
+                    <GridItem id="navItem17" class="Item"></GridItem>
+                    <GridItem id="navItem18" class="Item"></GridItem>
+                    <GridItem id="navItem19" class="Item"></GridItem>
+                    <GridItem id="navItem20" class="Item"></GridItem>
+                    <GridItem id="navItem21" class="Item"></GridItem>
+                    <GridItem id="navItem22" class="Item"></GridItem>
+                    <GridItem id="navItem23" class="Item"></GridItem>
+                    <GridItem id="navItem24" class="Item"></GridItem>
+                    <GridItem id="navItem25" class="Item"></GridItem>
+                </Grid>
+                </a>
+            </Row>
         </Row>
     </Row>
     <!-- characters部分 -->
@@ -1145,10 +1145,9 @@ export default {
                 {id:24, src:'/src/assets/images/img_story24_03.png'},
                 {id:25, src:'/src/assets/images/img_story25_03.png'},
             ],//v-for展示右侧滑动图片
-            txtbodyheight:"13.5vw",
-            txtbtn:[1,0],
-            istxtbodyanime:false,
-            istxtbodyanimereverse:false,
+            txtbtn:[1,0],//txtbtn是否显示，1为显示，0为隐藏
+            istxtbodyanime:false,//istxtbodyanime是否显示
+            istxtbodyanimereverse:false,//istxtbodyanimereverse是否显示
         }
     },
     methods:{

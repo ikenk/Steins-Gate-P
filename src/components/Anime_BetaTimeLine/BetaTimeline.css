@@ -41,7 +41,6 @@
   
   
   /* 3.1.2story body样式 */
-
   .b_st_body{
     position: relative;
     width: 100vw;
@@ -49,10 +48,277 @@
     overflow: hidden;
   }
 
-  /* 3.1.2.1story body text样式 */
-  .body_text{
-    width: 100%;
-  }
+
+
+/* 3.1.2.1story body text样式 */
+.body_text{
+  position: absolute;
+  top:-5vw;
+  left: 0;
+  width: 100vw; 
+  height: 80vw; 
+  overflow: hidden;
+}
+
+.textbody{
+position: relative;
+width: 100vw;
+height: 80vw;
+display: flex;
+flex-direction: column-reverse;
+flex-wrap: nowrap;
+z-index: 20;
+transition: all 0.8s;
+}
+
+/* body里的每个部分 */
+.textbody li{
+width: 100vw;
+list-style: none;
+}
+
+/* 文本旁的背景图 */
+.textbody .txtsidebg {
+position: absolute;
+left: 10vw;
+bottom: 5vw;
+width: 2vw;
+z-index: 10;
+height: calc(80vw * 25);
+/* background-color: rgb(0, 0, 0); */
+background-image: url("/src/assets/images/storytxtbg.svg");
+background-repeat: repeat-y;
+}
+
+/* 文本区 */
+div[class^='storytxt']{
+position: relative;
+width: 100%;
+height: 80vw;
+}
+
+/* 文本里的数字 */
+.txtnum{
+position: absolute;
+left: 35vw;
+top: 55vw;
+width: auto;
+height: auto;
+/* background-color: rgb(0, 0, 0); */
+z-index: 8;
+}
+
+.txtnum img{
+width: 13vw;
+}
+
+/* 文本里的文字 */
+.txtinside{
+position: absolute;
+top: 5vw;
+left: 13vw;
+z-index:10;
+color: white;
+width: 48vw;
+}
+
+.txtinsidetitle{
+font-size: 2vw;
+}
+
+.txtinsidebody{
+height: 7vw;
+overflow: hidden;
+font-size: 1.5vw;
+text-shadow: 1px 1px 5px rgb(0 0 0 / 70%);
+/* background-color:black; */
+transition: all 0.5s;
+}
+
+/* 文本展开后的高度 */
+.txtbodyanime01{
+height: 32.5vw;
+background-color:rgba(0,0,0,0.55) ;
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime02{
+height: 30vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime03{
+height: 34vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime04{
+height: 38.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime05{
+height: 25.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime06{
+height: 27.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime07{
+height: 36.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime08{
+height: 36.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime09{
+height: 34.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime10{
+height: 34vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime11{
+height: 43.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime12{
+height: 38.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime13{
+height: 30vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime14{
+height: 41vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime15{
+height: 38.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime16{
+height: 48vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime17{
+height: 45.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime18{
+height: 45.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime19{
+height: 50vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime20{
+height: 52vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime21{
+height: 52vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime22{
+height: 50vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime23{
+height: 61vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime24{
+height: 54.5vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+.txtbodyanime25{
+height: 16vw;
+background-color:rgba(0,0,0,0.55);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(166, 166, 166, 0.8));
+border-radius: 1vw;
+}
+
+/* btn按键样式 */
+.txtmorebtnbox{
+margin: 1vw 0;
+}
+
+.txtclosebtnbox{
+margin: 1vw 0vw;
+}
 
   /* 3.1.2.2story body img样式 */
   .body_img{
@@ -145,6 +411,7 @@
     width: 60vw;
     bottom: 11%;
     left: 39%;
+    z-index: 50;
   }
 
   .num_nav{

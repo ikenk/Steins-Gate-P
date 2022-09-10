@@ -118,13 +118,13 @@ export default {
   components: {
     "ClockRand": ClockRand,
     "TwinklingNoise": TwinklingNoise,
-    "BackgroundLongImg": BackgroundLongImg,
-    "BackToTop": BackToTop,
-    "BetaTimeLine": BetaTimeLine,
-    "SideThreeNavBtn": SideThreeNavBtn,
-    "TopImg":TopImg,
-    "AlphaTimeLine":AlphaTimeLine,
     "AnimeVideo1080pChange":AnimeVideo1080pChange,
+    "BackgroundLongImg": BackgroundLongImg,
+    "TopImg":TopImg,
+    "BackToTop": BackToTop,
+    "SideThreeNavBtn": SideThreeNavBtn,
+    "AlphaTimeLine":AlphaTimeLine,
+    "BetaTimeLine": BetaTimeLine,
 },
 
   data() {
