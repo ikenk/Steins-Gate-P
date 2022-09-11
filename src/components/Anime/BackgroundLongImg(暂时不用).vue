@@ -41,7 +41,7 @@ export default {
   .bg_img {
     position: absolute;
     width: 100vw;
-    height: 1300vw;
+    height: 100%;
     z-index: -1000;
   }
   
@@ -50,7 +50,7 @@ export default {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 1300vw;
+    height: 100%;
     background-image: url("/src/assets/images/bg_mainbg01.jpg");
     background-size: contain;
     background-repeat: repeat-y;
@@ -62,7 +62,7 @@ export default {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 1300vw;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: -998;
   }
@@ -72,7 +72,7 @@ export default {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 1300vw;
+    height: 100%;
     background-image: url("/src/assets/images/whitepoint.png");
     opacity: 0.15;
     z-index: -997;

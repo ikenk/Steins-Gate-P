@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <!-- 背景长图 -->
-    <BackgroundLongImg></BackgroundLongImg>
+    <!-- <BackgroundLongImg></BackgroundLongImg> -->
+    <div class="bg_img" :style="{ top: iScol + 'px' }">
+      <div class="bg_longimg"></div>
+      <div class="bg_grayimg"></div>
+      <div class="bg_pointimg"></div>
+    </div>
     <div class="contents_is_show">
       <div class="contents">
         <!-- 最顶部图片 -->
@@ -106,7 +111,7 @@ import ClockRand from "/src/components/globalReg/ClockRand.vue";
 import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
 import TwinklingNoise from "/src/components/globalReg/TwinklingNoise.vue";
 import TopImg from "/src/components/globalReg/TopImg.vue";
-import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/BackgroundLongImg.vue";
+// import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/BackgroundLongImg.vue";
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
 import SideThreeNavBtn from "/src/components/globalReg/SideThreeNavBtn.vue";
 import AlphaTimeLine from "/src/components/Anime_AlphaTimeLine/AlphaTimeLine.vue";
@@ -119,7 +124,7 @@ export default {
     "ClockRand": ClockRand,
     "TwinklingNoise": TwinklingNoise,
     "AnimeVideo1080pChange":AnimeVideo1080pChange,
-    "BackgroundLongImg": BackgroundLongImg,
+    // "BackgroundLongImg": BackgroundLongImg,
     "TopImg":TopImg,
     "BackToTop": BackToTop,
     "SideThreeNavBtn": SideThreeNavBtn,
@@ -130,7 +135,7 @@ export default {
   data() {
     return {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
-      // iScol: "0",//背景大图在页面滚动时向上的滚动距离
+      iScol: "0",//背景大图在页面滚动时向上的滚动距离
 
 
       b_topimgurl:[
@@ -205,8 +210,18 @@ export default {
     };
   },
   mounted() {
+    window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
   },
   methods: {
+    //监视网页滚动
+    scrollToTop() {
+      var scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      // console.log(scrollTop);
+      this.iScol = -1.8 * scrollTop;
+    },
     //展开nav栏
     show_nav() {
       this.NavShow = true;

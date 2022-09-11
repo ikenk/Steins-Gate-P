@@ -17,6 +17,9 @@
                     <li>
                         <div class="storytxt01">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">始まりと終わりのプロローグ</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime01':istxtbodyanime,'txtbodyanimereverse01':istxtbodyanimereverse}">
                                     秋葉原を拠点に活動している発明サークル、未来ガジェット研究所（通称：ラボ）の設立者、岡部倫太郎はサークルメンバーで幼なじみの椎名まゆりとともに、
@@ -37,6 +40,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 001</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav01.png'></div>
                         </div>
@@ -44,6 +54,9 @@
                     <li>
                         <div class="storytxt02">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">時間跳躍のパラノイア</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime02':istxtbodyanime,'txtbodyanimereverse02':istxtbodyanimereverse}">
                                     中鉢博士の講演が行われたラジ館で、何者かによって刺殺された牧瀬紅莉栖。しかし、ATFで行われたセミナーに参加した岡部が目にしたのは、
@@ -66,6 +79,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 002</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav02.png'></div>
                         </div>
@@ -73,6 +93,9 @@
                     <li>
                         <div class="storytxt03">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">並列過程のパラノイア</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime03':istxtbodyanime,'txtbodyanimereverse03':istxtbodyanimereverse}">
                                     未来ガジェット研究所にて、「電話レンジ（仮）」の実験を行う岡部とダル。レンジ内にあったはずのバナナはゲル状と化し、
@@ -95,6 +118,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 003</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav03.png'></div>
                         </div>
@@ -102,6 +132,9 @@
                     <li>
                         <div class="storytxt04">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">空理彷徨のランデヴー</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime04':istxtbodyanime,'txtbodyanimereverse04':istxtbodyanimereverse}">
                                     ハッキングしたSERN職員の電子メールに書かれていた「Human is Dead,mismatch 」の文字は、岡部とダルに戦慄を与えた。彼らはさらなるハッキングを行おうと試みるが、
@@ -124,6 +157,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 004</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav04.png'></div>
                         </div>
@@ -131,6 +171,9 @@
                     <li>
                         <div class="storytxt05">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">電荷衝突のランデヴー</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime05':istxtbodyanime,'txtbodyanimereverse05':istxtbodyanimereverse}">
                                     SERNのハッキングに必要なIBN5100をラボまで運んできた岡部と紅莉栖は、ブラウン管工房の片付けをする鈴羽と出会う。
@@ -151,6 +194,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 005</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav05.png'></div>
                         </div>
@@ -158,6 +208,9 @@
                     <li>
                         <div class="storytxt06">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">蝶翼のダイバージェンス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime06':istxtbodyanime,'txtbodyanimereverse06':istxtbodyanimereverse}">
                                     SERNへのハッキングに成功した岡部は、未来ガジェット研究所にラボメンを集め、円卓会議を開催する。そこで、自分たちが偶然発見した“過去へ送れるメール”を「Dメール」と命名する。
@@ -178,6 +231,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 006</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav06.png'></div>
                         </div>
@@ -185,6 +245,9 @@
                     <li>
                         <div class="storytxt07">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">断層のダイバージェンス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime07':istxtbodyanime,'txtbodyanimereverse07':istxtbodyanimereverse}">
                                     岡部はセカンドエディションバージョン1.03に改造した「電話レンジ（仮）」を使い、Dメールで過去を改変する実験を思いつく。
@@ -209,6 +272,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 007</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav07.png'></div>
                         </div>
@@ -216,6 +286,9 @@
                     <li>
                         <div class="storytxt08">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">夢幻のホメオスタシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime08':istxtbodyanime,'txtbodyanimereverse08':istxtbodyanimereverse}">
                                     ジョン・タイターから「救世主になってほしい」とのメールを受け取った岡部は、ダルと紅莉栖に、過去を司る女神作戦（オペレーション・ウルド）の再開を告げる。
@@ -238,6 +311,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 008</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav08.png'></div>
                         </div>
@@ -245,6 +325,9 @@
                     <li>
                         <div class="storytxt09">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">幻相のホメオスタシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime09':istxtbodyanime,'txtbodyanimereverse09':istxtbodyanimereverse}">
                                     フェイリスに「過去にメールを送る」話を聞かれてしまった岡部とダル。その後、岡部は円卓会議にて「電話レンジ（仮）」を使った物理的タイムトラベルの可能性に言及するが、
@@ -267,6 +350,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 009</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav09.png'></div>
                         </div>
@@ -274,6 +364,9 @@
                     <li>
                         <div class="storytxt10">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">相生のホメオスタシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime10':istxtbodyanime,'txtbodyanimereverse10':istxtbodyanimereverse}">
                                     フェイリスが送ったDメールによって、秋葉原の街から「萌え」が消え去ってしまった。しかし、メイクイーン＋ニャン2がなくなっていても、
@@ -296,6 +389,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 010</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav10.png'></div>
                         </div>
@@ -303,6 +403,9 @@
                     <li>
                         <div class="storytxt11">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">時空境界のドグマ</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime11':istxtbodyanime,'txtbodyanimereverse11':istxtbodyanimereverse}">
                                     岡部はDメール実験をするために、鈴羽に天王寺の目を引きつけてほしいと頼む。彼の目論みは失敗に終わるが、ブラウン管工房にある42型ブラウン管こそが「電話レンジ（仮）」によるDメール送信の鍵であると判明した。
@@ -325,6 +428,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 011</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav11.png'></div>
                         </div>
@@ -332,6 +442,9 @@
                     <li>
                         <div class="storytxt12">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">静止限界のドグマ</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime12':istxtbodyanime,'txtbodyanimereverse12':istxtbodyanimereverse}">
                                     7000万年前の荒野に時間跳躍する夢を見た岡部。白昼夢のような奇妙な感覚から目を覚ますと、まゆりが泊まり込みで制作していたコスプレ衣装、
@@ -354,6 +467,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 012</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav12.png'></div>
                         </div>
@@ -361,6 +481,9 @@
                     <li>
                         <div class="storytxt13">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">形而上のネクローシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime13':istxtbodyanime,'txtbodyanimereverse13':istxtbodyanimereverse}">
                                     ラボを強襲してきた萌郁の凶弾に倒れたまゆり。最悪の事態を前にして身動きが取れない岡部たちだったが、そこに姿を消したはずの鈴羽が現れる。
@@ -382,6 +505,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 013</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav13.png'></div>
                         </div>
@@ -389,6 +519,9 @@
                     <li>
                         <div class="storytxt14">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">形而下のネクローシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime14':istxtbodyanime,'txtbodyanimereverse14':istxtbodyanimereverse}">
                                     まゆりの命を救うため、タイムリープを繰り返す岡部。だが、どれだけ試みようと、「まゆりの死」という結果は変わらなかった。
@@ -413,6 +546,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 014</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav14.png'></div>
                         </div>
@@ -420,6 +560,9 @@
                     <li>   
                         <div class="storytxt15">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">亡環上のネクローシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime15':istxtbodyanime,'txtbodyanimereverse15':istxtbodyanimereverse}">
                                     2036年からやってきた鈴羽は、岡部と紅莉栖に未来の姿を伝えた。SERNがタイムマシンの力で世界を支配していること、鈴羽がレジスタンスであること、
@@ -442,6 +585,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 015</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav15.png'></div>
                         </div>
@@ -449,6 +599,9 @@
                     <li>
                         <div class="storytxt16">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">不可逆のネクローシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime16':istxtbodyanime,'txtbodyanimereverse16':istxtbodyanimereverse}">
                                     露天商にピンバッジを注文したのはダルだった。鈴羽のタイムマシンは過去にしか跳べず、1975年に行けばもう戻ってこられない――そのことを知ったダルは、
@@ -473,6 +626,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 016</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav16.png'></div>
                         </div>
@@ -480,6 +640,9 @@
                     <li>
                         <div class="storytxt17">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">虚像歪曲のコンプレックス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime17':istxtbodyanime,'txtbodyanimereverse17':istxtbodyanimereverse}">
                                     8月14日の夜、ラウンダーは過去の襲撃から一日遅れて姿を現し、まゆりはまたも命を落としてしまう。タイムリープした岡部は、
@@ -504,6 +667,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 017</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav17.png'></div>
                         </div>
@@ -511,6 +681,9 @@
                     <li>
                         <div class="storytxt18">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">自己相似のアンドロギュノス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime18':istxtbodyanime,'txtbodyanimereverse18':istxtbodyanimereverse}">
                                     β世界線に移動するために岡部が次に取りかかったのは、るかがまだお腹にいるころの母親へ送ったDメールを取り消すことだった。
@@ -534,6 +707,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 018</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav18.png'></div>
                         </div>
@@ -541,6 +721,9 @@
                     <li>
                         <div class="storytxt19">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">無限連鎖のアポトーシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime19':istxtbodyanime,'txtbodyanimereverse19':istxtbodyanimereverse}">
                                     Dメールを取り消していくことで1日ずつ時間がずれていくものの、まゆりが死ぬ結果に変わりなかった。まゆりはおそらく8月16日、
@@ -567,6 +750,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 019</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav19.png'></div>
                         </div>
@@ -574,6 +764,9 @@
                     <li>
                         <div class="storytxt20">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">怨嗟断絶のアポトーシス</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime20':istxtbodyanime,'txtbodyanimereverse20':istxtbodyanimereverse}">
                                     萌郁からIBN5100の隠し場所を聞き出した岡部。しかし、紅莉栖によると、岡部がこの世界線でIBN5100を手に入れることは不可能であり、
@@ -600,6 +793,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 020</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav20.png'></div>
                         </div>
@@ -607,6 +807,9 @@
                     <li>
                         <div class="storytxt21">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">因果律のメルト</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime21':istxtbodyanime,'txtbodyanimereverse21':istxtbodyanimereverse}">
                                     β世界線に戻れば、牧瀬紅莉栖が死ぬ――その事実に気付いた岡部は、SERNへのクラッキングを中止する。それから3日後、コミマ最終日の8月17日。
@@ -632,6 +835,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 021</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav21.png'></div>
                         </div>
@@ -639,6 +849,9 @@
                     <li>
                         <div class="storytxt22">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">存在了解のメルト</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime22':istxtbodyanime,'txtbodyanimereverse22':istxtbodyanimereverse}">
                                     紅莉栖を捜していた岡部はラジ館の屋上で彼女の姿を見つける。降り出した激しい雨から館内へ逃れたふたり。そこで紅莉栖は、
@@ -663,6 +876,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 022</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav22.png'></div>
                         </div>
@@ -670,6 +890,9 @@
                     <li>
                         <div class="storytxt23">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">境界面上のシュタインズゲート</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime23':istxtbodyanime,'txtbodyanimereverse23':istxtbodyanimereverse}">
                                     ラジ館の屋上に現れた鈴羽によると、この世界線の未来では、第3次世界大戦が勃発し、多くの人々が犠牲になるという。それを回避するためには、
@@ -694,6 +917,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 023</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav23.png'></div>
                         </div>
@@ -701,6 +931,9 @@
                     <li>
                         <div class="storytxt24">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">終わりと始まりのプロローグ</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime24':istxtbodyanime,'txtbodyanimereverse24':istxtbodyanimereverse}">
                                     「未来を司る女神作戦（オペレーション・スクルド）」の概要を理解した岡部は、ラボへ戻って未来ガジェット「サイリウム・セーバー」を用意する。
@@ -725,6 +958,13 @@
                                         <Icon type="ios-arrow-back" />
                                     </Button>
                                 </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 024</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_Nav24.png'></div>
                         </div>
@@ -732,6 +972,9 @@
                     <li>
                         <div class="storytxt25">
                             <div class="txtinside">
+                                <div class="txtinsidetop">
+                                    <div class="txtinsidetoptxt">story guide</div>
+                                </div>
                                 <div class="txtinsidetitle">横行跋扈のポリオマニア</div>
                                 <div class="txtinsidebody" :class="{'txtbodyanime25':istxtbodyanime,'txtbodyanimereverse25':istxtbodyanimereverse}">
                                     しばし秋葉原での穏やかな日々が過ぎた頃、岡部たちラボメンは、ひょんなことからフェイリスに誘われてアメリカへ行くことに。
@@ -749,6 +992,13 @@
                                         Close
                                         <Icon type="ios-arrow-back" />
                                     </Button>
+                                </div>
+                                <div class="txtinsidefoot">
+                                    <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                    <div class="txtinsidefoot_meter">
+                                        <div class="txtinsidefoot_meter_txt">#1-take 025</div>
+                                        <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="txtnum"><img src='/src/assets/images/bs_NavSP.png'></div>

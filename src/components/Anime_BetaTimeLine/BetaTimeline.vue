@@ -19,6 +19,9 @@
                 <li>
                     <div class="storytxt01">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">零化域のミッシングリンク</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime01':istxtbodyanime,'txtbodyanimereverse01':istxtbodyanimereverse}">
                                 いくつもの世界線を巡り、様々な可能性を“なかったこと”にしながら、大切な人たちを守ろうと足掻き続けてきた岡部。その果てに辿り着いたのは“紅莉栖とまゆりのどちらを見殺しにするか”という、
@@ -50,6 +53,9 @@
                 <li>
                     <div class="storytxt02">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">閉時曲線のエピグラフ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime02':istxtbodyanime,'txtbodyanimereverse02':istxtbodyanimereverse}">
                                 秋葉原のUPXで行われたレスキネン教授のセミナーで、人の記憶や心をベースに作られた人工知能「アマデウス」のデモンストレーションが始まった。
@@ -78,6 +84,9 @@
                 <li>
                     <div class="storytxt03">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">双対福音のプロトコル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime03':istxtbodyanime,'txtbodyanimereverse03':istxtbodyanimereverse}">
                                 岡部が主催する「未来ガジェット研究所」や秋葉原の街並みを見てみたいと、強く希望する「アマデウス紅莉栖」。岡部は生前の紅莉栖と面識がないラボメンが出入りするラボに、
@@ -106,6 +115,9 @@
                 <li>
                     <div class="storytxt04">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">亡失流転のソリチュード</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime04':istxtbodyanime,'txtbodyanimereverse04':istxtbodyanimereverse}">
                                 「アマデウス紅莉栖」は人工知能であって、紅莉栖本人ではない。死んだ紅莉栖はもう帰ってこない――。真帆から厳しい現実を突きつけられた岡部は、
@@ -134,6 +146,9 @@
                 <li>
                     <div class="storytxt05">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">非点収差のソリチュード</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime05':istxtbodyanime,'txtbodyanimereverse05':istxtbodyanimereverse}">
                                 萌郁の突然の来訪に、岡部は動揺を隠せない。岡部の警戒をよそに、ダルは萌郁が編集プロダクションのライターであり、調査のプロであると紹介。
@@ -162,6 +177,9 @@
                 <li>
                     <div class="storytxt06">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">軌道秩序のエクリプス</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime06':istxtbodyanime,'txtbodyanimereverse06':istxtbodyanimereverse}">
                                 るかが連れてきた記憶喪失の少女は、鈴羽がずっと捜していたかがりだった。たとえ名前がわかっても、かがりの記憶が戻るわけではない。
@@ -191,6 +209,9 @@
                 <li>
                     <div class="storytxt07">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">振電遷移のエクリプス</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime07':istxtbodyanime,'txtbodyanimereverse07':istxtbodyanimereverse}">
                                 ラボに押し入ってきた武装集団の狙いは、かがりだった。ライダースーツとフルフェイスヘルメットに身を包んだ女が、かがりを連れ去ろうとした、その時。
@@ -222,6 +243,9 @@
                 <li>
                     <div class="storytxt08">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">二律背反のデュアル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime08':istxtbodyanime,'txtbodyanimereverse08':istxtbodyanimereverse}">
                                 変動した「α世界線」で岡部は、あの頃と変わらない姿の紅莉栖と再会する。喜びの涙を流すのも束の間、もうひとつの事実に思い至り、絶望する。
@@ -250,6 +274,9 @@
                 <li>
                     <div class="storytxt09">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">永劫回帰のパンドラ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime09':istxtbodyanime,'txtbodyanimereverse09':istxtbodyanimereverse}">
                                 岡部が目を覚ますと、そこは病院のベッドの上だった。紅莉栖が生きていた「α世界線」から、元の「β世界線」へと戻ってきたのだ。
@@ -281,6 +308,9 @@
                 <li>
                     <div class="storytxt10">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">存在証明のパンドラ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime10':istxtbodyanime,'txtbodyanimereverse10':istxtbodyanimereverse}">
                                 何者かの乗っ取り工作でアクセス不能だった「アマデウス紅莉栖」は、無事復旧した。アメリカへ帰国する日が決まった真帆は、日本で過ごす残り少ない日々を堪能する。
@@ -310,6 +340,9 @@
                 <li>
                     <div class="storytxt11">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">存在忘却のパンドラ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime11':istxtbodyanime,'txtbodyanimereverse11':istxtbodyanimereverse}">
                                 紅莉栖が遺したノートパソコンを起動するため、ネットを通じて“専門家”にロック解除を依頼した真帆。その相手とは、“裏のアルバイト”でパソコンのロック解除やハッキングに手を染めているダルだった。
@@ -339,6 +372,9 @@
                 <li>
                     <div class="storytxt12">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">相互再帰のマザーグース</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime12':istxtbodyanime,'txtbodyanimereverse12':istxtbodyanimereverse}">
                                 かつて、2036年の世界からタイムマシンに乗ってこの時代へやってきた鈴羽とかがり。世界の破滅を食い止めるため、世界線を変えようとする鈴羽に、
@@ -370,6 +406,9 @@
                 <li>
                     <div class="storytxt13">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">回折叙唱のマザーグース</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime13':istxtbodyanime,'txtbodyanimereverse13':istxtbodyanimereverse}">
                                 記憶を取り戻したかがりは、以前とは見違えるように明るくなった。まるで子供の頃に戻ったかのように、まゆりを「ママ」と呼んで甘える姿に、岡部は思わず笑みをこぼす。
@@ -398,6 +437,9 @@
                 <li>
                     <div class="storytxt14">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">弾性限界のリコグナイズ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime14':istxtbodyanime,'txtbodyanimereverse14':istxtbodyanimereverse}">
                                 かがりが失踪してから時は移り、すでに季節は夏を迎えていた。鈴羽とダルは岡部に破棄されたタイムリープマシンを再び作るため、真帆に協力を要請する。
@@ -428,6 +470,9 @@
                 <li>   
                     <div class="storytxt15">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">漸近線のリコグナイズ</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime15':istxtbodyanime,'txtbodyanimereverse15':istxtbodyanimereverse}">
                                 タイムリープマシン開発を目的に再来日を果たした真帆。
@@ -461,6 +506,9 @@
                 <li>
                     <div class="storytxt16">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">無限遠点のアルタイル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime16':istxtbodyanime,'txtbodyanimereverse16':istxtbodyanimereverse}">
                                 ヴィクトル・コンドリア大学への留学を目指して、勉学に打ち込む日々を送る岡部。その結果、ほとんどラボに顔を出さなくなり、まゆりは一抹の寂しさを感じていた。
@@ -492,6 +540,9 @@
                 <li>
                     <div class="storytxt17">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">双曲平面のアルタイル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime17':istxtbodyanime,'txtbodyanimereverse17':istxtbodyanimereverse}">
                                 タイムマシンには既に、1年前紅莉栖が死んだ日への片道分しか残されていない。鈴羽は、世界線を変え、第三次世界大戦を回避するため、
@@ -523,6 +574,9 @@
                 <li>
                     <div class="storytxt18">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">並進対称のアルタイル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime18':istxtbodyanime,'txtbodyanimereverse18':istxtbodyanimereverse}">
                                 血を流し倒れるまゆりの姿を見て、武装した工作員たちに襲い掛かるかがり。銃弾を受けながらも人間離れした動きで工作員たちを排除していくものの、
@@ -552,6 +606,9 @@
                 <li>
                     <div class="storytxt19">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">循環座標のアルタイル</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime19':istxtbodyanime,'txtbodyanimereverse19':istxtbodyanimereverse}">
                                 攻撃ヘリによってタイムマシンは破壊されたが、結局まゆりと鈴羽の遺体は見つからなかった。2人の死がまだ確定していないのならば、
@@ -582,6 +639,9 @@
                 <li>
                     <div class="storytxt20">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">盟誓のリナシメント</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime20':istxtbodyanime,'txtbodyanimereverse20':istxtbodyanimereverse}">
                                 タイムリープ後、岡部が目を覚ましたのは崩れかけた廃ビルの一室だった。岡部はガラス戸に映った自分が40代半ばになっていること、
@@ -615,6 +675,9 @@
                 <li>
                     <div class="storytxt21">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">結像のリナシメント</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime21':istxtbodyanime,'txtbodyanimereverse21':istxtbodyanimereverse}">
                                 岡部が昏睡状態に陥ってからの11年間、ずっと付きっ切りで容態を管理してきたのは「アマデウス紅莉栖」だった。これから過去へ旅立っても、
@@ -647,6 +710,9 @@
                 <li>
                     <div class="storytxt22">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">投企のリナシメント</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime22':istxtbodyanime,'txtbodyanimereverse22':istxtbodyanimereverse}">
                                 何度タイムリープを重ねても、タイムマシンが破壊されてしまう。これまで、タイムマシン争奪に関わる「ストラトフォー」のレスキネン、
@@ -678,6 +744,9 @@
                 <li>
                     <div class="storytxt23">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">無限遠点のアークライト</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime23':istxtbodyanime,'txtbodyanimereverse23':istxtbodyanimereverse}">
                                 ついに迎えた決戦の時。ラジ館へと向かった岡部は、レスキネンに発見されてしまい、銃を突きつけられる。しかし、そこへ現れた萌郁に助けられて、
@@ -709,6 +778,9 @@
                 <li>
                     <div class="storytxt24">
                         <div class="txtinside">
+                            <div class="txtinsidetop">
+                                <div class="txtinsidetoptxt">story guide</div>
+                            </div>
                             <div class="txtinsidetitle">結晶多形のヴァレンティヌス</div>
                             <div class="txtinsidebody" :class="{'txtbodyanime24':istxtbodyanime,'txtbodyanimereverse24':istxtbodyanimereverse}">
                                 アメリカへの帰国準備を進める真帆。ふとカレンダーを見ると、バレンタインデーが近いことに気づく。かつての紅莉栖とのやりとりに思いを馳せる……。

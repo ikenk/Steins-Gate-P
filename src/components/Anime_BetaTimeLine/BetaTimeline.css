@@ -90,6 +90,10 @@ background-image: url("/src/assets/images/storytxtbg.svg");
 background-repeat: repeat-y;
 }
 
+
+
+
+
 /* 文本区 */
 div[class^='storytxt']{
 position: relative;
@@ -120,6 +124,26 @@ left: 13vw;
 z-index:10;
 color: white;
 width: 48vw;
+}
+
+.txtinsidetop{
+  position: relative;
+  width: 7vw;
+  height: 1.8vw;
+  /* background-color: black; */
+  border-bottom: 3px solid #fff;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+
+.txtinsidetoptxt{
+  position: absolute;
+  top:-0.9vw;
+  left: 0vw;
+  font-size: 1.2vw;
+  font-family: 'garamond';
+  color: #fff;
+  font-weight: 200;
 }
 
 .txtinsidetitle{
