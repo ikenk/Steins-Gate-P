@@ -2,7 +2,7 @@
   <div class="container">
     <!-- 背景长图 -->
     <!-- <BackgroundLongImg></BackgroundLongImg> -->
-    <div class="bg_img" :style="{ top: iScol + 'px' }">
+    <div class="bg_img" :style="{ top: iScol + 'px' ,height: theWholePage + 'px'}">
       <div class="bg_longimg"></div>
       <div class="bg_grayimg"></div>
       <div class="bg_pointimg"></div>
@@ -137,6 +137,7 @@ export default {
       //  作为单独组件引入，因此注释掉原变量iScol: "0"
       iScol: "0",//背景大图在页面滚动时向上的滚动距离
 
+      theWholePage:15000,//整个html的高度
 
       b_topimgurl:[
         "/src/assets/images/ttl_logo01_sp.svg",
@@ -156,7 +157,7 @@ export default {
       ChangeRandNum:6,//切换时间线所需的随机数   
       ChangeDisStatus: [0,0,0,0,0,0,1,0],//[video0,video1,v2,v3,v4,v5,alpha,beta]状态码，范围0~6，代表鼠标点击次数，到6之后就清零，表示该对象可再次出现
       ChangeDis:[0,0,0,0,0,0,1,0],//[video0,video1,v2,v3,v4,v5,alpha,beta]显示码，0表示不显示，1表示显示
-      ClockChangeDis:0,
+      ClockChangeDis:0,//clock动画是否显示，0为隐藏，1为显示
       NavChangeHref:[ "#a_story", "#a_characters", "#a_cast/staff"],//Nav栏在不同时间线下的指向id
 
       //1080p视url
@@ -211,6 +212,7 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
+
   },
   methods: {
     //监视网页滚动

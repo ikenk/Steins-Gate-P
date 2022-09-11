@@ -134,6 +134,8 @@ div[class^='storytxt']{
   font-weight: 200;
 }
 
+
+/* txtinsidefoot样式 */
 .txtinsidefoot{
   position: absolute;
   top: 70vw;

@@ -46,6 +46,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 001</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav01.png'></div>
                     </div>
@@ -76,6 +83,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 002</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav02.png'></div>
@@ -108,6 +122,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 003</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav03.png'></div>
                     </div>
@@ -138,6 +159,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 004</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav04.png'></div>
@@ -170,6 +198,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 005</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav05.png'></div>
                     </div>
@@ -201,6 +236,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 006</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav06.png'></div>
@@ -236,6 +278,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 007</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav07.png'></div>
                     </div>
@@ -266,6 +315,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 008</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav08.png'></div>
@@ -301,6 +357,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 009</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav09.png'></div>
                     </div>
@@ -333,6 +396,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 010</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav10.png'></div>
                     </div>
@@ -364,6 +434,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 011</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav11.png'></div>
@@ -399,6 +476,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 012</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav12.png'></div>
                     </div>
@@ -429,6 +513,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 013</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav13.png'></div>
@@ -462,6 +553,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 014</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav14.png'></div>
@@ -499,6 +597,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 015</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav15.png'></div>
                     </div>
@@ -532,6 +637,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 016</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav16.png'></div>
@@ -567,6 +679,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 017</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav17.png'></div>
                     </div>
@@ -598,6 +717,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 018</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav18.png'></div>
@@ -631,6 +757,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 019</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav19.png'></div>
@@ -668,6 +801,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 020</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav20.png'></div>
                     </div>
@@ -703,6 +843,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 021</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav21.png'></div>
                     </div>
@@ -737,6 +884,13 @@
                                     <Icon type="ios-arrow-back" />
                                 </Button>
                             </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 022</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav22.png'></div>
                     </div>
@@ -770,6 +924,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 023</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_Nav23.png'></div>
@@ -806,6 +967,13 @@
                                     Close
                                     <Icon type="ios-arrow-back" />
                                 </Button>
+                            </div>
+                            <div class="txtinsidefoot">
+                                <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
+                                <div class="txtinsidefoot_meter">
+                                    <div class="txtinsidefoot_meter_txt">#1-take 024</div>
+                                    <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
+                                </div>
                             </div>
                         </div>
                         <div class="txtnum"><img src='/src/assets/images/bs_NavSP.png'></div>
