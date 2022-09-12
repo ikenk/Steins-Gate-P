@@ -40,6 +40,13 @@
   src:url("/src/assets/fonts/BONX-Medium.otf")format('opentype');
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 
 body {
     font-size: 14px;

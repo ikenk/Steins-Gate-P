@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container" id="container">
     <!-- 背景长图 -->
     <!-- <BackgroundLongImg></BackgroundLongImg> -->
-    <div class="bg_img" :style="{ top: iScol + 'px' ,height: theWholePage + 'px'}">
+    <div class="bg_img" :style="{ top: iScol + 'px', height: theWholePage + 'px'}">
       <div class="bg_longimg"></div>
       <div class="bg_grayimg"></div>
       <div class="bg_pointimg"></div>
@@ -86,7 +86,7 @@
       </Row>
     </transition>
     <!-- 时钟切换 -->
-    <Row class="clock_change_box" v-if="ClockChangeDis">
+    <Row class="clock_change_box" v-show="ClockChangeDis">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
@@ -138,6 +138,7 @@ export default {
       iScol: "0",//背景大图在页面滚动时向上的滚动距离
 
       theWholePage:15000,//整个html的高度
+      thePageHeight:0,
 
       b_topimgurl:[
         "/src/assets/images/ttl_logo01_sp.svg",
@@ -176,27 +177,28 @@ export default {
         {
             key: '帮助',
             title: '帮助',
-            href: 'https://www.iviewui.com',
+            href: 'javascript:void(0);',
             blankTarget: true
         },
         {
             key: 'github',
-            icon: 'logo-github',
-            href: 'https://github.com/view-design/ViewUIPlus',
+            icon: 'ios-infinite',
+            href: 'javascript:void(0);',
             blankTarget: true
         },
         {
             key: '条款',
             title: '条款',
-            href: '',
+            href: 'javascript:void(0);',
             blankTarget: true
         }
       ],
-      copyright: 'Copyright © 2022 View Design All Rights Reserved',
+      copyright: 'Copyright © 2022 iKenaka All Rights Reserved',
       //全局页脚
 
 
       //btn图片链接
+
       btnimgurl:[
         "/src/assets/icons/无穷-透明黑色.png",
         "/src/assets/icons/菜单-透明白色.png",
@@ -212,17 +214,24 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
-
+    let container_el = document.getElementById("container")
+    this.thePageHeight = document.documentElement.clientHeight;
+    this.theWholePage = 1.83 * (container_el.clientHeight - this.thePageHeight) + container_el.clientHeight;
+  },
+  updated(){
+    let container_el = document.getElementById("container")
+    this.thePageHeight = document.documentElement.clientHeight;
+    this.theWholePage = 1.83 * (container_el.clientHeight - this.thePageHeight) + container_el.clientHeight;
   },
   methods: {
     //监视网页滚动
     scrollToTop() {
-      var scrollTop =
+      let scrollTop = Math.floor(
         window.pageYOffset ||
         document.documentElement.scrollTop ||
-        document.body.scrollTop;
+        document.body.scrollTop);
+      this.iScol = - 1.8 * scrollTop ;
       // console.log(scrollTop);
-      this.iScol = -1.8 * scrollTop;
     },
     //展开nav栏
     show_nav() {

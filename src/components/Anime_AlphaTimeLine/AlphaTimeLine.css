@@ -676,23 +676,6 @@ div[class^='storytxt']{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* 4.2characters总体样式 */
 
   .a_characters{
@@ -706,7 +689,7 @@ div[class^='storytxt']{
   .a_charas_title{
     width: 100%;
     padding: 8% 0 8%;
-    background-color: purple;
+    /* background-color: purple; */
   }
 
   .a_c_img{
@@ -719,6 +702,31 @@ div[class^='storytxt']{
   }
 
 
+  /* 4.2.2 body样式 */
+  .a_charas_body{
+    width: 100vw;
+    height: 65vw;
+  }
+
+  .a_charas_txtbody{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+  }
+
+  .txtbody_whole{
+    position: absolute;
+    left: center;
+    top: 0vw;
+    width: 80%;
+    height: 55vw;
+    background-color: rgb(133, 0, 0);
+    font-size: 1.2vw;
+  }
+
+  .txtbody_whole>li{
+    list-style: none;
+  }
 
 
 
@@ -727,6 +735,74 @@ div[class^='storytxt']{
 
 
 
+
+
+  .a_charas_picbody{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+  }
+
+  .picbody_charpic{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-color: rgb(1, 66, 185);
+  }
+
+  .charpic_whole{
+    position: absolute;
+    left: 10.5vw;
+    top: 0vw;
+    display: flex;
+    width: auto;
+    height: 100%;
+  }
+
+  /* .charpic_whole>li{
+    list-style: none;
+    width: 28vw;
+    height: 38vw;
+  } */
+
+  .charpic_whole img{
+    height: 100%;
+    margin-right: 5%;
+  }
+
+
+
+  .picbody_btn{
+    position: relative;
+    width: 100%;
+    height: 5vw;
+  }
+
+  .picbody_btnleft{
+    position: absolute;
+    left: 15vw;
+    top: 2vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("/src/assets/icons/返回-透明白色.png");
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .picbody_btnright{
+    position: absolute;
+    left: 25vw;
+    top: 2vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("/src/assets/icons/向前-透明白色.png");
+    background-position: 60% 40%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
 
 
 

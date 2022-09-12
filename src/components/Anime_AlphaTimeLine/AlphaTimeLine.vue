@@ -29,7 +29,7 @@
                                     ときに、2010年7月28日──ここより、運命石の扉(シュタインズ・ゲート)が開かれる。
                                 </div>
                                 <div v-if="txtbtn[0]" class="txtmorebtnbox">
-                                    <Button  class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
+                                    <Button class="txtmorebtn" shape="circle" size="large" ghost @click="unfold"> 
                                         More 
                                         <Icon type="ios-arrow-forward" />
                                     </Button>
@@ -43,7 +43,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 001</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 001</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 002</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 002</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 003</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 003</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -160,7 +160,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 004</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 004</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 005</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 005</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 006</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 006</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 007</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 007</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -314,7 +314,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 008</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 008</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -353,7 +353,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 009</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 009</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -392,7 +392,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 010</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 010</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -431,7 +431,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 011</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 011</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -470,7 +470,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 012</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 012</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -508,7 +508,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 013</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 013</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -549,7 +549,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 014</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 014</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -588,7 +588,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 015</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 015</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -629,7 +629,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 016</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 016</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -670,7 +670,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 017</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 017</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -710,7 +710,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 018</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 018</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -753,7 +753,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 019</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 019</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -796,7 +796,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 020</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 020</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -838,7 +838,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 021</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 021</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -879,7 +879,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 022</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 022</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -920,7 +920,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 023</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 023</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -961,7 +961,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 024</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 024</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -996,7 +996,7 @@
                                 <div class="txtinsidefoot">
                                     <div class="txtinsidefoot_category">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;story</div>
                                     <div class="txtinsidefoot_meter">
-                                        <div class="txtinsidefoot_meter_txt">#1-take 025</div>
+                                        <div class="txtinsidefoot_meter_txt">#0-take 025</div>
                                         <div class="txtinsidefoot_meter_item">&nbsp;&nbsp;|&nbsp;|</div>
                                     </div>
                                 </div>
@@ -1103,7 +1103,131 @@
         <Col span="8">
         </Col>
         </Row>
-        <Row class="a_charas_body"></Row>
+        <Row class="a_charas_body">
+            <Col span="14" class="a_charas_txtbody">
+                <ul class="txtbody_whole">
+                    <li class="txtbody_item01" id="txtbody_item00" v-if=txtbody_itemdis[0]>
+                        主人公。老け顔だが東京電機大学1年生。自称「狂気のマッドサイエンティスト・鳳凰院凶真」。通称は「オカリン」だが、本人はこう呼ばれるのを嫌がる。ドクターペッパーを愛飲している。
+                        秋葉原のとある雑居ビル2階に「未来ガジェット研究所」というサークルを立ち上げ、役に立たないヘンテコ発明品「未来ガジェット」の製作に勤しんでいる。
+                        酷い厨二病を患っており、唐突に通話中ではない携帯電話にむかって「機関の陰謀」などとノリノリで喋る痛い男。他人に対する態度も尊大・自己完結・ＫＹと似たような感じなので友人は余りいない。
+                        類は友を呼ぶのか知り合いも個性的な連中ばかり。一方で、頭が上がらない相手や不測の事態にはあっさりヘタれたり、ラボメンのために体を張るなどツンデレ意外とお人よしな部分が見られるが…。
+                    </li>
+                    <li class="txtbody_item02" id="txtbody_item01" v-if=txtbody_itemdis[1]>
+                        メインヒロイン。ヴィクトル・コンドリア大学脳科学研究所所属研究員。アメリカにて飛び級で大学を卒業し、かの有名なサイエンス誌に論文が掲載されたこともある天才少女。
+                        コミケ風に言うなら経歴無しの新人が2回目参加で壁に行くレベルのすごさ。
+                        とある理由で数日のあいだ来日していた際、秋葉原で岡部倫太郎と出会い、未来ガジェット研究所のラボメンとなる。
+                        すらりとした脚に赤茶色のロングヘアー、貧乳で大人っぽい。と、ヒロインとして対を成す椎名まゆりとは対照的な特徴。
+                        着ている服は日本の高校に逆留学していた時の制服を自己流に改造したお気に入り。
+                        非常に知的好奇心が強く、研究熱心。また、物事を冷静に分析する癖があり、周囲から冷たく見られることも多い。
+                        自分の頭脳や若さに嫉妬や理不尽な怒りを向けられる環境に置かれていた為、常に隙を見せないようムスッとした表情をしている。気丈な性格と相まって友達もいなかったが･･･。
+                        岡部からは「クリスティーナ」「助手」「セレセブ（セレブセブンティーン）」「蘇りし者（ザ・ゾンビ）」など数々の適当なあだ名を頂戴しているが、名づけられ呼ばれる度に否定する。
+                        また、バカな言動が嫌いなので岡部の中二病的言動に対しても容赦なく突っ込みを入れる（ちなみに、ある講演会では「専門外」である物理とタイムマシンの話で岡部を完全論破した）。
+                        一方で、彼女本人もたまに変なことを口走って空気を凍りつかせることがある。
+                        ラボメンとの交流でまゆりとは姉妹のように仲良くなり、岡部のからかいにからかいで返したり、素直にお礼が言えなかったり…実にテンプレートなツンデレである。
+                        岡部も岡部でツンデレな上、デレが同調するため…お前ら結婚しろ。
+                        実は、重度の隠れ＠ちゃんねらーであり、たまに無意識に＠ちゃんねる語を使ってしまう。本人は必死に否定するが、バレバレな上、岡部たちはネットスラングに詳しいためカミングアウトしてからもからかう材料程度にしかなっていない。
+                    </li>
+                    <li class="txtbody_item03" id="txtbody_item02" v-if=txtbody_itemdis[2]>
+                        私立花浅葱大学付属学園2年生。岡部倫太郎の幼馴染で、未来ガジェット研究所のラボメンNo.002。
+                        一人称は「まゆしぃ☆」。口癖は「トゥットゥルー♪」。メイド喫茶「メイクイーン＋ニャン2」でバイトをしていて、そこではウイッグを付けて「マユシィ・ニャンニャン」と名乗っている。
+                        服装は水色クロシェ&ワンピースと膝丈上のデニムパンツというがっかりスタイル。くしゃくしゃの黒髪に帽子を取ったてっぺんのアホ毛、なにより童顔巨乳で太眉キャラ。メインヒロインの牧瀬紅莉栖とは対を成す特徴の持ち主。
+                        非常にマイペースでかなりの天然。ラボの癒し役。あまり空気を読むタイプではなく、急に道で立ち止まったり居なくなったりする事もある。一方でラボメン一の体力を持ち、岡部の全力疾走に付き合っても息一つ切らさない。
+                        アニメでは疲れてた？何のことかな？
+                        見た目に似合わず食いしん坊キャラでいつもだいたい腹ペコ。好きな食べ物はバナナと唐揚げ。これだけ食べても太らないのはきっと栄養が全部胸に（ｒｙ
+                        趣味はコスプレの衣装作りで、複数のレイヤーに衣装を提供しているが自分ではほとんど着ない。ここ最近の目標は漆原るかにコスプレデビューしてもらう事。だが男だ。どうみても立派なアキバ系だが、周りがまゆり以上の「濃い」連中ばかりなので作中でもプレイヤーからも全然そんな扱いを受けない。ある意味お得なポジション。
+                        手のかかる妹みたいなほんわかなマイペースさと、誰にでも優しく友好的で気配りが利く近所のおばあちゃんみたいなこの手のヒロインとしては少し珍しい属性の組み合わせ（『年上』と『年下』に関わる属性なので、どちらか１つだけというキャラが多い）。そんなキャラだから紅莉栖とは即効で打ち解け、ある意味において彼女に勝てるラボメンはいない。
+                        幼いころ、祖母と一緒に夜空を見ていた影響で、空を見上げて唐突に手を伸ばす癖があり、岡部は「星屑との握手（スターダストシェイクハンド）」と呼んでいる。
+                        ちなみに、「まゆしぃはオカリンの人質」だからいつも岡部のそばにいるらしい･･･。
+                    </li>
+                    <li class="txtbody_item04" id="txtbody_item03" v-if=txtbody_itemdis[3]>
+                        東京電機大学1年に在籍する男子大学生。通称「ダル」。未来ガジェット研究所のラボメンNo.003。
+                        岡部倫太郎とは高校時代からの付き合いで、彼にとって数少ない友人の1人。
+                        日常的にネットスラングを織り交ぜて会話をしており、時にセクハラまがいの発言もしている。もちろん周囲のツッコミを喰らうのは言うまでもない。
+                        二次元に嫁がいる一方でフェイリス・ニャンニャン目当てにメイド喫茶「メイクイーン＋ニャン2」にも足しげく通う。
+                        ラボメンに入ったのも地理的に店のすぐ近くという理由だったりする。岡部いわく「二次元と三次元のバイ」。かと思えば無機物にも萌えを見出すアクティブぶり。
+                        紳士諸君もジャンルを固定しないで萌えを追求してはいかがだだろうか。
+                        技術においては、かなりの腕を有しており、ソフトもハードもいける有能ぶり。具体的には岡部の提案する未来ガジェットの制作を担当したり、専門機関へのハッキングも行ってしまう程。
+                        岡部からは、事ある度に「スーパーハカー」と呼ばれているが、その度に「スーパーハッカーだろ」と訂正している。
+                        立ち絵の通り、かなりの肥満体なので無呼吸症候群の疑惑が…
+                    </li>
+                    <li class="txtbody_item05" id="txtbody_item04" v-if=txtbody_itemdis[4]>
+                        未来ガジェット研究所が入っているビル1階にある「ブラウン管工房」の押しかけバイト。18歳。
+                        愛用のマウンテンバイクを乗り回すかなり元気な少女。
+                        格闘技やサバイバルに詳しかったり、秋葉原にカルチャーショックを受けていたり、どこか世間知らずで常識外れ。たまに小難しい単語を織り交ぜて会話する。
+                        自分の興味があることになると、性格が豹変し、積極的に行動する。
+                        自称「一人前の戦士」で、岡部倫太郎からは「バイト戦士」と呼ばれている。
+                        ブラウン管工房でバイトをしているが、客はほとんど来ないため、店長がいないときは自転車を磨いたりしている。また、店長の娘・天王寺綯とも仲よくしている。
+                        面倒見がよく誰とでも打ち解けるのが得意だが、なぜか牧瀬紅莉栖のことを初見から毛嫌いしている。
+                    </li>
+                    <li class="txtbody_item06" id="txtbody_item05" v-if=txtbody_itemdis[5]>
+                        私立花浅葱大学附属学園2年生で、椎名まゆりのクラスメイト。だが男だ。
+                        秋葉原にある柳林神社の一人息子で、巫女の格好で掃除したり模造刀を振ったりしている。だが男だ。
+                        非常に線が細く物静かで、恥ずかしがりや。だが男だ。
+                        岡部倫太郎の厨二病を信じてしまうほどに純情で、岡部のことを「凶真さん」と呼び、岡部からは「ルカ子」と呼ばれている。だが男だ。
+                        正真正銘の男だが、紅莉栖は最初それを信じず、その後真実を知って相当なショックを受けた。だが男だ。
+                        まゆりからいつも「コスプレして」と頼まれるが、かなりの恥ずかしがりやのため断っている。だが男だ。
+                        だが俺達は女だったルカ子の事も忘れない。
+                    </li>
+                    <li class="txtbody_item07" id="txtbody_item06" v-if=txtbody_itemdis[6]>
+                        メイド喫茶「メイクイーン+ニャン2」の人気ナンバー1メイド。私立金糸雀学園2年生。
+                        岡部倫太郎をも上回る厨二病で、岡部の厨二設定に厨二設定を被せてくる為、岡部をもってして「勝てない」と言わしめた。
+                        バイト以外でも常にネコミミを装備し、ニャンニャン語を話す。目を見るだけでなんとなく相手の心を読むことができる能力「チェシャ猫の微笑（チェシャー・ブレイク）」を持つ（自称）。
+                        椎名まゆりとはバイト仲間であり友人。橋田至はフェイリスの大ファンである。
+                        カードゲーム「雷ネット・アクセスバトラーズ」が強く、腕前は相当なものだが、諸事情により公式な大会には参加していない。
+                        どんなゲームかというと、『陣地の制圧やカード拾得が勝利条件』『カードは伏せる』等既存のゲームで言えば軍人将棋に近い。詳しいルールはこんな感じ。exit
+                    </li>
+                    <li class="txtbody_item08" id="txtbody_item07" v-if=txtbody_itemdis[7]>
+                        編集プロダクション「アーク・リライト」のアルバイト。
+                        「記録」としてラジ館前で携帯電話のカメラ機能を使用していた際に「偶然」岡部倫太郎の顔を写してしまい、それを岡部に指摘された事がきっかけで岡部達と知り合う事になる。
+                        その後ラボメンナンバー005として未来ガジェット研究所に迎えられる。
+                        ちなみに作中の登場人物で一番の巨乳の持ち主。ラボメン内では唯一の成人でもある。
+                        とある理由により本編では専用のルートを用意されなかったもののFBFDにて晴れて攻略対象に。やったねもえいくさん！
+                        人と話す事が苦手で普段は感情があまり表に出ない反面メールでは打って変って馴れ馴れしい長文が多い。
+                        メールを打つ速度が驚異的に速かった事から岡部が付けたあだ名は「閃光の指圧師(シャイニング・フィンガー)」、あるいは縮めて「指圧師」とも。
+                        原作本編でのあだ名は上記のみだが「郁」の読み方が多少分かり辛い事からか、ファンの間では「もえいくさん」の愛称で呼ばれる事もある。
+                        何故か幻のレトロPCとも言われるIBN5100を執拗に追っているが・・・
+                    </li>
+                    <li class="txtbody_item09" id="txtbody_item08" v-if=txtbody_itemdis[8]></li>
+                    <li class="txtbody_item10" id="txtbody_item09" v-if=txtbody_itemdis[9]>
+                        小学6年生。11歳。ミスターブラウンこと天王寺裕吾の娘。おとなしい性格で、岡部やダルにはすこし怯えてるが、他のラボメン（女性陣）とは仲がいい。
+                        まゆりに出会うと抱きつく癖があり、一見すると微笑ましいがどちらもパワフルな動作らしい（岡部談）。地下鉄の最前列にまゆりが立っててもそんなやりとりをやっちゃうお茶目な一面もある。
+                        科学ADVマニアクス記載の後日談ではこの年にして異様に格ゲーが強いことが発覚。また、ファンディスクの小説版「比翼連理のアンダーリン」では他作品と違い何故か岡部とフラグが立っているのだが…
+                    </li>
+                </ul>
+            </Col>
+            <Col span="10" class="a_charas_picbody">
+                <div class="picbody_charpic">
+                    <!-- <ul class="charpic_whole">
+                        <li class="charpicitem01"><img src='/src/assets/images/alphacharacter01.png'></li>
+                        <li class="charpicitem02"><img src='/src/assets/images/alphacharacter02.png'></li>
+                        <li class="charpicitem03"><img src='/src/assets/images/alphacharacter03.png'></li>
+                        <li class="charpicitem04"><img src='/src/assets/images/alphacharacter04.png'></li>
+                        <li class="charpicitem05"><img src='/src/assets/images/alphacharacter05.png'></li>
+                        <li class="charpicitem06"><img src='/src/assets/images/alphacharacter06.png'></li>
+                        <li class="charpicitem07"><img src='/src/assets/images/alphacharacter07.png'></li>
+                        <li class="charpicitem08"><img src='/src/assets/images/alphacharacter08.png'></li>
+                        <li class="charpicitem09"><img src='/src/assets/images/alphacharacter09.png'></li>
+                        <li class="charpicitem10"><img src='/src/assets/images/alphacharacter10.png'></li>
+                    </ul> -->
+                    <div class="charpic_whole">
+                        <img class="charpicitem01" id="charpicitem01" src='/src/assets/images/alphacharacter01.png'>
+                        <img class="charpicitem02" id="charpicitem02" src='/src/assets/images/alphacharacter02.png'>
+                        <img class="charpicitem03" id="charpicitem03" src='/src/assets/images/alphacharacter03.png'>
+                        <img class="charpicitem04" id="charpicitem04" src='/src/assets/images/alphacharacter04.png'>
+                        <img class="charpicitem05" id="charpicitem05" src='/src/assets/images/alphacharacter05.png'>
+                        <img class="charpicitem06" id="charpicitem06" src='/src/assets/images/alphacharacter06.png'>
+                        <img class="charpicitem07" id="charpicitem07" src='/src/assets/images/alphacharacter07.png'>
+                        <img class="charpicitem08" id="charpicitem08" src='/src/assets/images/alphacharacter08.png'>
+                        <img class="charpicitem09" id="charpicitem09" src='/src/assets/images/alphacharacter09.png'>
+                        <img class="charpicitem10" id="charpicitem10" src='/src/assets/images/alphacharacter10.png'>
+                    </div>
+                </div>
+                <div class="picbody_btn">
+                    <a class="picbody_btnleft" href="javascript:void(0);"></a>
+                    <a class="picbody_btnright" href="javascript:void(0);"></a>
+                </div>
+            </Col>
+        </Row>
     </Row>
     <!-- cast/staff部分 -->
     <Row class="a_cast" id="a_cast/staff">
@@ -1398,6 +1522,7 @@ export default {
             txtbtn:[1,0],//txtbtn是否显示，1为显示，0为隐藏
             istxtbodyanime:false,//istxtbodyanime是否显示
             istxtbodyanimereverse:false,//istxtbodyanimereverse是否显示
+            txtbody_itemdis:[1,0,0,0,0,0,0,0,0,0],//character里的各个txtitem是否显示
         }
     },
     methods:{
