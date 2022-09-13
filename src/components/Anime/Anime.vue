@@ -17,9 +17,9 @@
         <!-- 两条不同时间线的内容 -->
         <Row class="StoryCharacterCast">
           <!-- beta时间线 -->
-          <BetaTimeLine v-if="ChangeDis[7]"></BetaTimeLine>
+          <BetaTimeLine v-if="1"></BetaTimeLine>
           <!-- alpha时间线 -->
-          <AlphaTimeLine v-if="ChangeDis[6]"></AlphaTimeLine>
+          <AlphaTimeLine v-if="0"></AlphaTimeLine>
         </Row>
         <br />
         <Row class="product" id="product">

@@ -1077,271 +1077,270 @@
     </Col>
     </Row>
     <Row class="b_charas_body">
-    <Row class="charas_text"></Row>
-    <Row class="charas_cut">
+    <Row class="charas_cut" @mousemove="chara_move" @mouseleave="chara_back">
         <Row class="charas_main">
-        <Row class="float_img_whole">
-            <Row class="float_top_img">
-            <Row class="float_chara1" v-if="chara_img[0]">
-                <div class="float_chara_1_1">
-                    <img src="/src/assets/images/img_charamain01_1.png.png" />
-                </div>
-                <div class="float_chara_1_2">
-                    <img src="/src/assets/images/img_charamain01_2.png.png" />
-                </div>
-                <div class="float_chara_1_3">
-                    <img src="/src/assets/images/img_charamain01_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext01.svg" />
-                </div>
+            <Row class="float_img_whole">
+                <Row class="float_top_img">
+                <Row class="float_chara1" v-if="chara_img[0]">
+                    <div class="float_chara_1_1">
+                        <img src="/src/assets/images/img_charamain01_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
+                    </div>
+                    <div class="float_chara_1_2">
+                        <img src="/src/assets/images/img_charamain01_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
+                    </div>
+                    <div class="float_chara_1_3">
+                        <img src="/src/assets/images/img_charamain01_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext01.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara2" v-if="chara_img[1]">
+                    <div class="float_chara_2_1">
+                        <img src="/src/assets/images/img_charamain02_1.png.png" />
+                    </div>
+                    <div class="float_chara_2_2">
+                        <img src="/src/assets/images/img_charamain02_2.png.png" />
+                    </div>
+                    <div class="float_chara_2_3">
+                        <img src="/src/assets/images/img_charamain02_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext02.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara3" v-if="chara_img[2]">
+                    <div class="float_chara_3_1">
+                        <img src="/src/assets/images/img_charamain03_1.png.png" />
+                    </div>
+                    <div class="float_chara_3_2">
+                        <img src="/src/assets/images/img_charamain03_2.png.png" />
+                    </div>
+                    <div class="float_chara_3_3">
+                        <img src="/src/assets/images/img_charamain03_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext03.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara4" v-if="chara_img[3]">
+                    <div class="float_chara_4_1">
+                        <img src="/src/assets/images/img_charamain04_1.png.png" />
+                    </div>
+                    <div class="float_chara_4_2">
+                        <img src="/src/assets/images/img_charamain04_2.png.png" />
+                    </div>
+                    <div class="float_chara_4_3">
+                        <img src="/src/assets/images/img_charamain04_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext04.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara5" v-if="chara_img[4]">
+                    <div class="float_chara_5_1">
+                        <img src="/src/assets/images/img_charamain05_1.png.png" />
+                    </div>
+                    <div class="float_chara_5_2">
+                        <img src="/src/assets/images/img_charamain05_2.png.png" />
+                    </div>
+                    <div class="float_chara_5_3">
+                        <img src="/src/assets/images/img_charamain05_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext05.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara6" v-if="chara_img[5]">
+                    <div class="float_chara_6_1">
+                        <img src="/src/assets/images/img_charamain06_1.png.png" />
+                    </div>
+                    <div class="float_chara_6_2">
+                        <img src="/src/assets/images/img_charamain06_2.png.png" />
+                    </div>
+                    <div class="float_chara_6_3">
+                        <img src="/src/assets/images/img_charamain06_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext06.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara7" v-if="chara_img[6]">
+                    <div class="float_chara_7_1">
+                        <img src="/src/assets/images/img_charamain07_1.png.png" />
+                    </div>
+                    <div class="float_chara_7_2">
+                        <img src="/src/assets/images/img_charamain07_2.png.png" />
+                    </div>
+                    <div class="float_chara_7_3">
+                        <img src="/src/assets/images/img_charamain07_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext07.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara8" v-if="chara_img[7]">
+                    <div class="float_chara_8_1">
+                        <img src="/src/assets/images/img_charamain08_1.png.png" />
+                    </div>
+                    <div class="float_chara_8_2">
+                        <img src="/src/assets/images/img_charamain08_2.png.png" />
+                    </div>
+                    <div class="float_chara_8_3">
+                        <img src="/src/assets/images/img_charamain08_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext08.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara9" v-if="chara_img[8]">
+                    <div class="float_chara_9_1">
+                        <img src="/src/assets/images/img_charamain09_1.png.png" />
+                    </div>
+                    <div class="float_chara_9_2">
+                        <img src="/src/assets/images/img_charamain09_2.png.png" />
+                    </div>
+                    <div class="float_chara_9_3">
+                        <img src="/src/assets/images/img_charamain09_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext09.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara10" v-if="chara_img[9]">
+                    <div class="float_chara_10_1">
+                        <img src="/src/assets/images/img_charamain10_1.png.png" />
+                    </div>
+                    <div class="float_chara_10_2">
+                        <img src="/src/assets/images/img_charamain10_2.png.png" />
+                    </div>
+                    <div class="float_chara_10_3">
+                        <img src="/src/assets/images/img_charamain10_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext10.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara11" v-if="chara_img[10]">
+                    <div class="float_chara_11_1">
+                        <img src="/src/assets/images/img_charamain11_1.png.png" />
+                    </div>
+                    <div class="float_chara_11_2">
+                        <img src="/src/assets/images/img_charamain11_2.png.png" />
+                    </div>
+                    <div class="float_chara_11_3">
+                        <img src="/src/assets/images/img_charamain11_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext11.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara12" v-if="chara_img[11]">
+                    <div class="float_chara_12_1">
+                        <img src="/src/assets/images/img_charamain12_1.png.png" />
+                    </div>
+                    <div class="float_chara_12_3">
+                        <img src="/src/assets/images/img_charamain12_2.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext12.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara13" v-if="chara_img[12]">
+                    <div class="float_chara_13_1">
+                        <img src="/src/assets/images/img_charamain13_1.png.png" />
+                    </div>
+                    <div class="float_chara_13_2">
+                        <img src="/src/assets/images/img_charamain13_2.png.png" />
+                    </div>
+                    <div class="float_chara_13_3">
+                        <img src="/src/assets/images/img_charamain13_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext13.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara14" v-if="chara_img[13]">
+                    <div class="float_chara_14_1">
+                        <img src="/src/assets/images/img_charamain14_1.png.png" />
+                    </div>
+                    <div class="float_chara_14_2">
+                        <img src="/src/assets/images/img_charamain14_2.png.png" />
+                    </div>
+                    <div class="float_chara_14_3">
+                        <img src="/src/assets/images/img_charamain14_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext14.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara15" v-if="chara_img[14]">
+                    <div class="float_chara_15_1">
+                        <img src="/src/assets/images/img_charamain15_1.png.png" />
+                    </div>
+                    <div class="float_chara_15_2">
+                        <img src="/src/assets/images/img_charamain15_2.png.png" />
+                    </div>
+                    <div class="float_chara_15_3">
+                        <img src="/src/assets/images/img_charamain15_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext15.svg" />
+                    </div>
+                </Row>
+                <Row class="float_chara16" v-if="chara_img[15]">
+                    <div class="float_chara_16_1">
+                        <img src="/src/assets/images/img_charamain16_1.png.png" />
+                    </div>
+                    <div class="float_chara_16_2">
+                        <img src="/src/assets/images/img_charamain16_2.png.png" />
+                    </div>
+                    <div class="float_chara_16_3">
+                        <img src="/src/assets/images/img_charamain16_3.png.png" />
+                    </div>
+                    <div class="float_chara_txt">
+                        <img src="/src/assets/images/charactertext16.svg" />
+                    </div>
+                </Row>
+                </Row>
+                <Row class="float_bg_img">
+                    <Row class="float_bg_img1">
+                        <img src="/src/assets/images/bg_story01.png" :style="`transform:translate(${chara_floatbgimgstr[0][0]}, ${chara_floatbgimgstr[0][1]})`" />
+                    </Row>
+                    <Row class="float_bg_img2">
+                        <img src="/src/assets/images/bg_story02.png" :style="`transform:translate(${chara_floatbgimgstr[1][0]}, ${chara_floatbgimgstr[1][1]})`"/>
+                    </Row>
+                    <Row class="float_bg_img3">
+                        <img src="/src/assets/images/bg_story03.png" :style="`transform:translate(${chara_floatbgimgstr[2][0]}, ${chara_floatbgimgstr[2][1]})`"/>
+                    </Row>
+                </Row>
             </Row>
-            <Row class="float_chara2" v-if="chara_img[1]">
-                <div class="float_chara_2_1">
-                    <img src="/src/assets/images/img_charamain02_1.png.png" />
+            <Row class="slide_img_whole">
+                <Col span="18">
+                </Col>
+                <Col span="3" class="slide_img_col">
+                <div class="slide_img" :style="{ transform: `translateY(${SlideimgUp})` }">
+                <img src="/src/assets/images/img_charabg01.png.png" id="SlideImg01" />
+                <img src="/src/assets/images/img_charabg02.png.png" id="SlideImg02" />
+                <img src="/src/assets/images/img_charabg03.png.png" id="SlideImg03" />
+                <img src="/src/assets/images/img_charabg04.png.png" id="SlideImg04" />
+                <img src="/src/assets/images/img_charabg05.png.png" id="SlideImg05" />
+                <img src="/src/assets/images/img_charabg06.png.png" id="SlideImg06" />
+                <img src="/src/assets/images/img_charabg07.png.png" id="SlideImg07" />
+                <img src="/src/assets/images/img_charabg08.png.png" id="SlideImg08" />
+                <img src="/src/assets/images/img_charabg09.png.png" id="SlideImg09" />
+                <img src="/src/assets/images/img_charabg10.png.png" id="SlideImg10" />
+                <img src="/src/assets/images/img_charabg11.png.png" id="SlideImg11" />
+                <img src="/src/assets/images/img_charabg12.png.png" id="SlideImg12" />
+                <img src="/src/assets/images/img_charabg13.png.png" id="SlideImg13" />
+                <img src="/src/assets/images/img_charabg14.png.png" id="SlideImg14" />
+                <img src="/src/assets/images/img_charabg15.png.png" id="SlideImg15" />
+                <img src="/src/assets/images/img_charabg16.png.png" id="SlideImg16" />
                 </div>
-                <div class="float_chara_2_2">
-                    <img src="/src/assets/images/img_charamain02_2.png.png" />
-                </div>
-                <div class="float_chara_2_3">
-                    <img src="/src/assets/images/img_charamain02_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext02.svg" />
-                </div>
+                </Col>
+                <Col span="3">
+                </Col>
             </Row>
-            <Row class="float_chara3" v-if="chara_img[2]">
-                <div class="float_chara_3_1">
-                    <img src="/src/assets/images/img_charamain03_1.png.png" />
-                </div>
-                <div class="float_chara_3_2">
-                    <img src="/src/assets/images/img_charamain03_2.png.png" />
-                </div>
-                <div class="float_chara_3_3">
-                    <img src="/src/assets/images/img_charamain03_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext03.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara4" v-if="chara_img[3]">
-                <div class="float_chara_4_1">
-                    <img src="/src/assets/images/img_charamain04_1.png.png" />
-                </div>
-                <div class="float_chara_4_2">
-                    <img src="/src/assets/images/img_charamain04_2.png.png" />
-                </div>
-                <div class="float_chara_4_3">
-                    <img src="/src/assets/images/img_charamain04_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext04.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara5" v-if="chara_img[4]">
-                <div class="float_chara_5_1">
-                    <img src="/src/assets/images/img_charamain05_1.png.png" />
-                </div>
-                <div class="float_chara_5_2">
-                    <img src="/src/assets/images/img_charamain05_2.png.png" />
-                </div>
-                <div class="float_chara_5_3">
-                    <img src="/src/assets/images/img_charamain05_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext05.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara6" v-if="chara_img[5]">
-                <div class="float_chara_6_1">
-                    <img src="/src/assets/images/img_charamain06_1.png.png" />
-                </div>
-                <div class="float_chara_6_2">
-                    <img src="/src/assets/images/img_charamain06_2.png.png" />
-                </div>
-                <div class="float_chara_6_3">
-                    <img src="/src/assets/images/img_charamain06_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext06.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara7" v-if="chara_img[6]">
-                <div class="float_chara_7_1">
-                    <img src="/src/assets/images/img_charamain07_1.png.png" />
-                </div>
-                <div class="float_chara_7_2">
-                    <img src="/src/assets/images/img_charamain07_2.png.png" />
-                </div>
-                <div class="float_chara_7_3">
-                    <img src="/src/assets/images/img_charamain07_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext07.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara8" v-if="chara_img[7]">
-                <div class="float_chara_8_1">
-                    <img src="/src/assets/images/img_charamain08_1.png.png" />
-                </div>
-                <div class="float_chara_8_2">
-                    <img src="/src/assets/images/img_charamain08_2.png.png" />
-                </div>
-                <div class="float_chara_8_3">
-                    <img src="/src/assets/images/img_charamain08_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext08.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara9" v-if="chara_img[8]">
-                <div class="float_chara_9_1">
-                    <img src="/src/assets/images/img_charamain09_1.png.png" />
-                </div>
-                <div class="float_chara_9_2">
-                    <img src="/src/assets/images/img_charamain09_2.png.png" />
-                </div>
-                <div class="float_chara_9_3">
-                    <img src="/src/assets/images/img_charamain09_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext09.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara10" v-if="chara_img[9]">
-                <div class="float_chara_10_1">
-                    <img src="/src/assets/images/img_charamain10_1.png.png" />
-                </div>
-                <div class="float_chara_10_2">
-                    <img src="/src/assets/images/img_charamain10_2.png.png" />
-                </div>
-                <div class="float_chara_10_3">
-                    <img src="/src/assets/images/img_charamain10_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext10.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara11" v-if="chara_img[10]">
-                <div class="float_chara_11_1">
-                    <img src="/src/assets/images/img_charamain11_1.png.png" />
-                </div>
-                <div class="float_chara_11_2">
-                    <img src="/src/assets/images/img_charamain11_2.png.png" />
-                </div>
-                <div class="float_chara_11_3">
-                    <img src="/src/assets/images/img_charamain11_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext11.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara12" v-if="chara_img[11]">
-                <div class="float_chara_12_1">
-                    <img src="/src/assets/images/img_charamain12_1.png.png" />
-                </div>
-                <div class="float_chara_12_3">
-                    <img src="/src/assets/images/img_charamain12_2.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext12.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara13" v-if="chara_img[12]">
-                <div class="float_chara_13_1">
-                    <img src="/src/assets/images/img_charamain13_1.png.png" />
-                </div>
-                <div class="float_chara_13_2">
-                    <img src="/src/assets/images/img_charamain13_2.png.png" />
-                </div>
-                <div class="float_chara_13_3">
-                    <img src="/src/assets/images/img_charamain13_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext13.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara14" v-if="chara_img[13]">
-                <div class="float_chara_14_1">
-                    <img src="/src/assets/images/img_charamain14_1.png.png" />
-                </div>
-                <div class="float_chara_14_2">
-                    <img src="/src/assets/images/img_charamain14_2.png.png" />
-                </div>
-                <div class="float_chara_14_3">
-                    <img src="/src/assets/images/img_charamain14_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext14.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara15" v-if="chara_img[14]">
-                <div class="float_chara_15_1">
-                    <img src="/src/assets/images/img_charamain15_1.png.png" />
-                </div>
-                <div class="float_chara_15_2">
-                    <img src="/src/assets/images/img_charamain15_2.png.png" />
-                </div>
-                <div class="float_chara_15_3">
-                    <img src="/src/assets/images/img_charamain15_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext15.svg" />
-                </div>
-            </Row>
-            <Row class="float_chara16" v-if="chara_img[15]">
-                <div class="float_chara_16_1">
-                    <img src="/src/assets/images/img_charamain16_1.png.png" />
-                </div>
-                <div class="float_chara_16_2">
-                    <img src="/src/assets/images/img_charamain16_2.png.png" />
-                </div>
-                <div class="float_chara_16_3">
-                    <img src="/src/assets/images/img_charamain16_3.png.png" />
-                </div>
-                <div class="float_chara_txt">
-                    <img src="/src/assets/images/charactertext16.svg" />
-                </div>
-            </Row>
-            </Row>
-            <Row class="float_bg_img">
-            <Row class="float_bg_img1">
-                <img src="/src/assets/images/bg_story01.png" />
-            </Row>
-            <Row class="float_bg_img2">
-                <img src="/src/assets/images/bg_story02.png" />
-            </Row>
-            <Row class="float_bg_img3">
-                <img src="/src/assets/images/bg_story03.png" />
-            </Row>
-            </Row>
-        </Row>
-        <Row class="slide_img_whole">
-            <Col span="18">
-            </Col>
-            <Col span="3" class="slide_img_col">
-            <div class="slide_img" :style="{ transform: `translateY(${SlideimgUp})` }">
-            <img src="/src/assets/images/img_charabg01.png.png" id="SlideImg01" />
-            <img src="/src/assets/images/img_charabg02.png.png" id="SlideImg02" />
-            <img src="/src/assets/images/img_charabg03.png.png" id="SlideImg03" />
-            <img src="/src/assets/images/img_charabg04.png.png" id="SlideImg04" />
-            <img src="/src/assets/images/img_charabg05.png.png" id="SlideImg05" />
-            <img src="/src/assets/images/img_charabg06.png.png" id="SlideImg06" />
-            <img src="/src/assets/images/img_charabg07.png.png" id="SlideImg07" />
-            <img src="/src/assets/images/img_charabg08.png.png" id="SlideImg08" />
-            <img src="/src/assets/images/img_charabg09.png.png" id="SlideImg09" />
-            <img src="/src/assets/images/img_charabg10.png.png" id="SlideImg10" />
-            <img src="/src/assets/images/img_charabg11.png.png" id="SlideImg11" />
-            <img src="/src/assets/images/img_charabg12.png.png" id="SlideImg12" />
-            <img src="/src/assets/images/img_charabg13.png.png" id="SlideImg13" />
-            <img src="/src/assets/images/img_charabg14.png.png" id="SlideImg14" />
-            <img src="/src/assets/images/img_charabg15.png.png" id="SlideImg15" />
-            <img src="/src/assets/images/img_charabg16.png.png" id="SlideImg16" />
-            </div>
-            </Col>
-            <Col span="3">
-            </Col>
-        </Row>
         </Row>
     </Row>
     <Row class="charas_footer">
@@ -1687,14 +1686,14 @@ export default {
         return{
             hover: true, //将鼠标放在GridItem上是否有悬浮效果
             border: false, //GridItem是否有边框
+
+            //故事简介部分
             number_move: 0, //change_st(e)中使用到的移动几个图片单位
             LeftUp: "0px", //change_st(e)中使用到的左侧图片移动距离
             MidUp: "0px", //change_st(e)中使用到的中间图片移动距离
             RightUp: "0px", //change_st(e)中使用到的右侧图片移动距离
             TxtUp:"0px",//change_st(e)中使用到的文字区移动距离
             SlideimgUp: "0px", //character部分角色滑块滑动距离
-            chara_num: 0, //change_chara(e)中使用到的移动图片单位
-            chara_img: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //不同角色切换使用到的数组，1为true，0为false
             leftimgs_moveup:[
                 {id:1, src:'/src/assets/images/img_story01_01.png.png'},
                 {id:2, src:'/src/assets/images/img_story02_01.png.png'},
@@ -1750,6 +1749,16 @@ export default {
             txtbtn:[1,0],//txtbtn是否显示，1为显示，0为隐藏
             istxtbodyanime:false,//istxtbodyanime是否显示
             istxtbodyanimereverse:false,//istxtbodyanimereverse是否显示
+
+            //人物简介部分
+            chara_num: 0, //change_chara(e)中使用到的移动图片单位
+            chara_img: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //不同角色切换使用到的数组，1为true，0为false
+            chara_floatimg:[[0,0],[0,0],[0,0]],//角色图移动距离（数值类型）
+            chara_floatimgstr:[['0px','0px'],['0px','0px'],['0px','0px']],//角色图移动距离（字符串类型）
+            chara_floatbgimg:[[0,0],[0,0],[0,0]],//背景图移动距离（数值类型）
+            chara_floatbgimgstr:[['0px','0px'],['0px','0px'],['0px','0px']],//背景图移动距离（字符串类型）
+            mousepos_ini:[0,0],//鼠标位置初始值
+            mousepos_fin:[0,0],//鼠标位置100ms之后的值
         }
     },
     methods:{
@@ -1823,6 +1832,71 @@ export default {
 
         this.chara_img = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         this.chara_img[this.chara_num] = 1;
+        },
+
+        chara_move(e){
+            // console.log(e.pageX)
+            // console.log(e.pageX)
+            this.mousepos_ini = [e.pageX, e.pageY];//定下鼠标进入相应区域时的初始值
+            setTimeout(()=>{
+                this.mousepos_fin = [e.pageX,e.pageY];//经过100ms之后回调函数再次启动时获取的值（除第一次执行此回调函数外），和100ms之前保留下来的初始值ini进行算术运算
+
+                //与100ms之前的位置点的X/Y值的差
+                // this.mousepos_fin[0] - this.mousepos_ini[0];
+                // this.mousepos_fin[1] - this.mousepos_ini[1];
+
+
+                //背景图片随着鼠标移动而移动的值，由于背景图片只需很小幅地移动，因此需乘以0.00x
+                this.chara_floatbgimg[0][0] += - 0.002 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatbgimg[0][1] += - 0.003 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                this.chara_floatbgimg[1][0] += - 0.002 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatbgimg[1][1] +=   0.002 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                this.chara_floatbgimg[2][0] += - 0.003 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatbgimg[2][1] += - 0.002 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                //将背景图片移动的值转换成字符串类型，以便 Vue行内样式绑定 使用
+                this.chara_floatbgimgstr[0][0] = this.chara_floatbgimg[0][0] + 'px';
+                this.chara_floatbgimgstr[0][1] = this.chara_floatbgimg[0][1] + 'px';
+                this.chara_floatbgimgstr[1][0] = this.chara_floatbgimg[1][0] + 'px';
+                this.chara_floatbgimgstr[1][1] = this.chara_floatbgimg[1][1] + 'px';
+                this.chara_floatbgimgstr[2][0] = this.chara_floatbgimg[2][0] + 'px';
+                this.chara_floatbgimgstr[2][1] = this.chara_floatbgimg[2][1] + 'px';
+
+
+                //角色图片随着鼠标移动而移动的值，由于背景图片只需很小幅地移动，因此需乘以0.00x
+                this.chara_floatimg[0][0] += - 0.001 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatimg[0][1] += - 0.002 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                this.chara_floatimg[1][0] += - 0.001 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatimg[1][1] +=   0.001 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                this.chara_floatimg[2][0] += - 0.002 * (this.mousepos_fin[0] - this.mousepos_ini[0]);
+                this.chara_floatimg[2][1] += - 0.001 * (this.mousepos_fin[1] - this.mousepos_ini[1]);
+                //将角色图片移动的值转换成字符串类型，以便 Vue行内样式绑定 使用
+                this.chara_floatimgstr[0][0] = this.chara_floatimg[0][0] + 'px';
+                this.chara_floatimgstr[0][1] = this.chara_floatimg[0][1] + 'px';
+                this.chara_floatimgstr[1][0] = this.chara_floatimg[1][0] + 'px';
+                this.chara_floatimgstr[1][1] = this.chara_floatimg[1][1] + 'px';
+                this.chara_floatimgstr[2][0] = this.chara_floatimg[2][0] + 'px';
+                this.chara_floatimgstr[2][1] = this.chara_floatimg[2][1] + 'px';
+
+
+
+                this.mousepos_ini = this.mousepos_fin;//将本次回调函数一开始执行时获取的值付给ini，作为回调函数下次调用时的初始值
+            },100)
+        },
+
+        chara_back(){
+            this.chara_floatbgimgstr[0][0] = - this.chara_floatbgimg[0][0] + 'px';
+            this.chara_floatbgimgstr[0][1] = - this.chara_floatbgimg[0][1] + 'px';
+            this.chara_floatbgimgstr[1][0] = - this.chara_floatbgimg[1][0] + 'px';
+            this.chara_floatbgimgstr[1][1] = - this.chara_floatbgimg[1][1] + 'px';
+            this.chara_floatbgimgstr[2][0] = - this.chara_floatbgimg[2][0] + 'px';
+            this.chara_floatbgimgstr[2][1] = - this.chara_floatbgimg[2][1] + 'px';
+
+            this.chara_floatimgstr[0][0] = - this.chara_floatimg[0][0] + 'px';
+            this.chara_floatimgstr[0][1] = - this.chara_floatimg[0][1] + 'px';
+            this.chara_floatimgstr[1][0] = - this.chara_floatimg[1][0] + 'px';
+            this.chara_floatimgstr[1][1] = - this.chara_floatimg[1][1] + 'px';
+            this.chara_floatimgstr[2][0] = - this.chara_floatimg[2][0] + 'px';
+            this.chara_floatimgstr[2][1] = - this.chara_floatimg[2][1] + 'px';
         },
     },
 }
