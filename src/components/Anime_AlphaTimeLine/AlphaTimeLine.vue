@@ -1105,8 +1105,8 @@
         </Row>
         <Row class="a_charas_body">
             <Col span="14" class="a_charas_txtbody">
-                <ul class="txtbody_whole">
-                    <li class="txtbody_item01" id="txtbody_item00" v-if=txtbody_itemdis[0]>
+                <ul class="txtbody_whole" id="txtbody_whole">
+                    <li class="txtbody_item01" id="txtbody_item00" :class="txtbody_itemdis[0]?txtappear:txtdisappear" v-if=txtbody_itemdis[0]>
                         主人公。老け顔だが東京電機大学1年生。自称「狂気のマッドサイエンティスト・鳳凰院凶真」。通称は「オカリン」だが、本人はこう呼ばれるのを嫌がる。ドクターペッパーを愛飲している。
                         秋葉原のとある雑居ビル2階に「未来ガジェット研究所」というサークルを立ち上げ、役に立たないヘンテコ発明品「未来ガジェット」の製作に勤しんでいる。
                         酷い厨二病を患っており、唐突に通話中ではない携帯電話にむかって「機関の陰謀」などとノリノリで喋る痛い男。他人に対する態度も尊大・自己完結・ＫＹと似たような感じなので友人は余りいない。
@@ -1209,7 +1209,7 @@
                         <li class="charpicitem09"><img src='/src/assets/images/alphacharacter09.png'></li>
                         <li class="charpicitem10"><img src='/src/assets/images/alphacharacter10.png'></li>
                     </ul> -->
-                    <div class="charpic_whole">
+                    <div class="charpic_whole" :style="`transform: translateX(${charpic_movestr})`" id="charpic_whole" >
                         <img class="charpicitem01" id="charpicitem01" src='/src/assets/images/alphacharacter01.png'>
                         <img class="charpicitem02" id="charpicitem02" src='/src/assets/images/alphacharacter02.png'>
                         <img class="charpicitem03" id="charpicitem03" src='/src/assets/images/alphacharacter03.png'>
@@ -1223,8 +1223,8 @@
                     </div>
                 </div>
                 <div class="picbody_btn">
-                    <a class="picbody_btnleft" href="javascript:void(0);"></a>
-                    <a class="picbody_btnright" href="javascript:void(0);"></a>
+                    <a class="picbody_btnleft" href="javascript:void(0);" @click="charpicitemback"></a>
+                    <a class="picbody_btnright" href="javascript:void(0);" @click="charpicitemforward"></a>
                 </div>
             </Col>
         </Row>
@@ -1523,6 +1523,9 @@ export default {
             istxtbodyanime:false,//istxtbodyanime是否显示
             istxtbodyanimereverse:false,//istxtbodyanimereverse是否显示
             txtbody_itemdis:[1,0,0,0,0,0,0,0,0,0],//character里的各个txtitem是否显示
+            charpic_num:0,//记录character图片已经移动的个数
+            charpic_move:0,//记录character图片需要移动的距离
+            charpic_movestr:'0px',
         }
     },
     methods:{
@@ -1577,6 +1580,54 @@ export default {
             this.istxtbodyanimereverse = false;
             this.txtbtn[0] = 0;
             this.txtbtn[1] = 1;
+        },
+
+        //控制character的前进和后退
+        charpicitemback(){
+            let el_right = document.getElementById("charpic_whole").children;
+            // console.log(el_right);
+            if(this.charpic_num === 0){
+            }
+            else{
+                let el_picmargin = parseFloat(window.getComputedStyle(el_right[this.charpic_num-1]).marginRight.slice(0,-2));
+                let el_picwidth = el_right[this.charpic_num-1].clientWidth;
+                let el_picmove = el_picmargin + el_picwidth;
+                this.charpic_move += el_picmove;
+                this.charpic_movestr = String(this.charpic_move) + 'px';
+
+                this.txtbody_itemdis[this.charpic_num] = 0;
+
+                this.charpic_num--;
+
+                this.txtbody_itemdis[this.charpic_num] = 1;
+                console.log(this.charpic_num);
+                console.log(this.charpic_move);
+                console.log(this.charpic_movestr);
+            }
+        },
+        charpicitemforward(){
+            let el_right = document.getElementById("charpic_whole").children;
+            // console.log(el_right);
+            if(this.charpic_num === 9){
+            }
+            else{
+                let el_picmargin = parseFloat(window.getComputedStyle(el_right[this.charpic_num]).marginRight.slice(0,-2));
+                console.log(el_picmargin);
+                let el_picwidth = el_right[this.charpic_num].clientWidth;
+                console.log(el_picwidth);
+                let el_picmove = -(el_picmargin + el_picwidth);
+                this.charpic_move += el_picmove;
+                this.charpic_movestr = String(this.charpic_move) + 'px';
+
+                this.txtbody_itemdis[this.charpic_num] = 0;
+
+                this.charpic_num++;
+
+                this.txtbody_itemdis[this.charpic_num] = 1;
+                console.log(this.charpic_num);
+                console.log(this.charpic_move);
+                console.log(this.charpic_movestr);
+            }
         },
     },
 }
