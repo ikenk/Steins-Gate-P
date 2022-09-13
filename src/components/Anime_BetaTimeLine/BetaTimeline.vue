@@ -1878,7 +1878,6 @@ export default {
                 this.chara_floatimgstr[2][1] = this.chara_floatimg[2][1] + 'px';
 
 
-
                 this.mousepos_ini = this.mousepos_fin;//将本次回调函数一开始执行时获取的值付给ini，作为回调函数下次调用时的初始值
             },100)
         },
