@@ -716,7 +716,7 @@ div[class^='storytxt']{
 
   .txtbody_whole{
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 45%;
     transform: translateY(-50%);
     width: 70%;
@@ -731,11 +731,11 @@ div[class^='storytxt']{
   }
 
   .txtappear{
-    animation: appear 0.5s linear forwards;
+    animation: appear 0.8s linear forwards;
   }
 
   .txtdisappear{
-    animation: disappear 0.5s linear forwards;
+    animation: disappear 0.8s linear forwards;
   }
 
   @keyframes appear {

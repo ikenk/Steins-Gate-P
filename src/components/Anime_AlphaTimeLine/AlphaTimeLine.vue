@@ -1106,13 +1106,13 @@
         <Row class="a_charas_body">
             <Col span="14" class="a_charas_txtbody">
                 <ul class="txtbody_whole" id="txtbody_whole">
-                    <li class="txtbody_item01" id="txtbody_item00" :class="txtbody_itemdis[0]?txtappear:txtdisappear" v-if=txtbody_itemdis[0]>
+                    <li class="txtbody_item01" id="txtbody_item00" :class="txtbody_itemdis[0]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[0]>
                         主人公。老け顔だが東京電機大学1年生。自称「狂気のマッドサイエンティスト・鳳凰院凶真」。通称は「オカリン」だが、本人はこう呼ばれるのを嫌がる。ドクターペッパーを愛飲している。
                         秋葉原のとある雑居ビル2階に「未来ガジェット研究所」というサークルを立ち上げ、役に立たないヘンテコ発明品「未来ガジェット」の製作に勤しんでいる。
                         酷い厨二病を患っており、唐突に通話中ではない携帯電話にむかって「機関の陰謀」などとノリノリで喋る痛い男。他人に対する態度も尊大・自己完結・ＫＹと似たような感じなので友人は余りいない。
                         類は友を呼ぶのか知り合いも個性的な連中ばかり。一方で、頭が上がらない相手や不測の事態にはあっさりヘタれたり、ラボメンのために体を張るなどツンデレ意外とお人よしな部分が見られるが…。
                     </li>
-                    <li class="txtbody_item02" id="txtbody_item01" v-if=txtbody_itemdis[1]>
+                    <li class="txtbody_item02" id="txtbody_item01" :class="txtbody_itemdis[1]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[1]>
                         メインヒロイン。ヴィクトル・コンドリア大学脳科学研究所所属研究員。アメリカにて飛び級で大学を卒業し、かの有名なサイエンス誌に論文が掲載されたこともある天才少女。
                         コミケ風に言うなら経歴無しの新人が2回目参加で壁に行くレベルのすごさ。
                         とある理由で数日のあいだ来日していた際、秋葉原で岡部倫太郎と出会い、未来ガジェット研究所のラボメンとなる。
@@ -1127,7 +1127,7 @@
                         岡部も岡部でツンデレな上、デレが同調するため…お前ら結婚しろ。
                         実は、重度の隠れ＠ちゃんねらーであり、たまに無意識に＠ちゃんねる語を使ってしまう。本人は必死に否定するが、バレバレな上、岡部たちはネットスラングに詳しいためカミングアウトしてからもからかう材料程度にしかなっていない。
                     </li>
-                    <li class="txtbody_item03" id="txtbody_item02" v-if=txtbody_itemdis[2]>
+                    <li class="txtbody_item03" id="txtbody_item02" :class="txtbody_itemdis[2]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[2]>
                         私立花浅葱大学付属学園2年生。岡部倫太郎の幼馴染で、未来ガジェット研究所のラボメンNo.002。
                         一人称は「まゆしぃ☆」。口癖は「トゥットゥルー♪」。メイド喫茶「メイクイーン＋ニャン2」でバイトをしていて、そこではウイッグを付けて「マユシィ・ニャンニャン」と名乗っている。
                         服装は水色クロシェ&ワンピースと膝丈上のデニムパンツというがっかりスタイル。くしゃくしゃの黒髪に帽子を取ったてっぺんのアホ毛、なにより童顔巨乳で太眉キャラ。メインヒロインの牧瀬紅莉栖とは対を成す特徴の持ち主。
@@ -1139,7 +1139,7 @@
                         幼いころ、祖母と一緒に夜空を見ていた影響で、空を見上げて唐突に手を伸ばす癖があり、岡部は「星屑との握手（スターダストシェイクハンド）」と呼んでいる。
                         ちなみに、「まゆしぃはオカリンの人質」だからいつも岡部のそばにいるらしい･･･。
                     </li>
-                    <li class="txtbody_item04" id="txtbody_item03" v-if=txtbody_itemdis[3]>
+                    <li class="txtbody_item04" id="txtbody_item03" :class="txtbody_itemdis[3]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[3]>
                         東京電機大学1年に在籍する男子大学生。通称「ダル」。未来ガジェット研究所のラボメンNo.003。
                         岡部倫太郎とは高校時代からの付き合いで、彼にとって数少ない友人の1人。
                         日常的にネットスラングを織り交ぜて会話をしており、時にセクハラまがいの発言もしている。もちろん周囲のツッコミを喰らうのは言うまでもない。
@@ -1150,7 +1150,7 @@
                         岡部からは、事ある度に「スーパーハカー」と呼ばれているが、その度に「スーパーハッカーだろ」と訂正している。
                         立ち絵の通り、かなりの肥満体なので無呼吸症候群の疑惑が…
                     </li>
-                    <li class="txtbody_item05" id="txtbody_item04" v-if=txtbody_itemdis[4]>
+                    <li class="txtbody_item05" id="txtbody_item04" :class="txtbody_itemdis[4]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[4]>
                         未来ガジェット研究所が入っているビル1階にある「ブラウン管工房」の押しかけバイト。18歳。
                         愛用のマウンテンバイクを乗り回すかなり元気な少女。
                         格闘技やサバイバルに詳しかったり、秋葉原にカルチャーショックを受けていたり、どこか世間知らずで常識外れ。たまに小難しい単語を織り交ぜて会話する。
@@ -1159,7 +1159,7 @@
                         ブラウン管工房でバイトをしているが、客はほとんど来ないため、店長がいないときは自転車を磨いたりしている。また、店長の娘・天王寺綯とも仲よくしている。
                         面倒見がよく誰とでも打ち解けるのが得意だが、なぜか牧瀬紅莉栖のことを初見から毛嫌いしている。
                     </li>
-                    <li class="txtbody_item06" id="txtbody_item05" v-if=txtbody_itemdis[5]>
+                    <li class="txtbody_item06" id="txtbody_item05" :class="txtbody_itemdis[5]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[5]>
                         私立花浅葱大学附属学園2年生で、椎名まゆりのクラスメイト。だが男だ。
                         秋葉原にある柳林神社の一人息子で、巫女の格好で掃除したり模造刀を振ったりしている。だが男だ。
                         非常に線が細く物静かで、恥ずかしがりや。だが男だ。
@@ -1168,7 +1168,7 @@
                         まゆりからいつも「コスプレして」と頼まれるが、かなりの恥ずかしがりやのため断っている。だが男だ。
                         だが俺達は女だったルカ子の事も忘れない。
                     </li>
-                    <li class="txtbody_item07" id="txtbody_item06" v-if=txtbody_itemdis[6]>
+                    <li class="txtbody_item07" id="txtbody_item06" :class="txtbody_itemdis[6]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[6]>
                         メイド喫茶「メイクイーン+ニャン2」の人気ナンバー1メイド。私立金糸雀学園2年生。
                         岡部倫太郎をも上回る厨二病で、岡部の厨二設定に厨二設定を被せてくる為、岡部をもってして「勝てない」と言わしめた。
                         バイト以外でも常にネコミミを装備し、ニャンニャン語を話す。目を見るだけでなんとなく相手の心を読むことができる能力「チェシャ猫の微笑（チェシャー・ブレイク）」を持つ（自称）。
@@ -1176,7 +1176,7 @@
                         カードゲーム「雷ネット・アクセスバトラーズ」が強く、腕前は相当なものだが、諸事情により公式な大会には参加していない。
                         どんなゲームかというと、『陣地の制圧やカード拾得が勝利条件』『カードは伏せる』等既存のゲームで言えば軍人将棋に近い。詳しいルールはこんな感じ。exit
                     </li>
-                    <li class="txtbody_item08" id="txtbody_item07" v-if=txtbody_itemdis[7]>
+                    <li class="txtbody_item08" id="txtbody_item07" :class="txtbody_itemdis[7]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[7]>
                         編集プロダクション「アーク・リライト」のアルバイト。
                         「記録」としてラジ館前で携帯電話のカメラ機能を使用していた際に「偶然」岡部倫太郎の顔を写してしまい、それを岡部に指摘された事がきっかけで岡部達と知り合う事になる。
                         その後ラボメンナンバー005として未来ガジェット研究所に迎えられる。
@@ -1187,8 +1187,8 @@
                         原作本編でのあだ名は上記のみだが「郁」の読み方が多少分かり辛い事からか、ファンの間では「もえいくさん」の愛称で呼ばれる事もある。
                         何故か幻のレトロPCとも言われるIBN5100を執拗に追っているが・・・
                     </li>
-                    <li class="txtbody_item09" id="txtbody_item08" v-if=txtbody_itemdis[8]></li>
-                    <li class="txtbody_item10" id="txtbody_item09" v-if=txtbody_itemdis[9]>
+                    <li class="txtbody_item09" id="txtbody_item08" :class="txtbody_itemdis[8]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[8]></li>
+                    <li class="txtbody_item10" id="txtbody_item09" :class="txtbody_itemdis[9]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[9]>
                         小学6年生。11歳。ミスターブラウンこと天王寺裕吾の娘。おとなしい性格で、岡部やダルにはすこし怯えてるが、他のラボメン（女性陣）とは仲がいい。
                         まゆりに出会うと抱きつく癖があり、一見すると微笑ましいがどちらもパワフルな動作らしい（岡部談）。地下鉄の最前列にまゆりが立っててもそんなやりとりをやっちゃうお茶目な一面もある。
                         科学ADVマニアクス記載の後日談ではこの年にして異様に格ゲーが強いことが発覚。また、ファンディスクの小説版「比翼連理のアンダーリン」では他作品と違い何故か岡部とフラグが立っているのだが…
@@ -1197,18 +1197,6 @@
             </Col>
             <Col span="10" class="a_charas_picbody">
                 <div class="picbody_charpic">
-                    <!-- <ul class="charpic_whole">
-                        <li class="charpicitem01"><img src='/src/assets/images/alphacharacter01.png'></li>
-                        <li class="charpicitem02"><img src='/src/assets/images/alphacharacter02.png'></li>
-                        <li class="charpicitem03"><img src='/src/assets/images/alphacharacter03.png'></li>
-                        <li class="charpicitem04"><img src='/src/assets/images/alphacharacter04.png'></li>
-                        <li class="charpicitem05"><img src='/src/assets/images/alphacharacter05.png'></li>
-                        <li class="charpicitem06"><img src='/src/assets/images/alphacharacter06.png'></li>
-                        <li class="charpicitem07"><img src='/src/assets/images/alphacharacter07.png'></li>
-                        <li class="charpicitem08"><img src='/src/assets/images/alphacharacter08.png'></li>
-                        <li class="charpicitem09"><img src='/src/assets/images/alphacharacter09.png'></li>
-                        <li class="charpicitem10"><img src='/src/assets/images/alphacharacter10.png'></li>
-                    </ul> -->
                     <div class="charpic_whole" :style="`transform: translateX(${charpic_movestr})`" id="charpic_whole" >
                         <img class="charpicitem01" id="charpicitem01" src='/src/assets/images/alphacharacter01.png'>
                         <img class="charpicitem02" id="charpicitem02" src='/src/assets/images/alphacharacter02.png'>
