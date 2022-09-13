@@ -1187,7 +1187,11 @@
                         原作本編でのあだ名は上記のみだが「郁」の読み方が多少分かり辛い事からか、ファンの間では「もえいくさん」の愛称で呼ばれる事もある。
                         何故か幻のレトロPCとも言われるIBN5100を執拗に追っているが・・・
                     </li>
-                    <li class="txtbody_item09" id="txtbody_item08" :class="txtbody_itemdis[8]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[8]></li>
+                    <li class="txtbody_item09" id="txtbody_item08" :class="txtbody_itemdis[8]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[8]>
+                        未来ガジェット研究所階下、大檜山ビル1階で「ブラウン管工房」を経営している中年の大男。岡部からは「ミスターブラウン」と呼ばれている。
+                        ブラウン管と娘の綯をこよなく愛し、液晶や綯にちょっかいをかける者に対しては怒りを抱く。怒らせると容赦なく鉄拳制裁を加えたりするが、基本的に度量が広く優しい性格をしている。
+                        また、大檜山ビルのオーナーでもあるため、借主の岡部達にとっては頭の上がらない存在であるが、格安の家賃でスペースを貸したり入居祝いにとブラウン管テレビ（オンボロではあるが）を譲ったりしている。
+                    </li>
                     <li class="txtbody_item10" id="txtbody_item09" :class="txtbody_itemdis[9]?'txtappear':'txtdisappear'" v-if=txtbody_itemdis[9]>
                         小学6年生。11歳。ミスターブラウンこと天王寺裕吾の娘。おとなしい性格で、岡部やダルにはすこし怯えてるが、他のラボメン（女性陣）とは仲がいい。
                         まゆりに出会うと抱きつく癖があり、一見すると微笑ましいがどちらもパワフルな動作らしい（岡部談）。地下鉄の最前列にまゆりが立っててもそんなやりとりをやっちゃうお茶目な一面もある。

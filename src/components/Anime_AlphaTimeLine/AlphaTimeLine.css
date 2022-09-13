@@ -717,7 +717,7 @@ div[class^='storytxt']{
   .txtbody_whole{
     position: absolute;
     left: 25%;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     width: 70%;
     height: auto;
