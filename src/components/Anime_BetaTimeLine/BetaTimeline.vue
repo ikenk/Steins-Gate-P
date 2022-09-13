@@ -1077,7 +1077,7 @@
     </Col>
     </Row>
     <Row class="b_charas_body">
-    <Row class="charas_cut" @mousemove="chara_move" @mouseleave="chara_back">
+    <Row class="charas_cut" @mousemove="chara_move">
         <Row class="charas_main">
             <Row class="float_img_whole">
                 <Row class="float_top_img">
@@ -1097,13 +1097,13 @@
                 </Row>
                 <Row class="float_chara2" v-if="chara_img[1]">
                     <div class="float_chara_2_1">
-                        <img src="/src/assets/images/img_charamain02_1.png.png" />
+                        <img src="/src/assets/images/img_charamain02_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_2_2">
-                        <img src="/src/assets/images/img_charamain02_2.png.png" />
+                        <img src="/src/assets/images/img_charamain02_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_2_3">
-                        <img src="/src/assets/images/img_charamain02_3.png.png" />
+                        <img src="/src/assets/images/img_charamain02_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext02.svg" />
@@ -1111,13 +1111,13 @@
                 </Row>
                 <Row class="float_chara3" v-if="chara_img[2]">
                     <div class="float_chara_3_1">
-                        <img src="/src/assets/images/img_charamain03_1.png.png" />
+                        <img src="/src/assets/images/img_charamain03_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_3_2">
-                        <img src="/src/assets/images/img_charamain03_2.png.png" />
+                        <img src="/src/assets/images/img_charamain03_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_3_3">
-                        <img src="/src/assets/images/img_charamain03_3.png.png" />
+                        <img src="/src/assets/images/img_charamain03_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext03.svg" />
@@ -1125,13 +1125,13 @@
                 </Row>
                 <Row class="float_chara4" v-if="chara_img[3]">
                     <div class="float_chara_4_1">
-                        <img src="/src/assets/images/img_charamain04_1.png.png" />
+                        <img src="/src/assets/images/img_charamain04_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_4_2">
-                        <img src="/src/assets/images/img_charamain04_2.png.png" />
+                        <img src="/src/assets/images/img_charamain04_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_4_3">
-                        <img src="/src/assets/images/img_charamain04_3.png.png" />
+                        <img src="/src/assets/images/img_charamain04_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext04.svg" />
@@ -1139,13 +1139,13 @@
                 </Row>
                 <Row class="float_chara5" v-if="chara_img[4]">
                     <div class="float_chara_5_1">
-                        <img src="/src/assets/images/img_charamain05_1.png.png" />
+                        <img src="/src/assets/images/img_charamain05_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_5_2">
-                        <img src="/src/assets/images/img_charamain05_2.png.png" />
+                        <img src="/src/assets/images/img_charamain05_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_5_3">
-                        <img src="/src/assets/images/img_charamain05_3.png.png" />
+                        <img src="/src/assets/images/img_charamain05_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext05.svg" />
@@ -1153,13 +1153,13 @@
                 </Row>
                 <Row class="float_chara6" v-if="chara_img[5]">
                     <div class="float_chara_6_1">
-                        <img src="/src/assets/images/img_charamain06_1.png.png" />
+                        <img src="/src/assets/images/img_charamain06_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_6_2">
-                        <img src="/src/assets/images/img_charamain06_2.png.png" />
+                        <img src="/src/assets/images/img_charamain06_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_6_3">
-                        <img src="/src/assets/images/img_charamain06_3.png.png" />
+                        <img src="/src/assets/images/img_charamain06_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext06.svg" />
@@ -1167,13 +1167,13 @@
                 </Row>
                 <Row class="float_chara7" v-if="chara_img[6]">
                     <div class="float_chara_7_1">
-                        <img src="/src/assets/images/img_charamain07_1.png.png" />
+                        <img src="/src/assets/images/img_charamain07_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_7_2">
-                        <img src="/src/assets/images/img_charamain07_2.png.png" />
+                        <img src="/src/assets/images/img_charamain07_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_7_3">
-                        <img src="/src/assets/images/img_charamain07_3.png.png" />
+                        <img src="/src/assets/images/img_charamain07_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext07.svg" />
@@ -1181,13 +1181,13 @@
                 </Row>
                 <Row class="float_chara8" v-if="chara_img[7]">
                     <div class="float_chara_8_1">
-                        <img src="/src/assets/images/img_charamain08_1.png.png" />
+                        <img src="/src/assets/images/img_charamain08_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_8_2">
-                        <img src="/src/assets/images/img_charamain08_2.png.png" />
+                        <img src="/src/assets/images/img_charamain08_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_8_3">
-                        <img src="/src/assets/images/img_charamain08_3.png.png" />
+                        <img src="/src/assets/images/img_charamain08_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext08.svg" />
@@ -1195,13 +1195,13 @@
                 </Row>
                 <Row class="float_chara9" v-if="chara_img[8]">
                     <div class="float_chara_9_1">
-                        <img src="/src/assets/images/img_charamain09_1.png.png" />
+                        <img src="/src/assets/images/img_charamain09_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_9_2">
-                        <img src="/src/assets/images/img_charamain09_2.png.png" />
+                        <img src="/src/assets/images/img_charamain09_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_9_3">
-                        <img src="/src/assets/images/img_charamain09_3.png.png" />
+                        <img src="/src/assets/images/img_charamain09_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext09.svg" />
@@ -1209,13 +1209,13 @@
                 </Row>
                 <Row class="float_chara10" v-if="chara_img[9]">
                     <div class="float_chara_10_1">
-                        <img src="/src/assets/images/img_charamain10_1.png.png" />
+                        <img src="/src/assets/images/img_charamain10_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_10_2">
-                        <img src="/src/assets/images/img_charamain10_2.png.png" />
+                        <img src="/src/assets/images/img_charamain10_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_10_3">
-                        <img src="/src/assets/images/img_charamain10_3.png.png" />
+                        <img src="/src/assets/images/img_charamain10_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext10.svg" />
@@ -1223,13 +1223,13 @@
                 </Row>
                 <Row class="float_chara11" v-if="chara_img[10]">
                     <div class="float_chara_11_1">
-                        <img src="/src/assets/images/img_charamain11_1.png.png" />
+                        <img src="/src/assets/images/img_charamain11_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_11_2">
-                        <img src="/src/assets/images/img_charamain11_2.png.png" />
+                        <img src="/src/assets/images/img_charamain11_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_11_3">
-                        <img src="/src/assets/images/img_charamain11_3.png.png" />
+                        <img src="/src/assets/images/img_charamain11_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext11.svg" />
@@ -1237,10 +1237,10 @@
                 </Row>
                 <Row class="float_chara12" v-if="chara_img[11]">
                     <div class="float_chara_12_1">
-                        <img src="/src/assets/images/img_charamain12_1.png.png" />
+                        <img src="/src/assets/images/img_charamain12_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_12_3">
-                        <img src="/src/assets/images/img_charamain12_2.png.png" />
+                        <img src="/src/assets/images/img_charamain12_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext12.svg" />
@@ -1248,13 +1248,13 @@
                 </Row>
                 <Row class="float_chara13" v-if="chara_img[12]">
                     <div class="float_chara_13_1">
-                        <img src="/src/assets/images/img_charamain13_1.png.png" />
+                        <img src="/src/assets/images/img_charamain13_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_13_2">
-                        <img src="/src/assets/images/img_charamain13_2.png.png" />
+                        <img src="/src/assets/images/img_charamain13_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_13_3">
-                        <img src="/src/assets/images/img_charamain13_3.png.png" />
+                        <img src="/src/assets/images/img_charamain13_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext13.svg" />
@@ -1262,13 +1262,13 @@
                 </Row>
                 <Row class="float_chara14" v-if="chara_img[13]">
                     <div class="float_chara_14_1">
-                        <img src="/src/assets/images/img_charamain14_1.png.png" />
+                        <img src="/src/assets/images/img_charamain14_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_14_2">
-                        <img src="/src/assets/images/img_charamain14_2.png.png" />
+                        <img src="/src/assets/images/img_charamain14_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_14_3">
-                        <img src="/src/assets/images/img_charamain14_3.png.png" />
+                        <img src="/src/assets/images/img_charamain14_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext14.svg" />
@@ -1276,13 +1276,13 @@
                 </Row>
                 <Row class="float_chara15" v-if="chara_img[14]">
                     <div class="float_chara_15_1">
-                        <img src="/src/assets/images/img_charamain15_1.png.png" />
+                        <img src="/src/assets/images/img_charamain15_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_15_2">
-                        <img src="/src/assets/images/img_charamain15_2.png.png" />
+                        <img src="/src/assets/images/img_charamain15_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_15_3">
-                        <img src="/src/assets/images/img_charamain15_3.png.png" />
+                        <img src="/src/assets/images/img_charamain15_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext15.svg" />
@@ -1290,13 +1290,13 @@
                 </Row>
                 <Row class="float_chara16" v-if="chara_img[15]">
                     <div class="float_chara_16_1">
-                        <img src="/src/assets/images/img_charamain16_1.png.png" />
+                        <img src="/src/assets/images/img_charamain16_1.png.png" :style="`transform:translate(${chara_floatimgstr[0][0]}, ${chara_floatimgstr[0][1]})`"/>
                     </div>
                     <div class="float_chara_16_2">
-                        <img src="/src/assets/images/img_charamain16_2.png.png" />
+                        <img src="/src/assets/images/img_charamain16_2.png.png" :style="`transform:translate(${chara_floatimgstr[1][0]}, ${chara_floatimgstr[1][1]})`"/>
                     </div>
                     <div class="float_chara_16_3">
-                        <img src="/src/assets/images/img_charamain16_3.png.png" />
+                        <img src="/src/assets/images/img_charamain16_3.png.png" :style="`transform:translate(${chara_floatimgstr[2][0]}, ${chara_floatimgstr[2][1]})`"/>
                     </div>
                     <div class="float_chara_txt">
                         <img src="/src/assets/images/charactertext16.svg" />
@@ -1881,22 +1881,6 @@ export default {
 
                 this.mousepos_ini = this.mousepos_fin;//将本次回调函数一开始执行时获取的值付给ini，作为回调函数下次调用时的初始值
             },100)
-        },
-
-        chara_back(){
-            this.chara_floatbgimgstr[0][0] = - this.chara_floatbgimg[0][0] + 'px';
-            this.chara_floatbgimgstr[0][1] = - this.chara_floatbgimg[0][1] + 'px';
-            this.chara_floatbgimgstr[1][0] = - this.chara_floatbgimg[1][0] + 'px';
-            this.chara_floatbgimgstr[1][1] = - this.chara_floatbgimg[1][1] + 'px';
-            this.chara_floatbgimgstr[2][0] = - this.chara_floatbgimg[2][0] + 'px';
-            this.chara_floatbgimgstr[2][1] = - this.chara_floatbgimg[2][1] + 'px';
-
-            this.chara_floatimgstr[0][0] = - this.chara_floatimg[0][0] + 'px';
-            this.chara_floatimgstr[0][1] = - this.chara_floatimg[0][1] + 'px';
-            this.chara_floatimgstr[1][0] = - this.chara_floatimg[1][0] + 'px';
-            this.chara_floatimgstr[1][1] = - this.chara_floatimg[1][1] + 'px';
-            this.chara_floatimgstr[2][0] = - this.chara_floatimg[2][0] + 'px';
-            this.chara_floatimgstr[2][1] = - this.chara_floatimg[2][1] + 'px';
         },
     },
 }
