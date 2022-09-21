@@ -86,7 +86,7 @@
       </Row>
     </transition>
     <!-- 时钟切换 -->
-    <Row class="clock_change_box" v-show="ClockChangeDis">
+    <Row class="clock_change_box" v-if="ClockChangeDis">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
         <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
@@ -248,7 +248,7 @@ export default {
       this.ClockChangeDis = 1;
       setTimeout(() => {
         this.ClockChangeDis = 0;
-      }, 1000);
+      }, 1200);
       //在时钟动画出现过程中，生成一个随机数
       while(true){
         this.Randnum = this.getRndInteger(0, 7)

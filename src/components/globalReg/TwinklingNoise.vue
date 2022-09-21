@@ -12,7 +12,7 @@
 <script>
 export default {
     name:'TwinklingNoise',
-     data() {
+    data() {
         return { 
             disn:'block',
         }
@@ -74,33 +74,33 @@ export default {
     } 
 }
 
-/* 各部分闪烁和为宜 */
+/* 各部分闪烁和位移 */
 .rightimg1{
     position: absolute;
     width: 55%;
     height: 100%;
-    animation: twinkling 0.1s  8 ;
+    /* animation: twinkling 0.1s  8 */;
 }
 .rightimg2{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 55%;
-    animation: twinkling 0.1s  0.2s 7 ;
+    /* animation: twinkling 0.1s  0.2s 7 */;
 }
 .rightimg3{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 70%;
-    animation: twinkling 0.1s  0.1s 8 ;
+    /* animation: twinkling 0.1s  0.1s 8 */;
 }
 .rightimg4{
     position: absolute;
     width: 15%;
     height: 100%;
     left: 85%;
-    animation: twinkling 0.1s 0.2s 7 ;
+    /*animation: twinkling 0.1s 0.2s 7 */;
 }
 
 </style>

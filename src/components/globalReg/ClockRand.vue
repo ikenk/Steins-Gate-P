@@ -13,26 +13,43 @@ export default {
             hour: '',
             minute: '',
             second: '',
+            timesRun:0,
         }
     },
     mounted(){
-        this.getRandomTime()
+        // setTimeout(()=>{
+        //     this.getRandomTime()
+        // },500)
+        this.getRandomTime();
+        // this.stopRandomTime();
     },
     methods:{
         getRandomTime(){
             let _this = this;
-            setInterval(()=>{
-                let rand_hour = Math.floor(Math.random()*24)
-                let rand_min = Math.floor(Math.random()*60)
-                let rand_sec = Math.floor(Math.random()*60)
-                _this.hour = _this.time2str(rand_hour)
-                _this.minute = _this.time2str(rand_min)
-                _this.second = _this.time2str(rand_sec)
-            },100)
+            let intervalTime = setInterval(()=>{
+                _this.timesRun += 1;
+                console.log(_this.timesRun);
+                if(_this.timesRun === 11){
+                    _this.timesRun = 0;
+                    clearInterval(intervalTime);
+                }
+                let rand_hour = Math.floor(Math.random()*24);
+                let rand_min = Math.floor(Math.random()*60);
+                let rand_sec = Math.floor(Math.random()*60);
+                _this.hour = _this.time2str(rand_hour);
+                _this.minute = _this.time2str(rand_min);
+                _this.second = _this.time2str(rand_sec);
+            },50);
         },
         time2str(num){
-            return ('0' + num).slice(-2)
+            return ('0' + num).slice(-2);
         },
+        // stopRandomTime(){
+        //     setTimeout(()=>{
+        //         this.getRandomTime()
+        //     },800);
+
+        // },
     },
 }
 </script>
@@ -90,6 +107,6 @@ export default {
         font-size: 15vh;
         color: #D9A600;
         text-shadow: -3px 0 2px #eb2900, 0 3px 2px #eb2900, 3px 0 2px #eb2900, 0 -3px 2px #eb2900;
-        animation: twinkling  0.2s 7;
+        
     }
 </style>
