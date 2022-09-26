@@ -1,0 +1,90 @@
+/* 1.0 clockchangepage整体布局 */
+.clockchangepage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    /* background: black; */
+    /* background-image: url("./images/img_noise01.png"); */
+}
+
+
+.clockchangeani{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+}
+
+.clockchangeani::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index: 0;
+}
+
+/* 播放器样式 */
+.video_clock_player{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 闪烁动画 */
+/* @-webkit-keyframes twinkling{ 
+    0%{ 
+        opacity: 0.5; 
+    } 
+    100%{ 
+        opacity: 1; 
+    } 
+} 
+@keyframes twinkling{ 
+    0%{ 
+        opacity: 0.5; 
+    } 
+    100%{ 
+        opacity: 1; 
+    } 
+} */
+
+/* 移位动画 */
+/* @-webkit-keyframes move{ 
+    100%{ 
+        transform: translate(-2%,-2%); 
+    } 
+} 
+@keyframes move{ 
+    100%{ 
+        transform: translate(0,-2%); 
+    } 
+} */
+
+/* 各部分闪烁和位移 */
+/* .rightimg1{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    animation: twinkling 0.1s  8;
+}
+.rightimg2{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 55%;
+    animation: twinkling 0.1s  0.2s 7;
+}
+.rightimg3{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 70%;
+    animation: twinkling 0.1s  0.1s 8;
+}
+.rightimg4{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 85%;
+    animation: twinkling 0.1s 0.2s 7;
+} */

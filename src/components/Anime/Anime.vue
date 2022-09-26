@@ -61,7 +61,9 @@
           </Row>
         </Row>
         <br />
-        <GlobalFooter :links="links" :copyright="copyright" />
+        <!-- 全局页脚 -->
+        <GlobalFooter :copyright="copyright" />
+        <!-- <GlobalFooter :links="links" :copyright="copyright" /> -->
         <!-- 返回顶部按钮 -->
         <BackToTop></BackToTop>
       </div>
@@ -89,7 +91,7 @@
     <Row class="clock_change_box" v-if="ClockChangeDis">
       <Row class="clock_change">
         <ClockRand class="clock_click"></ClockRand>
-        <TwinklingNoise class="twinkle_noise"></TwinklingNoise>
+        <ClockRandBG class="twinkle_noise"></ClockRandBG>
       </Row>
     </Row>
     <!-- 1080p video切换 -->
@@ -109,7 +111,7 @@
 <script>
 import ClockRand from "/src/components/globalReg/ClockRand.vue";
 import AnimeVideo1080pChange from "/src/components/globalReg/AnimeVideo1080pChange.vue";
-import TwinklingNoise from "/src/components/globalReg/TwinklingNoise.vue";
+import ClockRandBG from "/src/components/globalReg/ClockRandBG.vue";
 import TopImg from "/src/components/globalReg/TopImg.vue";
 // import BackgroundLongImg from "/src/components/Anime_BackgroundLongImg/BackgroundLongImg.vue";
 import BackToTop from "/src/components/globalReg/BackToTop.vue";
@@ -122,7 +124,7 @@ export default {
 
   components: {
     "ClockRand": ClockRand,
-    "TwinklingNoise": TwinklingNoise,
+    "ClockRandBG": ClockRandBG,
     "AnimeVideo1080pChange":AnimeVideo1080pChange,
     // "BackgroundLongImg": BackgroundLongImg,
     "TopImg":TopImg,
@@ -130,7 +132,7 @@ export default {
     "SideThreeNavBtn": SideThreeNavBtn,
     "AlphaTimeLine":AlphaTimeLine,
     "BetaTimeLine": BetaTimeLine,
-},
+  },
 
   data() {
     return {
@@ -173,27 +175,28 @@ export default {
       //1080p视url
 
       //全局页脚
-      links: [
-        {
-            key: '帮助',
-            title: '帮助',
-            href: 'javascript:void(0);',
-            blankTarget: true
-        },
-        {
-            key: 'github',
-            icon: 'ios-infinite',
-            href: 'javascript:void(0);',
-            blankTarget: true
-        },
-        {
-            key: '条款',
-            title: '条款',
-            href: 'javascript:void(0);',
-            blankTarget: true
-        }
-      ],
-      copyright: 'Copyright © 2022 iKenaka All Rights Reserved',
+      // links: [
+      //   {
+      //       key: '帮助',
+      //       title: '帮助',
+      //       href: 'javascript:void(0);',
+      //       blankTarget: true
+      //   },
+      //   {
+      //       key: 'github',
+      //       icon: 'ios-infinite',
+      //       href: 'javascript:void(0);',
+      //       blankTarget: true
+      //   },
+      //   {
+      //       key: '条款',
+      //       title: '条款',
+      //       href: 'javascript:void(0);',
+      //       blankTarget: true
+      //   }
+      // ],
+      year:0,
+      copyright: '',
       //全局页脚
 
 
@@ -213,10 +216,18 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.scrollToTop);//监视页面滚动
+    //监视页面滚动
+    window.addEventListener("scroll", this.scrollToTop);
     let container_el = document.getElementById("container")
     this.thePageHeight = document.documentElement.clientHeight;
     this.theWholePage = 1.83 * (container_el.clientHeight - this.thePageHeight) + container_el.clientHeight;
+    //监视页面滚动
+
+    // 全局页脚的年份的实时变化
+    const date = new Date();
+    this.year = date.getFullYear();
+    this.copyright = `Copyright © ` + this.year + ` iKenaka All Rights Reserved`;
+    // 全局页脚的年份的实时变化
   },
   updated(){
     let container_el = document.getElementById("container")

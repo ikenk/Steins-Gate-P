@@ -28,7 +28,7 @@ export default {
             let _this = this;
             let intervalTime = setInterval(()=>{
                 _this.timesRun += 1;
-                console.log(_this.timesRun);
+                // console.log(_this.timesRun);
                 if(_this.timesRun === 11){
                     _this.timesRun = 0;
                     clearInterval(intervalTime);
