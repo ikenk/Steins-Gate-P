@@ -120,6 +120,7 @@ import AlphaTimeLine from "/src/components/Anime_AlphaTimeLine/AlphaTimeLine.vue
 import BetaTimeLine from "/src/components/Anime_BetaTimeLine/BetaTimeLine.vue";
 
 export default {
+  
   name: "Anime",
 
   components: {

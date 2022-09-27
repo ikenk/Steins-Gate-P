@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../Home/Home.vue'
 import Anime from '../Anime/Anime.vue'
 import Game from '../Game/Game.vue'
+import TDOpening from "../Home/3DOpening.vue"
 
 const routes = [
   {path:'/', redirect:'/home'},
@@ -18,7 +19,7 @@ const routes = [
   {
     path:'/game',
     name:'game',
-    component:Game,
+    component:TDOpening,
   },
 ]
 
