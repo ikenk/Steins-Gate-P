@@ -73,8 +73,29 @@
         );
 
         //添加灯光
+        // Z轴灯光，前后
         const light01 = new THREE.DirectionalLight(0xffffff,1);
-        light01.position.set(0,0,10)
+        light01.position.set(0,0,50);
+        scene.add(light01);
+        const light02 = new THREE.DirectionalLight(0xffffff,1);
+        light02.position.set(0,0,-10);
+        scene.add(light02);
+
+        //X轴灯光，左右
+        const light03 = new THREE.DirectionalLight(0xffffff,1);
+        light03.position.set(10,0,0);
+        scene.add(light03);
+        const light04 = new THREE.DirectionalLight(0xffffff,1);
+        light04.position.set(-10,0,0);
+        scene.add(light04);
+
+        // Y轴灯光，上
+        const light05 = new THREE.DirectionalLight(0xffffff,1);
+        light05.position.set(0,10,0);
+        scene.add(light05);
+        const light06 = new THREE.DirectionalLight(0xffffff,1);
+        light06.position.set(0,10,0);
+        scene.add(light06);
     });
 
 </script>
