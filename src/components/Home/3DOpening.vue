@@ -31,22 +31,33 @@
 
     //设置render函数用来渲染场景
     const render = () => {
-        renderer.render(scene,camera);
-        controls && controls.update();
-        requestAnimationFrame(render);
+        renderer.render(scene,camera);//用scene和camera渲染场景
+        controls && controls.update();//控制器更新
+        requestAnimationFrame(render);//按帧更新控制器
     }
+
+    //监视画面变化
+    window.addEventListener("resize",() => {
+        //更新摄像机
+        camera.aspect = window.innerWidth / window.innerHeight;
+        //更新摄像机的投影矩阵
+        camera.updateProjectionMatrix();
+
+        // 更新渲染器尺寸
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        //更新渲染器的像素比
+        renderer.setPixelRatio(window.devicePixelRatio);
+    })
 
     onMounted(()=>{
         // 将渲染器插入到Dom中
-        // console.log(canvasDom.value);
         canvasDom.value.appendChild(renderer.domElement);
 
         // 初始化渲染器
         renderer.setClearColor("#000")
         scene.background = new THREE.Color("#ccc");//渲染场景背景，背景总是首先被渲染的
         scene.environment = new THREE.Color("#ccc");//渲染场景环境，该纹理贴图将会被设为场景中所有物理材质的环境贴图
-        //调用渲染函数render
-        render();
+        render();//调用渲染函数render
 
         //添加网格地面
         const gridHelper = new THREE.GridHelper(10,10);
@@ -55,7 +66,8 @@
         scene.add(gridHelper);
 
         //添加控制器
-        controls = new OrbitControls(camera,renderer.domElement)
+        controls = new OrbitControls(camera,renderer.domElement);
+        controls.enableDamping = true;// 设置控制器阻尼，让控制器更真实
         controls.update();
 
         //载入模型
@@ -73,29 +85,32 @@
         );
 
         //添加灯光
-        // Z轴灯光，前后
         const light01 = new THREE.DirectionalLight(0xffffff,1);
-        light01.position.set(0,0,50);
-        scene.add(light01);
+        light01.position.set(0,0,10);
+        // scene.add(light01);
         const light02 = new THREE.DirectionalLight(0xffffff,1);
         light02.position.set(0,0,-10);
         scene.add(light02);
 
-        //X轴灯光，左右
         const light03 = new THREE.DirectionalLight(0xffffff,1);
-        light03.position.set(10,0,0);
-        scene.add(light03);
+        light03.position.set(50,0,0);
+        // scene.add(light03);
         const light04 = new THREE.DirectionalLight(0xffffff,1);
-        light04.position.set(-10,0,0);
-        scene.add(light04);
+        light04.position.set(-50,0,0);
+        // scene.add(light04);
 
-        // Y轴灯光，上
         const light05 = new THREE.DirectionalLight(0xffffff,1);
-        light05.position.set(0,10,0);
+        light05.position.set(-50,50,50);
         scene.add(light05);
         const light06 = new THREE.DirectionalLight(0xffffff,1);
-        light06.position.set(0,10,0);
+        light05.position.set(50,50,50);
         scene.add(light06);
+        const light07 = new THREE.DirectionalLight(0xffffff,1);
+        light06.position.set(-50,-50,-50);
+        scene.add(light07);
+        const light08 = new THREE.DirectionalLight(0xffffff,1);
+        light06.position.set(50,-50,-50);
+        scene.add(light08);
     });
 
 </script>
