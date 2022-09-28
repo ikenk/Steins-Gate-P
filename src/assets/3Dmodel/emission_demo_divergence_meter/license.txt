@@ -1,0 +1,11 @@
+Model Information:
+* title:	Emission Demo: Divergence Meter
+* source:	https://sketchfab.com/3d-models/emission-demo-divergence-meter-148e3de16e9e4c389d67c7a12db47fc0
+* author:	Sketchfab (https://sketchfab.com/Sketchfab)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Emission Demo: Divergence Meter" (https://sketchfab.com/3d-models/emission-demo-divergence-meter-148e3de16e9e4c389d67c7a12db47fc0) by Sketchfab (https://sketchfab.com/Sketchfab) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

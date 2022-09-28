@@ -1,0 +1,11 @@
+Model Information:
+* title:	[Steins;Gate] Time machine
+* source:	https://sketchfab.com/3d-models/steinsgate-time-machine-f0aa81a123b54f77ac2ff4a4630cc050
+* author:	mrTorch (https://sketchfab.com/mrTorch)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[Steins;Gate] Time machine" (https://sketchfab.com/3d-models/steinsgate-time-machine-f0aa81a123b54f77ac2ff4a4630cc050) by mrTorch (https://sketchfab.com/mrTorch) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
