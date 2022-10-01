@@ -1,130 +1,567 @@
 <template>
-    <div class="opening">
-        <div class="canvas_container" ref="canvasDom"></div>
+    <!-- partial:index.partial.html -->
+    <div class="relative w-screen h-screen">
+        <div class="absolute w-full h-full" :style="{opacity:`${this.opacity}`}" @click="changeopa()">
+            <img src="./「シュタインズ・ゲート-ゼロ」キービジュアル.png" class="w-full h-full cursor-pointer img1" alt="" crossorigin="anonymous" />
+        </div>
+        <div class="particle-explode w-full h-full bg-black"></div>
     </div>
+    <!-- partial -->
 </template>
 
-<script setup>
-    import * as THREE from "/node_modules/three";
-    import {OrbitControls} from "/node_modules/three/examples/jsm/controls/OrbitControls.js";
-    import {GLTFLoader} from "/node_modules/three/examples/jsm/loaders/GLTFLoader.js";
-    import { onMounted, reactive, ref } from "vue";
+<script>
+    import * as THREE from "https://cdn.skypack.dev/three@0.124.0";
+    import { OrbitControls } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/controls/OrbitControls";
+    import { EffectComposer } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/EffectComposer";
+    import Stats from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/libs/stats.module";
+    import * as dat from "https://cdn.skypack.dev/dat.gui@0.7.7";
+    import imagesLoaded from "https://cdn.skypack.dev/imagesloaded@4.1.4";
+    import { RenderPass } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/RenderPass.js";
+    import { UnrealBloomPass } from "https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/UnrealBloomPass.js";
+    import gsap from "https://cdn.skypack.dev/gsap@3.6.0";
+    import { Maku, getScreenFov } from "https://cdn.skypack.dev/maku.js@1.0.1";
 
-    // 获取canvasDom元素
-    let canvasDom = ref(null); 
 
-    //声明控制器
-    let controls;
+    export default {
+        name: 'ThreeDOpening',
 
-    // 创建场景
-    const scene = new THREE.Scene();
+        data () {
+            return {
+                opacity:0,
+            }
+        },
 
-    // 创建相机
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(0,2,6);
+        methods:{
+            changeopa(){
+                this.opacity = 0.5 - this.opacity;
+            }
+        },
+        
+        mounted () {
+            
+            const calcAspect = (el) => el.clientWidth / el.clientHeight;
+            const getNormalizedMousePos = (e) => {
+                return {
+                    x: (e.clientX / window.innerWidth) * 2 - 1,
+                    y: -(e.clientY / window.innerHeight) * 2 + 1
+                };
+            };
+            const preloadImages = (sel = "img") => {
+                return new Promise((resolve) => {
+                    imagesLoaded(sel, { background: true }, resolve);
+                });
+            };
+            class MouseTracker {
+                constructor() {
+                    this.mousePos = new THREE.Vector2(0, 0);
+                    this.mouseSpeed = 0;
+                }
+                // 追踪鼠标位置
+                trackMousePos() {
+                    window.addEventListener("mousemove", (e) => {
+                        this.setMousePos(e);
+                    });
+                    window.addEventListener("touchstart", (e) => {
+                        this.setMousePos(e.touches[0]);
+                    }, { passive: false });
+                    window.addEventListener("touchmove", (e) => {
+                        this.setMousePos(e.touches[0]);
+                    });
+                }
+                // 设置鼠标位置
+                setMousePos(e) {
+                    const { x, y } = getNormalizedMousePos(e);
+                    this.mousePos.x = x;
+                    this.mousePos.y = y;
+                }
+                // 追踪鼠标速度
+                trackMouseSpeed() {
+                    // https://stackoverflow.com/questions/6417036/track-mouse-speed-with-js
+                    let lastMouseX = -1;
+                    let lastMouseY = -1;
+                    let mouseSpeed = 0;
+                    window.addEventListener("mousemove", (e) => {
+                        const mousex = e.pageX;
+                        const mousey = e.pageY;
+                        if (lastMouseX > -1) {
+                            mouseSpeed = Math.max(Math.abs(mousex - lastMouseX), Math.abs(mousey - lastMouseY));
+                            this.mouseSpeed = mouseSpeed / 100;
+                        }
+                        lastMouseX = mousex;
+                        lastMouseY = mousey;
+                    });
+                    document.addEventListener("mouseleave", () => {
+                        this.mouseSpeed = 0;
+                    });
+                }
+            }
 
-    // 创建渲染器renderer
-    const renderer = new THREE.WebGL1Renderer({
-        antialias:true,// 抗锯齿
-    });
-    renderer.setSize(window.innerWidth, window.innerHeight);//设置renderer尺寸
+            const particleExplodeVertexShader = `
+            vec4 permute(vec4 x){return mod(((x*34.)+1.)*x,289.);}
+            vec4 taylorInvSqrt(vec4 r){return 1.79284291400159-.85373472095314*r;}
 
-    //设置render函数用来渲染场景
-    const render = () => {
-        renderer.render(scene,camera);//用scene和camera渲染场景
-        controls && controls.update();//控制器更新
-        requestAnimationFrame(render);//按帧更新控制器
+            float snoise(vec3 v){
+                const vec2 C=vec2(1./6.,1./3.);
+                const vec4 D=vec4(0.,.5,1.,2.);
+                
+                // First corner
+                vec3 i=floor(v+dot(v,C.yyy));
+                vec3 x0=v-i+dot(i,C.xxx);
+                
+                // Other corners
+                vec3 g=step(x0.yzx,x0.xyz);
+                vec3 l=1.-g;
+                vec3 i1=min(g.xyz,l.zxy);
+                vec3 i2=max(g.xyz,l.zxy);
+                
+                //  x0 = x0 - 0. + 0.0 * C
+                vec3 x1=x0-i1+1.*C.xxx;
+                vec3 x2=x0-i2+2.*C.xxx;
+                vec3 x3=x0-1.+3.*C.xxx;
+                
+                // Permutations
+                i=mod(i,289.);
+                vec4 p=permute(permute(permute(
+                            i.z+vec4(0.,i1.z,i2.z,1.))
+                            +i.y+vec4(0.,i1.y,i2.y,1.))
+                            +i.x+vec4(0.,i1.x,i2.x,1.));
+                            
+                            // Gradients
+                            // ( N*N points uniformly over a square, mapped onto an octahedron.)
+                            float n_=1./7.;// N=7
+                            vec3 ns=n_*D.wyz-D.xzx;
+                            
+                            vec4 j=p-49.*floor(p*ns.z*ns.z);//  mod(p,N*N)
+                            
+                            vec4 x_=floor(j*ns.z);
+                            vec4 y_=floor(j-7.*x_);// mod(j,N)
+                            
+                            vec4 x=x_*ns.x+ns.yyyy;
+                            vec4 y=y_*ns.x+ns.yyyy;
+                            vec4 h=1.-abs(x)-abs(y);
+                            
+                            vec4 b0=vec4(x.xy,y.xy);
+                            vec4 b1=vec4(x.zw,y.zw);
+                            
+                            vec4 s0=floor(b0)*2.+1.;
+                            vec4 s1=floor(b1)*2.+1.;
+                            vec4 sh=-step(h,vec4(0.));
+                            
+                            vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy;
+                            vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;
+                            
+                            vec3 p0=vec3(a0.xy,h.x);
+                            vec3 p1=vec3(a0.zw,h.y);
+                            vec3 p2=vec3(a1.xy,h.z);
+                            vec3 p3=vec3(a1.zw,h.w);
+                            
+                            //Normalise gradients
+                            vec4 norm=taylorInvSqrt(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3)));
+                            p0*=norm.x;
+                            p1*=norm.y;
+                            p2*=norm.z;
+                            p3*=norm.w;
+                            
+                            // Mix final noise value
+                            vec4 m=max(.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.);
+                            m=m*m;
+                            return 42.*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),
+                            dot(p2,x2),dot(p3,x3)));
+                        }
+                        
+                        vec3 snoiseVec3(vec3 x){
+                            return vec3(snoise(vec3(x)*2.-1.),
+                            snoise(vec3(x.y-19.1,x.z+33.4,x.x+47.2))*2.-1.,
+                            snoise(vec3(x.z+74.2,x.x-124.5,x.y+99.4)*2.-1.)
+                        );
+                    }
+                    
+                    vec3 curlNoise(vec3 p){
+                        const float e=.1;
+                        vec3 dx=vec3(e,0.,0.);
+                        vec3 dy=vec3(0.,e,0.);
+                        vec3 dz=vec3(0.,0.,e);
+                        
+                        vec3 p_x0=snoiseVec3(p-dx);
+                        vec3 p_x1=snoiseVec3(p+dx);
+                        vec3 p_y0=snoiseVec3(p-dy);
+                        vec3 p_y1=snoiseVec3(p+dy);
+                        vec3 p_z0=snoiseVec3(p-dz);
+                        vec3 p_z1=snoiseVec3(p+dz);
+                        
+                        float x=p_y1.z-p_y0.z-p_z1.y+p_z0.y;
+                        float y=p_z1.x-p_z0.x-p_x1.z+p_x0.z;
+                        float z=p_x1.y-p_x0.y-p_y1.x+p_y0.x;
+                        
+                        const float divisor=1./(2.*e);
+                        return normalize(vec3(x,y,z)*divisor);
+                    }
+                    
+                    uniform float uTime;
+                    uniform float uProgress;
+                    varying vec2 vUv;
+                    
+                    void main(){
+                        vec3 noise=curlNoise(vec3(position.x*.02,position.y*.008,uTime*.05));
+                        vec3 distortion=vec3(position.x*2.,position.y,1.)*noise*uProgress;
+                        vec3 newPos=position+distortion;
+                        vec4 modelPosition=modelMatrix*vec4(newPos,1.);
+                        vec4 viewPosition=viewMatrix*modelPosition;
+                        vec4 projectedPosition=projectionMatrix*viewPosition;
+                        gl_Position=projectedPosition;
+                        gl_PointSize=10.;
+                        
+                        vUv=uv;
+                    }
+            `;
+
+
+            const particleExplodeFragmentShader = `
+            uniform float uTime;
+            uniform vec2 uMouse;
+            uniform vec2 uResolution;
+            uniform sampler2D uTexture;
+
+            varying vec2 vUv;
+
+            void main(){
+                vec4 color=texture2D(uTexture,vUv);
+                if(color.r<.1&&color.g<.1&&color.b<.1){
+                    discard;
+                }
+                gl_FragColor=color;
+            }
+            `;
+
+
+            class Base {
+                constructor(sel, debug = false) {
+                    this.debug = debug;
+                    this.container = window.document.querySelector(".particle-explode");
+                    console.log(this.container);
+                    this.perspectiveCameraParams = {
+                        fov: 75,
+                        near: 0.1,
+                        far: 100
+                    };
+                    this.orthographicCameraParams = {
+                        zoom: 2,
+                        near: -100,
+                        far: 1000
+                    };
+                    this.cameraPosition = new THREE.Vector3(0, 3, 10);
+                    this.lookAtPosition = new THREE.Vector3(0, 0, 0);
+                    this.rendererParams = {
+                        alpha: true,
+                        antialias: true
+                    };
+                    this.mouseTracker = new MouseTracker();
+                }
+                // 初始化
+                init() {
+                    this.createScene();
+                    this.createPerspectiveCamera();
+                    this.createRenderer();
+                    this.createMesh({});
+                    this.createLight();
+                    this.createOrbitControls();
+                    this.createDebugUI();
+                    this.addListeners();
+                    this.setLoop();
+                }
+                // 创建场景
+                createScene() {
+                    const scene = new THREE.Scene();
+                    this.scene = scene;
+                }
+                // 创建透视相机
+                createPerspectiveCamera() {
+                    const { perspectiveCameraParams, cameraPosition, lookAtPosition } = this;
+                    const { fov, near, far } = perspectiveCameraParams;
+                    const aspect = calcAspect(this.container);
+                    const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+                    camera.position.copy(cameraPosition);
+                    camera.lookAt(lookAtPosition);
+                    this.camera = camera;
+                }
+                // 创建正交相机
+                createOrthographicCamera() {
+                    const { orthographicCameraParams, cameraPosition, lookAtPosition } = this;
+                    const { left, right, top, bottom, near, far } = orthographicCameraParams;
+                    const camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far);
+                    camera.position.copy(cameraPosition);
+                    camera.lookAt(lookAtPosition);
+                    this.camera = camera;
+                }
+                // 更新正交相机参数
+                updateOrthographicCameraParams() {
+                    const { container } = this;
+                    const { zoom, near, far } = this.orthographicCameraParams;
+                    const aspect = calcAspect(container);
+                    this.orthographicCameraParams = {
+                        left: -zoom * aspect,
+                        right: zoom * aspect,
+                        top: zoom,
+                        bottom: -zoom,
+                        near,
+                        far,
+                        zoom
+                    };
+                }
+                // 创建渲染
+                createRenderer() {
+                    const { rendererParams } = this;
+                    const renderer = new THREE.WebGLRenderer(rendererParams);
+                    renderer.setClearColor(0x000000, 0);
+                    this.container.appendChild(renderer.domElement);
+                    this.renderer = renderer;
+                    this.resizeRendererToDisplaySize();
+                }
+                // 调整渲染器尺寸
+                resizeRendererToDisplaySize() {
+                    const { renderer } = this;
+                    renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+                    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                }
+                // 创建网格
+                createMesh(meshObject, container = this.scene) {
+                    const { geometry = new THREE.BoxGeometry(1, 1, 1), material = new THREE.MeshStandardMaterial({
+                        color: new THREE.Color("#d9dfc8")
+                    }), position = new THREE.Vector3(0, 0, 0) } = meshObject;
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.position.copy(position);
+                    container.add(mesh);
+                    return mesh;
+                }
+                // 创建光源
+                createLight() {
+                    const dirLight = new THREE.DirectionalLight(new THREE.Color("#ffffff"), 0.5);
+                    dirLight.position.set(0, 50, 0);
+                    this.scene.add(dirLight);
+                    const ambiLight = new THREE.AmbientLight(new THREE.Color("#ffffff"), 0.4);
+                    this.scene.add(ambiLight);
+                }
+                // 创建轨道控制
+                createOrbitControls() {
+                    const controls = new OrbitControls(this.camera, this.renderer.domElement);
+                    const { lookAtPosition } = this;
+                    controls.target.copy(lookAtPosition);
+                    controls.update();
+                    this.controls = controls;
+                }
+                // 创建调试UI
+                createDebugUI() {
+                    const axisHelper = new THREE.AxesHelper();
+                    this.scene.add(axisHelper);
+                    const stats = Stats();
+                    this.container.appendChild(stats.dom);
+                    this.stats = stats;
+                }
+                // 监听事件
+                addListeners() {
+                    this.onResize();
+                }
+                // 监听画面缩放
+                onResize() {
+                    window.addEventListener("resize", (e) => {
+                        const aspect = calcAspect(this.container);
+                        const camera = this.camera;
+                        camera.aspect = aspect;
+                        camera.updateProjectionMatrix();
+                        this.resizeRendererToDisplaySize();
+                        if (this.shaderMaterial) {
+                            this.shaderMaterial.uniforms.uResolution.value.x = window.innerWidth;
+                            this.shaderMaterial.uniforms.uResolution.value.y = window.innerHeight;
+                        }
+                    });
+                }
+                // 动画
+                update() {
+                    console.log("animation");
+                }
+                // 渲染
+                setLoop() {
+                    this.renderer.setAnimationLoop(() => {
+                        this.update();
+                        if (this.controls) {
+                            this.controls.update();
+                        }
+                        if (this.stats) {
+                            this.stats.update();
+                        }
+                        if (this.composer) {
+                            this.composer.render();
+                        }
+                        else {
+                            this.renderer.render(this.scene, this.camera);
+                        }
+                    });
+                }
+            }
+
+
+            class ParticleExplode extends Base {
+                constructor(sel, debug,classname) {
+                    super(sel, debug);
+                    this.clock = new THREE.Clock();
+                    this.cameraPosition = new THREE.Vector3(0, 0, 1500);
+                    const fov = getScreenFov(this.cameraPosition.z);
+                    this.perspectiveCameraParams = {
+                        fov,
+                        near: 0.1,
+                        far: 5000
+                    };
+                    this.image = document.querySelector(classname);
+                    this.params = {
+                        exposure: 1,
+                        bloomStrength: 0,
+                        bloomThreshold: 0,
+                        bloomRadius: 0
+                    };
+                    this.isOpen = false;
+                }
+                // 初始化
+                async init() {
+                    this.createScene();
+                    this.createPerspectiveCamera();
+                    this.createRenderer();
+                    this.createParticleExplodeMaterial();
+                    await preloadImages();
+                    this.createMaku();
+                    this.createPostprocessingEffect();
+                    this.createClickEffect();
+                    this.createLight();
+                    this.mouseTracker.trackMousePos();
+                    this.createOrbitControls();
+                    // this.createDebugPanel();
+                    this.addListeners();
+                    this.setLoop();
+                }
+                // 创建材质
+                createParticleExplodeMaterial() {
+                    const particleExplodeMaterial = new THREE.ShaderMaterial({
+                        vertexShader: particleExplodeVertexShader,
+                        fragmentShader: particleExplodeFragmentShader,
+                        side: THREE.DoubleSide,
+                        uniforms: {
+                            uTime: {
+                                value: 0
+                            },
+                            uMouse: {
+                                value: new THREE.Vector2(0, 0)
+                            },
+                            uResolution: {
+                                value: new THREE.Vector2(window.innerWidth, window.innerHeight)
+                            },
+                            uProgress: {
+                                value: 0
+                            },
+                            uTexture: {
+                                value: null
+                            }
+                        }
+                    });
+                    this.particleExplodeMaterial = particleExplodeMaterial;
+                }
+                // 创建点
+                createMaku() {
+                    const { image, particleExplodeMaterial, scene } = this;
+                    const maku = new Maku(image, particleExplodeMaterial, scene, {
+                        meshType: "points",
+                        segments: {
+                            width: 128,
+                            height: 128
+                        }
+                    });
+                    maku.setPosition();
+                    this.maku = maku;
+                }
+                // 创建后期特效
+                createPostprocessingEffect() {
+                    const renderScene = new RenderPass(this.scene, this.camera);
+                    const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
+                    bloomPass.threshold = this.params.bloomThreshold;
+                    bloomPass.strength = this.params.bloomStrength;
+                    bloomPass.radius = this.params.bloomRadius;
+                    this.bloomPass = bloomPass;
+                    this.composer = new EffectComposer(this.renderer);
+                    this.composer.addPass(renderScene);
+                    this.composer.addPass(bloomPass);
+                }
+                // 创建点击效果
+                createClickEffect() {
+                    const material = this.maku.mesh.material;
+                    this.maku.el.addEventListener("click", () => {
+                        if (!this.isOpen) {
+                            gsap.to(material.uniforms.uProgress, {
+                                value: 3,
+                                duration: 2
+                            });
+                            this.isOpen = true;
+                        }
+                        else {
+                            gsap.to(material.uniforms.uProgress, {
+                                value: 0,
+                                duration: 2
+                            });
+                            this.isOpen = false;
+                        }
+                    });
+                }
+                // 动画
+                update() {
+                    const elapsedTime = this.clock.getElapsedTime();
+                    const mousePos = this.mouseTracker.mousePos;
+                    if (this.maku) {
+                        const material = this.maku.mesh.material;
+                        material.uniforms.uTime.value = elapsedTime;
+                        material.uniforms.uMouse.value = mousePos;
+                    }
+                    this.bloomPass.strength = this.params.bloomStrength;
+                }
+                // 创建调试面板
+                createDebugPanel() {
+                    const gui = new dat.GUI();
+                    const material = this.maku.mesh.material;
+                    const uniforms = material.uniforms;
+                    const params = this.params;
+                    gui
+                        .add(uniforms.uProgress, "value")
+                        .min(0)
+                        .max(3)
+                        .step(0.01)
+                        .name("progress");
+                    gui.add(params, "bloomStrength").min(0).max(10).step(0.01);
+                }
+            }
+
+
+            const start = () => {
+                const particleExplode = new ParticleExplode(".particle-explode", false, ".img1");
+                particleExplode.init();
+            };
+            start();
+        }
     }
 
-    //监视画面变化
-    window.addEventListener("resize",() => {
-        //更新摄像机
-        camera.aspect = window.innerWidth / window.innerHeight;
-        //更新摄像机的投影矩阵
-        camera.updateProjectionMatrix();
-
-        // 更新渲染器尺寸
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        //更新渲染器的像素比
-        renderer.setPixelRatio(window.devicePixelRatio);
-    })
-
-    onMounted(()=>{
-        // 将渲染器插入到Dom中
-        canvasDom.value.appendChild(renderer.domElement);
-
-        // 初始化渲染器
-        renderer.setClearColor("#000")
-        scene.background = new THREE.Color("#ccc");//渲染场景背景，背景总是首先被渲染的
-        scene.environment = new THREE.Color("#ccc");//渲染场景环境，该纹理贴图将会被设为场景中所有物理材质的环境贴图
-        render();//调用渲染函数render
-
-        //添加网格地面
-        const gridHelper = new THREE.GridHelper(10,10);
-        gridHelper.material.opacity = 0.2;
-        gridHelper.material.transparent = true;
-        scene.add(gridHelper);
-
-        //添加控制器
-        controls = new OrbitControls(camera,renderer.domElement);
-        controls.enableDamping = true;// 设置控制器阻尼，让控制器更真实
-        controls.update();
-
-        //载入模型
-        const loader = new GLTFLoader();
-        loader.load(
-            '/src/assets/3Dmodel/emission_demo_divergence_meter/scene.gltf',
-            ( gltf ) => {
-            const nixieclock = gltf.scene;
-            nixieclock.scale.set(20, 20,20);
-            scene.add( nixieclock );
-            },
-            undefined, function ( error ) {
-            console.error( error );
-            }
-        );
-
-        //添加灯光
-        const light01 = new THREE.DirectionalLight(0xffffff,1);
-        light01.position.set(0,0,10);
-        // scene.add(light01);
-        const light02 = new THREE.DirectionalLight(0xffffff,1);
-        light02.position.set(0,0,-10);
-        scene.add(light02);
-
-        const light03 = new THREE.DirectionalLight(0xffffff,1);
-        light03.position.set(50,0,0);
-        // scene.add(light03);
-        const light04 = new THREE.DirectionalLight(0xffffff,1);
-        light04.position.set(-50,0,0);
-        // scene.add(light04);
-
-        const light05 = new THREE.DirectionalLight(0xffffff,1);
-        light05.position.set(-50,50,50);
-        scene.add(light05);
-        const light06 = new THREE.DirectionalLight(0xffffff,1);
-        light05.position.set(50,50,50);
-        scene.add(light06);
-        const light07 = new THREE.DirectionalLight(0xffffff,1);
-        light06.position.set(-50,-50,-50);
-        scene.add(light07);
-        const light08 = new THREE.DirectionalLight(0xffffff,1);
-        light06.position.set(50,-50,-50);
-        scene.add(light08);
-    });
 
 </script>
 
 <style scoped>
-    *{
+    @import url("https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css");
+
+    /* *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        background: #fcfcfc;
+    } */
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+        background: #fcfcfc;
     }
 
-    .canvas_container{
-        width: 100vw;
-        height: 100vh;
-    }
 </style>

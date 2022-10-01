@@ -1,23 +1,34 @@
 <template>
-    <!-- 开场动画部分 -->
-    <TwinklingOpening></TwinklingOpening>
-
-    <!-- 第二页选项部分 -->
-    <Select></Select>
+    <div class="secpage" id="secendpage">
+        <!-- 顶部时间部分 -->
+        <!-- <clock></clock> -->
+        <!-- 底部日期部分 -->
+        <!-- <Date></Date> -->
+        <div class="middleimg" name="middle">
+            <router-link to="/anime" class="lefturl">
+                <div class="leftbox" name="middle">
+                    <img src="/src/assets/images/left.png" class="secrightimg">
+                </div>
+            </router-link>
+            <router-link to="/game" class="righturl">
+                <div class="rightbox" name="middle">
+                    <img src="/src/assets/images/right.png" class="secrightimg">
+                </div>
+            </router-link>
+        </div>
+    </div>
 </template>
 
 <script>
-import TwinklingOpening from '/src/components/Home/TwinklingOpening.vue';
-import ThreeDOpening from "./3DOpening.vue";
-import Select from "./Select.vue";
+    // import Clock from '/src/components/globalReg/Clock.vue';
+    // import Date from '/src/components/globalReg/Date.vue';
 
 export default{
-    name:'Home',
+    name:'Select',
     components:{
-    "TwinklingOpening": TwinklingOpening,
-    "ThreeDOpening": ThreeDOpening,
-    "Select": Select,
-},
+        // "Clock": Clock,
+        // "Date": Date,
+    },
 }
 </script>
 

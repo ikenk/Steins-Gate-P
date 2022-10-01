@@ -25,13 +25,13 @@
 <script>
 export default {
     name:'TwinklingImg',
-     data() {
+    data() {
         return { 
             disn:'block',
         }
     },
     mounted(){
-        setTimeout(()=>{this.disn='none'},2000)
+        setTimeout(()=>{this.disn='none'},2000);
     },
 }
 </script>
