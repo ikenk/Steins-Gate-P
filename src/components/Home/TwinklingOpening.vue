@@ -1,6 +1,6 @@
 <template>
     <!-- 开场动画部分 -->
-    <div class="firpage"  id="firstpage" :style="{display:[disn]}">
+    <div class="firpage"  id="firstpage" >
         <div class="startani">
             <img src="/src/assets/images/ttl_logo01_1.svg" class="img1">
             <img src="/src/assets/images/ttl_logo01_3.svg" class="img2">
@@ -29,9 +29,6 @@ export default {
         return { 
             disn:'block',
         }
-    },
-    mounted(){
-        setTimeout(()=>{this.disn='none'},2000);
     },
 }
 </script>

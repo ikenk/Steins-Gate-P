@@ -1,10 +1,10 @@
 <template>
     <!-- partial:index.partial.html -->
-    <div class="relative w-screen h-screen">
-        <div class="absolute w-full h-full" :style="{opacity:`${this.opacity}`}" @click="changeopa()">
-            <img src="./「シュタインズ・ゲート-ゼロ」キービジュアル.png" class="w-full h-full cursor-pointer img1" alt="" crossorigin="anonymous" />
+    <div class="relative w-screen h-screen selectbox">
+        <div class="absolute w-full h-full selectimgbox" :style="{opacity:`${this.opacity}`}">
+            <img src="./「シュタインズ・ゲート-ゼロ」キービジュアル.png" class="cursor-pointer img01" @click="particleclick" crossorigin="anonymous"  />
         </div>
-        <div class="particle-explode w-full h-full bg-black"></div>
+        <div class="particle-explode bg-black explosion" ></div>
     </div>
     <!-- partial -->
 </template>
@@ -25,6 +25,10 @@
     export default {
         name: 'ThreeDOpening',
 
+        emits:[
+            'ParticleClick',
+        ],
+
         data () {
             return {
                 opacity:0,
@@ -32,9 +36,13 @@
         },
 
         methods:{
-            changeopa(){
-                this.opacity = 0.5 - this.opacity;
-            }
+            // changeopa(){
+            //     this.opacity = 0.5 - this.opacity;
+            // }
+            particleclick(){
+                this.$emit('ParticleClick');
+                console.log(123);
+            },
         },
         
         mounted () {
@@ -209,7 +217,7 @@
                         vec4 viewPosition=viewMatrix*modelPosition;
                         vec4 projectedPosition=projectionMatrix*viewPosition;
                         gl_Position=projectedPosition;
-                        gl_PointSize=10.;
+                        gl_PointSize=30.;
                         
                         vUv=uv;
                     }
@@ -537,13 +545,17 @@
 
 
             const start = () => {
-                const particleExplode = new ParticleExplode(".particle-explode", false, ".img1");
+                const particleExplode = new ParticleExplode(".particle-explode", false, ".img01");
                 particleExplode.init();
             };
             start();
-        }
-    }
+        },
 
+        updated(){
+            console.log(232323);
+        }
+    
+    }
 
 </script>
 
@@ -562,6 +574,26 @@
         min-height: 100vh;
         margin: 0;
         background: #fcfcfc;
+    }
+
+    .selectbox{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .selectimgbox{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .img01{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .explosion{
+        width: 100vw;
+        height: 100vh;
     }
 
 </style>

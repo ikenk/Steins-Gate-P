@@ -1,9 +1,11 @@
 <template>
     <!-- 开场动画部分 -->
-    <TwinklingOpening></TwinklingOpening>
+    <TwinklingOpening v-if="display[0]"></TwinklingOpening>
+
+    <ThreeDOpening v-if="display[1]" @ParticleClick="particleclick"></ThreeDOpening>
 
     <!-- 第二页选项部分 -->
-    <Select></Select>
+    <Select v-if="display[2]"></Select>
 </template>
 
 <script>
@@ -13,12 +15,48 @@ import Select from "./Select.vue";
 
 export default{
     name:'Home',
+
     components:{
     "TwinklingOpening": TwinklingOpening,
     "ThreeDOpening": ThreeDOpening,
     "Select": Select,
-},
+    },
+
+    data(){
+        return{
+            display:[0,1,0],
+            click_num:0,
+        }
+    },
+
+    mounted(){
+        setTimeout(() => {
+            this.display[0] = 0;
+            // this.display[1] = 1;
+        }, 2000);
+    },
+
+    methods:{
+        particleclick(){
+            if(this.click_num >= 2){
+                console.log(2);
+                return ;
+            }
+            if(this.click_num ===1){
+                console.log(1);
+                setTimeout(() => {
+                    this.display[2] = 1;
+                    this.display[1] = 0;
+                }, 2000);
+            }
+
+            this.click_num += 1;
+            console.log(this.click_num);
+        },
+    },
+
 }
+
 </script>
 
 <style scoped>
