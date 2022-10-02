@@ -24,34 +24,30 @@ export default{
 
     data(){
         return{
-            display:[0,1,0],
+            display:[1,0,0],
             click_num:0,
+            timer:null,
         }
     },
 
     mounted(){
         setTimeout(() => {
             this.display[0] = 0;
-            // this.display[1] = 1;
+            this.display[1] = 1;
         }, 2000);
     },
 
     methods:{
         particleclick(){
-            if(this.click_num >= 2){
-                console.log(2);
-                return ;
-            }
-            if(this.click_num ===1){
-                console.log(1);
-                setTimeout(() => {
-                    this.display[2] = 1;
-                    this.display[1] = 0;
-                }, 2000);
-            }
-
+            clearTimeout(this.timer)
+            this.timer = setTimeout(() => {
+                this.display[2] = 1;
+                this.display[1] = 0;
+            }, 2000);
             this.click_num += 1;
-            console.log(this.click_num);
+            if(this.click_num % 2 === 1){
+                clearTimeout(this.timer);
+            }
         },
     },
 
