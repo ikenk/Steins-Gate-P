@@ -22,7 +22,7 @@
           <AlphaTimeLine v-if="0"></AlphaTimeLine>
         </Row>
         <br />
-        <Row class="product" id="product">
+        <!-- <Row class="product" id="product">
           <Row class="product_title">
             <Col span="8">
             </Col>
@@ -59,7 +59,7 @@
             <Col flex="5">
             </Col>
           </Row>
-        </Row>
+        </Row> -->
         <br />
         <!-- 全局页脚 -->
         <GlobalFooter :copyright="copyright" />

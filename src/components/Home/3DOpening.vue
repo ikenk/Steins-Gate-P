@@ -2,7 +2,7 @@
     <!-- partial:index.partial.html -->
     <div class="relative w-screen h-screen selectbox">
         <div class="absolute w-full h-full selectimgbox" :style="{opacity:`${this.opacity}`}">
-            <img src="./「シュタインズ・ゲート-ゼロ」キービジュアル.png" class="cursor-pointer img01" @click="particleclick" crossorigin="anonymous"  />
+            <img src="/src/assets/images/「シュタインズ・ゲート-ゼロ」キービジュアル_blacklayer.png" class="cursor-pointer img01" @click="particleclick" crossorigin="anonymous"  />
         </div>
         <div class="particle-explode bg-black explosion" ></div>
     </div>
@@ -41,7 +41,7 @@
             // }
             particleclick(){
                 this.$emit('ParticleClick');
-                console.log(123);
+                // console.log(123);
             },
         },
         
@@ -246,7 +246,7 @@
                 constructor(sel, debug = false) {
                     this.debug = debug;
                     this.container = window.document.querySelector(".particle-explode");
-                    console.log(this.container);
+                    // console.log(this.container);
                     this.perspectiveCameraParams = {
                         fov: 75,
                         near: 0.1,
